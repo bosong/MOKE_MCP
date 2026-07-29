@@ -1,0 +1,22 @@
+{
+  "name": "@moke-mcp/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "moke-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  }
+}
