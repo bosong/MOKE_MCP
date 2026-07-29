@@ -1,4 +1,4 @@
-# Moke MCP
+# MOKE MCP
 
 将**摹客（Mockplus）设计数据**接入 AI 编码助手的 MCP Server。对标 Figma MCP，实现设计到代码的自动化工作流。
 
