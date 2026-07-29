@@ -20,11 +20,6 @@ export function extractVariables(data: DesignData): DesignVariable[] {
   const styles = data.globalVars?.styles || {};
 
   for (const [key, value] of Object.entries(styles)) {
-    // 跳过 fill_* layout_* effect_* 等引用 key，只保留语义化名称
-    if (key.match(/^(fill|layout|effect|stroke)_\d{6}$/)) {
-      continue;
-    }
-
     const variable = classifyVariable(key, value);
     if (variable) {
       variables.push(variable);
@@ -42,6 +37,27 @@ function classifyVariable(name: string, value: unknown): DesignVariable | null {
     // 颜色值
     if (value.startsWith('#') || value.startsWith('rgb')) {
       return { name, type: 'COLOR', value };
+    }
+    return { name, type: 'OTHER', value };
+  }
+
+  if (Array.isArray(value)) {
+    // 数组类型（如 fill_*: ["#8C8C8C"] 或 effect_*: [{...}]）
+    const arr = value as unknown[];
+    if (arr.length === 0) return null;
+    const first = arr[0];
+    if (typeof first === 'string') {
+      // 颜色数组: ["#8C8C8C"]
+      if (first.startsWith('#') || first.startsWith('rgb')) {
+        return { name, type: 'COLOR', value: first };
+      }
+      return { name, type: 'OTHER', value: first };
+    }
+    if (typeof first === 'object' && first !== null) {
+      const obj = first as Record<string, unknown>;
+      if ('type' in obj && ['DROP_SHADOW', 'INNER_SHADOW', 'LAYER_BLUR'].includes(obj.type as string)) {
+        return { name, type: 'EFFECT', value: obj };
+      }
     }
     return { name, type: 'OTHER', value };
   }

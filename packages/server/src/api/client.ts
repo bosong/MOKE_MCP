@@ -15,8 +15,22 @@ import type { PythonResult, PageMeta, GroupInfo, DesignData, CookieStatus, PageT
 import { MockplusExitCode } from './types.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-// scripts/mockplus 相对于 packages/server/src/api/ 的路径
-const SCRIPTS_DIR = path.resolve(__dirname, '../../../../scripts/mockplus');
+
+/** 定位 scripts/mockplus 目录
+ *  - 编译后: packages/server/dist/ → 上 3 层到项目根
+ *  - 源码中: packages/server/src/api/ → 上 4 层到项目根
+ */
+function resolveScriptsDir(): string {
+  // 编译后路径（packages/server/dist → ../../../ → 项目根）
+  const distPath = path.resolve(__dirname, '../../../scripts/mockplus');
+  if (fs.existsSync(path.join(distPath, 'mockplus.py'))) {
+    return distPath;
+  }
+  // 源码路径（packages/server/src/api → ../../../../ → 项目根）
+  return path.resolve(__dirname, '../../../../scripts/mockplus');
+}
+
+const SCRIPTS_DIR = resolveScriptsDir();
 
 /** 解析摹客 URL */
 export interface ParsedUrl {
