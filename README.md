@@ -443,6 +443,17 @@ A: Moke MCP 对标 Figma MCP 的工具集，输出格式兼容，但数据源为
 
 ---
 
+## 致谢
+
+MOKE_MCP 的设计灵感来自以下两个优秀项目：
+
+- **[mockplus-context](https://github.com/MySwallow/mockplus-context)** by [MySwallow](https://github.com/MySwallow) — Agent Skill 形式的摹客设计数据获取方案，其中 `mockplus.py` 脚本（REST API 调用、Cookie 认证、Sketch JSON 的 transform/distill 管线）被 MOKE_MCP 通过子进程方式复用，是数据获取的核心
+- **[mockplus-rp-skill](https://github.com/Retohsaka/mockplus-rp-skill)** by [Retohsaka](https://github.com/Retohsaka) — 摹客 RP 原型工具的数据解析方案，为多产品线支持提供了参考思路
+
+感谢两位作者的开源贡献。
+
+---
+
 ## License
 
 MIT
