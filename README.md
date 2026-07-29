@@ -139,7 +139,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
       "command": "npx",
       "args": ["-y", "@moke-mcp/cli", "serve"],
       "env": {
-        "MOKE_COOKIE": "token=xxx; JSESSIONID=yyy"
+        "MOKE_COOKIE": "你的cookie"
       }
     }
   }
@@ -159,7 +159,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
       "command": "npx",
       "args": ["-y", "@moke-mcp/cli", "serve"],
       "env": {
-        "MOKE_COOKIE": "token=xxx; JSESSIONID=yyy"
+        "MOKE_COOKIE": "你的cookie"
       }
     }
   }
@@ -182,7 +182,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
       "command": "npx",
       "args": ["-y", "@moke-mcp/cli", "serve"],
       "env": {
-        "MOKE_COOKIE": "token=xxx; JSESSIONID=yyy"
+        "MOKE_COOKIE": "你的cookie"
       }
     }
   }
@@ -203,7 +203,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
       "command": "npx",
       "args": ["-y", "@moke-mcp/cli", "serve"],
       "env": {
-        "MOKE_COOKIE": "token=xxx; JSESSIONID=yyy"
+        "MOKE_COOKIE": "你的cookie"
       }
     }
   }
@@ -223,7 +223,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
       "command": "npx",
       "args": ["-y", "@moke-mcp/cli", "serve"],
       "env": {
-        "MOKE_COOKIE": "token=xxx; JSESSIONID=yyy"
+        "MOKE_COOKIE": "你的cookie"
       }
     }
   }
