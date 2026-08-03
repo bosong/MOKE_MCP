@@ -17,17 +17,25 @@ import { MockplusExitCode } from './types.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** 定位 scripts/mockplus 目录
- *  - 编译后: packages/server/dist/ → 上 3 层到项目根
- *  - 源码中: packages/server/src/api/ → 上 4 层到项目根
+ *
+ * 查找优先级:
+ *   1. 打包后的同包路径: dist/ → ../scripts/mockplus  (npm 发布后的常态)
+ *   2. monorepo 编译后:   packages/server/dist → ../../../scripts/mockplus
+ *   3. monorepo 源码:     packages/server/src/api → ../../../../scripts/mockplus
  */
 function resolveScriptsDir(): string {
-  // 编译后路径（packages/server/dist → ../../../ → 项目根）
-  const distPath = path.resolve(__dirname, '../../../scripts/mockplus');
-  if (fs.existsSync(path.join(distPath, 'mockplus.py'))) {
-    return distPath;
+  const candidates = [
+    path.resolve(__dirname, '../scripts/mockplus'),
+    path.resolve(__dirname, '../../../scripts/mockplus'),
+    path.resolve(__dirname, '../../../../scripts/mockplus'),
+  ];
+  for (const dir of candidates) {
+    if (fs.existsSync(path.join(dir, 'mockplus.py'))) {
+      return dir;
+    }
   }
-  // 源码路径（packages/server/src/api → ../../../../ → 项目根）
-  return path.resolve(__dirname, '../../../../scripts/mockplus');
+  // 都找不到时退回发布包位置，让后续 spawn 报清晰错误
+  return candidates[0];
 }
 
 const SCRIPTS_DIR = resolveScriptsDir();
@@ -48,8 +56,12 @@ export function parseMockplusUrl(url: string): ParsedUrl {
     );
   }
   const appId = m[1];
-  const tail = url.replace(/[?#].*$/, '').split('/').pop();
-  const targetId = tail !== appId ? tail : undefined;
+  const tail = url.replace(/[?#].*$/, '').split('/').pop() || '';
+  // URL 固定路径段(design/develop)与过短段不是 target id:
+  // 摹客 id 为 ≥8 位 base62/UUID,`/app/{APP}/design` 这类无 target 链接
+  // 尾段是路径的一部分,误判会让后续页面定位失败(与 Python 侧一致)。
+  const isPathSegment = tail === appId || tail === 'design' || tail === 'develop' || tail.length < 8;
+  const targetId = isPathSegment ? undefined : tail;
   return { type: 'dt', appId, targetId };
 }
 
@@ -238,13 +250,25 @@ export async function downloadImages(
   logger.info(`[API] 下载切图: ${hashes.length} 个 → ${outDir}`);
 
   const nodesArg = hashes.join(',');
-  const args = ['download', url, '--nodes', nodesArg, '--out', outDir];
+  // --json: Python 侧输出真实下载统计到 stdout(P0:旧实现返回写死的假统计)
+  const args = ['download', url, '--nodes', nodesArg, '--out', outDir, '--json'];
 
   const result = await runPython(args);
   handleResult(result, '下载切图');
 
-  // download 的结果在 stderr 中输出统计信息
-  return { ok: hashes.length, fail: 0, cached: 0, total: hashes.length };
+  try {
+    const stats = JSON.parse(result.stdout) as { ok: number; fail: number; cached: number; total: number };
+    return {
+      ok: stats.ok ?? 0,
+      fail: stats.fail ?? 0,
+      cached: stats.cached ?? 0,
+      total: stats.total ?? 0,
+    };
+  } catch {
+    // Python 侧契约升级前(无 --json)的兜底:保持旧行为不中断调用方
+    logger.warn('[API] download --json 响应解析失败，回退估算统计');
+    return { ok: hashes.length, fail: 0, cached: 0, total: hashes.length };
+  }
 }
 
 /**
@@ -303,7 +327,8 @@ export async function fetchPageTreeForMetadata(url: string): Promise<PageTreeNod
 export async function checkCookieStatus(appId: string): Promise<CookieStatus> {
   logger.info('[API] 检查 Cookie 状态');
 
-  const result = await runPython(['cookie', 'status']);
+  // --json: Python 侧输出结构化状态(P0:旧实现解析纯文本 stdout 必失败)
+  const result = await runPython(['cookie', 'status', '--json']);
   handleResult(result, '检查 Cookie');
 
   try {

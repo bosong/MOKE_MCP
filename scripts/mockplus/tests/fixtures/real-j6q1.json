@@ -1,0 +1,1789 @@
+{
+ "id": "884",
+ "clientID": "467401025",
+ "clientAppID": "467400141",
+ "artboardID": "884",
+ "name": "ANON0001",
+ "source": "ps",
+ "device": "ios2x",
+ "scale": 1,
+ "layers": {
+  "basic": {
+   "id": "884",
+   "name": "ANON0002",
+   "type": "rect",
+   "opacity": 1
+  },
+  "bounds": {
+   "left": 0,
+   "top": 0,
+   "width": 750,
+   "height": 1666
+  },
+  "slice": {},
+  "sharedStyle": {},
+  "children": [
+   {
+    "basic": {
+     "id": "7",
+     "name": "ANON0003",
+     "type": "group",
+     "opacity": 1,
+     "realType": "layerSection"
+    },
+    "bounds": {
+     "left": 5,
+     "top": 1343,
+     "width": 735,
+     "height": 215
+    },
+    "slice": {},
+    "sharedStyle": {},
+    "children": [
+     {
+      "basic": {
+       "id": "51",
+       "name": "ANON0004",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 5,
+       "top": 1343,
+       "width": 39,
+       "height": 39
+      },
+      "slice": {
+       "svgURL": "https://cdn.mockplus.test/ANON0004",
+       "bitmapURL": "https://cdn.mockplus.test/ANON0004"
+      },
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "50",
+         "name": "ANON0005",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 18,
+         "top": 1356,
+         "width": 12,
+         "height": 12
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 140,
+            "g": 140,
+            "b": 140,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [
+          0.814638,
+          0.814638,
+          0.814638,
+          0.814638
+         ],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "49",
+         "name": "ANON0006",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 8,
+         "top": 1346,
+         "width": 32,
+         "height": 32
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [
+          {
+           "type": "outside",
+           "opacity": 30,
+           "offsetX": 0,
+           "offsetY": 0,
+           "blur": 4,
+           "spread": 0,
+           "color": {
+            "type": "normal",
+            "value": {
+             "r": 0,
+             "g": 0,
+             "b": 0,
+             "a": 30
+            }
+           }
+          }
+         ],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "65",
+       "name": "ANON0007",
+       "type": "shape",
+       "opacity": 1,
+       "realType": "shapeLayer"
+      },
+      "bounds": {
+       "left": 8,
+       "top": 1346,
+       "width": 32,
+       "height": 32
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [],
+      "fill": {
+       "colors": [
+        {
+         "type": "normal",
+         "value": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+         }
+        }
+       ]
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "64",
+       "name": "ANON0008",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 5,
+       "top": 1343,
+       "width": 39,
+       "height": 39
+      },
+      "slice": {
+       "svgURL": "https://cdn.mockplus.test/ANON0008",
+       "bitmapURL": "https://cdn.mockplus.test/ANON0008"
+      },
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "63",
+         "name": "ANON0009",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 18,
+         "top": 1356,
+         "width": 12,
+         "height": 12
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 130,
+            "g": 130,
+            "b": 130,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [
+          0.814638,
+          0.814638,
+          0.814638,
+          0.814638
+         ],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "62",
+         "name": "ANON0010",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 8,
+         "top": 1346,
+         "width": 32,
+         "height": 32
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 20,
+            "g": 20,
+            "b": 20,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [
+          {
+           "type": "outside",
+           "opacity": 30,
+           "offsetX": 0,
+           "offsetY": 0,
+           "blur": 4,
+           "spread": 0,
+           "color": {
+            "type": "normal",
+            "value": {
+             "r": 255,
+             "g": 255,
+             "b": 255,
+             "a": 30
+            }
+           }
+          }
+         ],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "27",
+       "name": "ANON0011",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 48,
+       "top": 1386,
+       "width": 48,
+       "height": 48
+      },
+      "slice": {
+       "svgURL": "https://cdn.mockplus.test/ANON0011",
+       "bitmapURL": "https://cdn.mockplus.test/ANON0011"
+      },
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "43",
+         "name": "ANON0012",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 57,
+         "top": 1397.06,
+         "width": 29.9375,
+         "height": 23.63000000000011
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "25",
+         "name": "ANON0013",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 56.8125,
+         "top": 1394.81,
+         "width": 30,
+         "height": 30
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 0
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "42",
+         "name": "ANON0014",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 48,
+         "top": 1386,
+         "width": 48,
+         "height": 48
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 235,
+            "g": 51,
+            "b": 59,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "60",
+       "name": "ANON0015",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 48,
+       "top": 1386,
+       "width": 48,
+       "height": 48
+      },
+      "slice": {
+       "svgURL": "https://cdn.mockplus.test/ANON0015",
+       "bitmapURL": "https://cdn.mockplus.test/ANON0015"
+      },
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "59",
+         "name": "ANON0016",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 57,
+         "top": 1397.06,
+         "width": 29.9375,
+         "height": 23.63000000000011
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "58",
+         "name": "ANON0017",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 56.8125,
+         "top": 1394.81,
+         "width": 30,
+         "height": 30
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 0
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "57",
+         "name": "ANON0018",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 48,
+         "top": 1386,
+         "width": 48,
+         "height": 48
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 255,
+            "g": 51,
+            "b": 67,
+            "a": 1
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "18",
+       "name": "ANON0019",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 112,
+       "top": 1395,
+       "width": 90,
+       "height": 30
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "13",
+         "name": "ANON0020",
+         "type": "text",
+         "opacity": 1,
+         "realType": "textLayer"
+        },
+        "bounds": {
+         "left": 113,
+         "top": 1396,
+         "width": 87,
+         "height": 29
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": []
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {
+         "styles": [
+          {
+           "font": {
+            "family": "PingFang SC",
+            "weight": "Bold",
+            "color": {
+             "type": "normal",
+             "value": {
+              "r": 31,
+              "g": 31,
+              "b": 31,
+              "a": 1
+             }
+            },
+            "size": 30
+           },
+           "align": "left",
+           "fontStyles": {
+            "underLine": false,
+            "lineThrough": false,
+            "bold": false,
+            "italic": false
+           },
+           "space": {
+            "lineHeight": 30,
+            "letterSpacing": 0,
+            "paragraph": 1
+           },
+           "value": "张少坤 "
+          }
+         ],
+         "paragraphStyles": [
+          {
+           "align": "left",
+           "value": "ANON0021"
+          }
+         ]
+        }
+       },
+       {
+        "basic": {
+         "id": "12",
+         "name": "ANON0022",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 112,
+         "top": 1395,
+         "width": 90,
+         "height": 30
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 149,
+            "g": 149,
+            "b": 149,
+            "a": 0
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "32",
+       "name": "ANON0023",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 620,
+       "top": 1398,
+       "width": 82,
+       "height": 24
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "66",
+         "name": "ANON0024",
+         "type": "group",
+         "opacity": 1,
+         "realType": "layerSection"
+        },
+        "bounds": {
+         "left": 690,
+         "top": 1398,
+         "width": 12,
+         "height": 24
+        },
+        "slice": {
+         "svgURL": "https://cdn.mockplus.test/ANON0024",
+         "bitmapURL": "https://cdn.mockplus.test/ANON0024"
+        },
+        "sharedStyle": {},
+        "children": [
+         {
+          "basic": {
+           "id": "30",
+           "name": "ANON0025",
+           "type": "shape",
+           "opacity": 1,
+           "realType": "shapeLayer"
+          },
+          "bounds": {
+           "left": 691,
+           "top": 1400.53,
+           "width": 10.5,
+           "height": 18.970000000000027
+          },
+          "slice": {},
+          "sharedStyle": {},
+          "children": [],
+          "fill": {
+           "colors": [
+            {
+             "type": "normal",
+             "value": {
+              "r": 0,
+              "g": 121,
+              "b": 255,
+              "a": 1
+             }
+            }
+           ]
+          },
+          "effect": {
+           "shadows": [],
+           "blurs": []
+          },
+          "glow": {},
+          "stroke": {
+           "borders": [],
+           "radius": [
+            1,
+            1,
+            1,
+            1
+           ],
+           "dash": []
+          },
+          "text": {}
+         },
+         {
+          "basic": {
+           "id": "31",
+           "name": "ANON0026",
+           "type": "shape",
+           "opacity": 1,
+           "realType": "shapeLayer"
+          },
+          "bounds": {
+           "left": 690,
+           "top": 1398,
+           "width": 12,
+           "height": 24
+          },
+          "slice": {},
+          "sharedStyle": {},
+          "children": [],
+          "fill": {
+           "colors": [
+            {
+             "type": "normal",
+             "value": {
+              "r": 149,
+              "g": 149,
+              "b": 149,
+              "a": 0
+             }
+            }
+           ]
+          },
+          "effect": {
+           "shadows": [],
+           "blurs": []
+          },
+          "glow": {},
+          "stroke": {
+           "borders": [],
+           "radius": [],
+           "dash": []
+          },
+          "text": {}
+         }
+        ],
+        "fill": {
+         "colors": []
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "17",
+         "name": "ANON0027",
+         "type": "text",
+         "opacity": 1,
+         "realType": "textLayer"
+        },
+        "bounds": {
+         "left": 636,
+         "top": 1399,
+         "width": 45,
+         "height": 23
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": []
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {
+         "styles": [
+          {
+           "font": {
+            "family": "PingFang SC",
+            "weight": "Regular",
+            "color": {
+             "type": "normal",
+             "value": {
+              "r": 0,
+              "g": 121,
+              "b": 255,
+              "a": 1
+             }
+            },
+            "size": 24
+           },
+           "align": "right",
+           "fontStyles": {
+            "underLine": false,
+            "lineThrough": false,
+            "bold": false,
+            "italic": false
+           },
+           "space": {
+            "lineHeight": 30,
+            "letterSpacing": 0,
+            "paragraph": 1
+           },
+           "value": "回复"
+          }
+         ],
+         "paragraphStyles": [
+          {
+           "align": "right",
+           "value": "ANON0028"
+          }
+         ]
+        }
+       },
+       {
+        "basic": {
+         "id": "16",
+         "name": "ANON0029",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 620,
+         "top": 1398,
+         "width": 62,
+         "height": 24
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 149,
+            "g": 149,
+            "b": 149,
+            "a": 0
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "34",
+       "name": "ANON0030",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 218,
+       "top": 1398,
+       "width": 160,
+       "height": 24
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "15",
+         "name": "ANON0031",
+         "type": "text",
+         "opacity": 1,
+         "realType": "textLayer"
+        },
+        "bounds": {
+         "left": 220,
+         "top": 1399,
+         "width": 83,
+         "height": 23
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": []
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {
+         "styles": [
+          {
+           "font": {
+            "family": "PingFang SC",
+            "weight": "Regular",
+            "color": {
+             "type": "normal",
+             "value": {
+              "r": 140,
+              "g": 140,
+              "b": 140,
+              "a": 1
+             }
+            },
+            "size": 24
+           },
+           "align": "left",
+           "fontStyles": {
+            "underLine": false,
+            "lineThrough": false,
+            "bold": false,
+            "italic": false
+           },
+           "space": {
+            "lineHeight": 30,
+            "letterSpacing": 0,
+            "paragraph": 1
+           },
+           "value": "1分钟前"
+          }
+         ],
+         "paragraphStyles": [
+          {
+           "align": "left",
+           "value": "ANON0032"
+          }
+         ]
+        }
+       },
+       {
+        "basic": {
+         "id": "14",
+         "name": "ANON0033",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 218,
+         "top": 1398,
+         "width": 160,
+         "height": 24
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 149,
+            "g": 149,
+            "b": 149,
+            "a": 0
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "28",
+       "name": "ANON0034",
+       "type": "group",
+       "opacity": 1,
+       "realType": "layerSection"
+      },
+      "bounds": {
+       "left": 48,
+       "top": 1450,
+       "width": 658,
+       "height": 70
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [
+       {
+        "basic": {
+         "id": "10",
+         "name": "ANON0035",
+         "type": "text",
+         "opacity": 1,
+         "realType": "textLayer"
+        },
+        "bounds": {
+         "left": 48,
+         "top": 1450,
+         "width": 658,
+         "height": 69
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": []
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {
+         "styles": [
+          {
+           "font": {
+            "family": "PingFang SC",
+            "weight": "Regular",
+            "color": {
+             "type": "normal",
+             "value": {
+              "r": 100,
+              "g": 100,
+              "b": 100,
+              "a": 1
+             }
+            },
+            "size": 30
+           },
+           "align": "left",
+           "fontStyles": {
+            "underLine": false,
+            "lineThrough": false,
+            "bold": false,
+            "italic": false
+           },
+           "space": {
+            "lineHeight": 40,
+            "letterSpacing": 0,
+            "paragraph": 2
+           },
+           "value": "您好，我是你的专属客服，顶部小盟可找到我，有\r什么问题欢迎咨询我哦~"
+          }
+         ],
+         "paragraphStyles": [
+          {
+           "align": "left",
+           "value": "ANON0036"
+          },
+          {
+           "align": "left",
+           "value": "ANON0037"
+          }
+         ]
+        }
+       },
+       {
+        "basic": {
+         "id": "11",
+         "name": "ANON0038",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 48,
+         "top": 1450,
+         "width": 654,
+         "height": 30
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 149,
+            "g": 149,
+            "b": 149,
+            "a": 0
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       },
+       {
+        "basic": {
+         "id": "36",
+         "name": "ANON0039",
+         "type": "shape",
+         "opacity": 1,
+         "realType": "shapeLayer"
+        },
+        "bounds": {
+         "left": 48,
+         "top": 1490,
+         "width": 654,
+         "height": 30
+        },
+        "slice": {},
+        "sharedStyle": {},
+        "children": [],
+        "fill": {
+         "colors": [
+          {
+           "type": "normal",
+           "value": {
+            "r": 149,
+            "g": 149,
+            "b": 149,
+            "a": 0
+           }
+          }
+         ]
+        },
+        "effect": {
+         "shadows": [],
+         "blurs": []
+        },
+        "glow": {},
+        "stroke": {
+         "borders": [],
+         "radius": [],
+         "dash": []
+        },
+        "text": {}
+       }
+      ],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "9",
+       "name": "ANON0040",
+       "type": "shape",
+       "opacity": 1,
+       "realType": "shapeLayer"
+      },
+      "bounds": {
+       "left": 24,
+       "top": 1362,
+       "width": 702,
+       "height": 182
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [],
+      "fill": {
+       "colors": [
+        {
+         "type": "normal",
+         "value": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+         }
+        }
+       ]
+      },
+      "effect": {
+       "shadows": [
+        {
+         "type": "outside",
+         "opacity": 30,
+         "offsetX": 0,
+         "offsetY": 0,
+         "blur": 14,
+         "spread": 0,
+         "color": {
+          "type": "normal",
+          "value": {
+           "r": 0,
+           "g": 0,
+           "b": 0,
+           "a": 30
+          }
+         }
+        }
+       ],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "68",
+       "name": "ANON0041",
+       "type": "shape",
+       "opacity": 1,
+       "realType": "shapeLayer"
+      },
+      "bounds": {
+       "left": 448,
+       "top": 1368,
+       "width": 67,
+       "height": 67
+      },
+      "slice": {
+       "svgURL": "https://cdn.mockplus.test/ANON0041",
+       "bitmapURL": "https://cdn.mockplus.test/ANON0041"
+      },
+      "sharedStyle": {},
+      "children": [],
+      "fill": {
+       "colors": [
+        {
+         "type": "normal",
+         "value": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+         }
+        }
+       ]
+      },
+      "effect": {
+       "shadows": [
+        {
+         "type": "outside",
+         "opacity": 30,
+         "offsetX": 0,
+         "offsetY": 0,
+         "blur": 14,
+         "spread": 0,
+         "color": {
+          "type": "normal",
+          "value": {
+           "r": 0,
+           "g": 0,
+           "b": 0,
+           "a": 30
+          }
+         }
+        }
+       ],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "70",
+       "name": "ANON0042",
+       "type": "shape",
+       "opacity": 1,
+       "realType": "shapeLayer"
+      },
+      "bounds": {
+       "left": 448,
+       "top": 1368,
+       "width": 67,
+       "height": 67
+      },
+      "slice": {
+       "svgURL": "https://cdn.mockplus.test/ANON0042",
+       "bitmapURL": "https://cdn.mockplus.test/ANON0042"
+      },
+      "sharedStyle": {},
+      "children": [],
+      "fill": {
+       "colors": [
+        {
+         "type": "normal",
+         "value": {
+          "r": 20,
+          "g": 20,
+          "b": 20,
+          "a": 1
+         }
+        }
+       ]
+      },
+      "effect": {
+       "shadows": [
+        {
+         "type": "outside",
+         "opacity": 30,
+         "offsetX": 0,
+         "offsetY": 0,
+         "blur": 14,
+         "spread": 0,
+         "color": {
+          "type": "normal",
+          "value": {
+           "r": 255,
+           "g": 255,
+           "b": 255,
+           "a": 30
+          }
+         }
+        }
+       ],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "dash": []
+      },
+      "text": {}
+     }
+    ],
+    "fill": {
+     "colors": []
+    },
+    "effect": {
+     "shadows": [],
+     "blurs": []
+    },
+    "glow": {},
+    "stroke": {
+     "borders": [],
+     "radius": [],
+     "dash": []
+    },
+    "text": {}
+   },
+   {
+    "basic": {
+     "id": "5",
+     "name": "ANON0043",
+     "type": "group",
+     "opacity": 1,
+     "realType": "layerSection"
+    },
+    "bounds": {
+     "left": 0,
+     "top": 0,
+     "width": 750,
+     "height": 1666
+    },
+    "slice": {},
+    "sharedStyle": {},
+    "children": [
+     {
+      "basic": {
+       "id": "4",
+       "name": "ANON0044",
+       "type": "rect",
+       "opacity": 1,
+       "realType": "layer"
+      },
+      "bounds": {
+       "left": 0,
+       "top": 1568,
+       "width": 750,
+       "height": 98
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     },
+     {
+      "basic": {
+       "id": "2",
+       "name": "ANON0045",
+       "type": "rect",
+       "opacity": 1,
+       "realType": "layer"
+      },
+      "bounds": {
+       "left": 0,
+       "top": 0,
+       "width": 750,
+       "height": 1666
+      },
+      "slice": {},
+      "sharedStyle": {},
+      "children": [],
+      "fill": {
+       "colors": []
+      },
+      "effect": {
+       "shadows": [],
+       "blurs": []
+      },
+      "glow": {},
+      "stroke": {
+       "borders": [],
+       "radius": [],
+       "dash": []
+      },
+      "text": {}
+     }
+    ],
+    "fill": {
+     "colors": []
+    },
+    "effect": {
+     "shadows": [],
+     "blurs": []
+    },
+    "glow": {},
+    "stroke": {
+     "borders": [],
+     "radius": [],
+     "dash": []
+    },
+    "text": {}
+   }
+  ],
+  "fill": {},
+  "effect": {},
+  "stroke": {},
+  "text": {}
+ },
+ "positionX": 0,
+ "positionY": 0,
+ "size": {
+  "width": 750,
+  "height": 1666
+ },
+ "backgroundColor": {
+  "type": "normal",
+  "value": {
+   "r": 255,
+   "g": 255,
+   "b": 255,
+   "a": 1
+  }
+ },
+ "artboardScale": 1,
+ "sliceScale": 1,
+ "markExtraArea": false,
+ "isUploadHDDesign": false,
+ "isUploadHightQualitySlice": false,
+ "pluginVersion": "2.0.0",
+ "documentVersion": "2",
+ "pluginPlatform": "windows"
+}

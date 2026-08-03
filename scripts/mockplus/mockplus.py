@@ -36,6 +36,8 @@ def build_parser() -> argparse.ArgumentParser:
                    help="同时下整页截图 design.png")
     g.add_argument("--png-scale", type=int, default=2, choices=[1, 2],
                    help="(保留参数,目前固定 @2x)")
+    g.add_argument("--json", action="store_true",
+                   help="stdout 输出 JSON 统计(供 MCP server 消费)")
 
     # all
     g = sub.add_parser("all", help="一站式 = data + download(all + design)")
@@ -58,7 +60,9 @@ def build_parser() -> argparse.ArgumentParser:
     cset.add_argument("--from-file", help="从文件读 cookie(默认 stdin)")
     ctest = csub.add_parser("test")
     ctest.add_argument("app_id")
-    csub.add_parser("status")
+    cstatus = csub.add_parser("status")
+    cstatus.add_argument("--json", action="store_true",
+                         help="JSON 输出(供 MCP server 消费)")
     csub.add_parser("clear")
     csub.add_parser("path")
 

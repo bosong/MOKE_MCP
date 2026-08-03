@@ -8,11 +8,33 @@
 npm install -g @moke-mcp/cli
 ```
 
+> `@moke-mcp/cli` 内置了 `@moke-mcp/server` 和 Python 脚本，安装后无需额外配置即可使用。
+
 验证安装：
 
 ```bash
 moke-mcp --help
 ```
+
+## npx 免安装使用
+
+无需全局安装，直接在 MCP 配置中使用 `npx`：
+
+```json
+{
+  "mcpServers": {
+    "moke-mcp": {
+      "command": "npx",
+      "args": ["-y", "@moke-mcp/cli", "serve"],
+      "env": {
+        "MOKE_COOKIE": "你的cookie"
+      }
+    }
+  }
+}
+```
+
+`npx -y` 会自动下载并缓存，首次使用稍慢，后续秒开。
 
 ## Cookie 配置
 

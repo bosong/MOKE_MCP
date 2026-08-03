@@ -42,7 +42,7 @@ export async function startServer(_options: ServerOptions = {}): Promise<void> {
 
   // 创建 MCP Server 并注册 Tools
   const mcpServer = createMcpServer();
-  logger.info('[Server] MCP Tools 已注册 (7 tools)');
+  logger.info('[Server] MCP Tools 已注册');
 
   // 启动 stdio 传输
   const transport = new StdioServerTransport();
@@ -68,3 +68,18 @@ process.on('SIGTERM', async () => {
   await stopServer();
   process.exit(0);
 });
+
+// ─── 自启动守护 ──────────────────────────────────────────
+// 当本文件作为入口被直接执行 (node dist/index.js) 时自动启动 Server。
+// 通过 import.meta.url 与 process.argv[1] 比对判断，避免被其他模块 import 时重复启动。
+const invokedAsEntry =
+  typeof import.meta.url === 'string' &&
+  process.argv[1] &&
+  import.meta.url.endsWith(process.argv[1]);
+
+if (invokedAsEntry) {
+  startServer().catch((err) => {
+    logger.error('[Server] 启动失败:', err);
+    process.exit(1);
+  });
+}

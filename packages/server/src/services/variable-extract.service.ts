@@ -13,6 +13,19 @@ export interface DesignVariable {
 }
 
 /**
+ * 效果 token 的 type 集合。
+ * 兼容两种导出语义:
+ *  - Sketch:  DROP_SHADOW / INNER_SHADOW / LAYER_BLUR / BACKGROUND_BLUR
+ *  - Mockplus: 小写导出格式的 effect.shadows[].type 为 "outside" / "inside"
+ * 修复前只认 Sketch 语义,真实 Mockplus 阴影永远提取不到(P0)。
+ */
+const EFFECT_TYPES = ['DROP_SHADOW', 'INNER_SHADOW', 'LAYER_BLUR', 'BACKGROUND_BLUR', 'outside', 'inside'];
+
+function isEffectType(type: unknown): boolean {
+  return typeof type === 'string' && EFFECT_TYPES.includes(type);
+}
+
+/**
  * 从设计数据中提取变量定义
  */
 export function extractVariables(data: DesignData): DesignVariable[] {
@@ -55,7 +68,7 @@ function classifyVariable(name: string, value: unknown): DesignVariable | null {
     }
     if (typeof first === 'object' && first !== null) {
       const obj = first as Record<string, unknown>;
-      if ('type' in obj && ['DROP_SHADOW', 'INNER_SHADOW', 'LAYER_BLUR'].includes(obj.type as string)) {
+      if (isEffectType(obj.type)) {
         return { name, type: 'EFFECT', value: obj };
       }
     }
@@ -71,11 +84,8 @@ function classifyVariable(name: string, value: unknown): DesignVariable | null {
     }
 
     // 效果
-    if ('type' in obj && typeof obj.type === 'string') {
-      const type = obj.type as string;
-      if (['DROP_SHADOW', 'INNER_SHADOW', 'LAYER_BLUR', 'BACKGROUND_BLUR'].includes(type)) {
-        return { name, type: 'EFFECT', value: obj };
-      }
+    if (isEffectType(obj.type)) {
+      return { name, type: 'EFFECT', value: obj };
     }
 
     // 颜色（对象格式）

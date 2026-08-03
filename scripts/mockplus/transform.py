@@ -67,13 +67,20 @@ def normalize_bg(bg) -> str:
 # bounds / 数字
 # ============================================================
 
+def _round_half(x):
+    """四舍五入到整数（远离零），避免 Python round() 的银行家舍入问题"""
+    if x >= 0:
+        return int(x + 0.5)
+    return int(x - 0.5)
+
+
 def round_num(n):
     if n is None:
         return None
     if isinstance(n, (int, float)):
         if abs(n - round(n)) < 0.01:
             return int(round(n))
-        return round(n * 2) / 2
+        return _round_half(n * 2) / 2
     return n
 
 
@@ -263,8 +270,8 @@ class TokenTable:
         spec = compact({
             "fontSize": font.get("size"),
             "fontFamily": font.get("family", ""),
-            "fontWeight": font.get("weight"),
-            "fontStyle": font.get("fontWeight", ""),  # 注:Mockplus fontWeight 是 "Semibold" 这类字符串
+            "fontWeight": _normalize_weight(font.get("weight")),
+            "fontStyle": "italic" if fstyles.get("italic") else None,
             "color": rgba_to_str(color),
             "lineHeight": space.get("lineHeight"),
             "letterSpacing": space.get("letterSpacing"),
@@ -293,12 +300,16 @@ def _fingerprint(spec) -> str:
 LAYER_HANDLED = {
     "basic", "bounds", "fill", "stroke", "effect", "text", "slice",
     "sharedStyle", "children",
+    "flow", "parentID", "interactions",  # 小写/预览格式结构字段(非样式,无需透出)
+    "transform", "waitForExported", "glow",  # 几何矩阵/导出标志/发光(当前无有效负载)
+    "boundsWithNoEffect",  # 小写格式:无 effect 时的 bounds 快照(与 bounds 冗余,忽略)
 }
 BASIC_HANDLED = {
     "id", "sourceID", "type", "realType", "name", "opacity",
     "libraryID", "libraryName", "imageID", "containerSourceName",
     "symbolId", "symbolMasterId",
     "maskType",  # realType=mask 节点的蒙版类型标志;v0.6 蒙版冻结处理,值无需透出
+    "zIndex", "assetId",  # 小写/预览格式附加字段
 }
 
 REAL_TYPE_TO_V5 = {
@@ -314,8 +325,62 @@ REAL_TYPE_TO_V5 = {
     "MSShapeGroup": "VECTOR",  # 形状组,统一按 VECTOR
     "Image": "IMAGE",        # 位图节点;图源常在父 SymbolInstance 或同级 MSSliceLayer 的 slice 上
     "MSSliceLayer": "SLICE", # Sketch 切片层;自带 slice.bitmapURL,与同级 Image 节点配对
+    "Line": "LINE",          # Sketch 直线
     "mask": "MASK",          # 裁剪蒙版层(真实语料:徽标圆形蒙版);relayout 冻结不参与重建
 }
+
+# 真实语料实证(2026-08, app yd2hUtESwQ5):摹客 DT 当前导出多为小写/预览格式,
+# realType 缺失或为 shapeLayer/layerSection/textLayer,类型信息在 basic.type。
+LOWER_TYPE_TO_V5 = {
+    "artboard": "FRAME", "group": "FRAME", "text": "TEXT",
+    "symbol": "INSTANCE", "symbolinstance": "INSTANCE",
+    "rect": "RECTANGLE", "oval": "ELLIPSE",
+    "image": "IMAGE", "path": "VECTOR", "line": "LINE",
+    "shape": "VECTOR", "slice": "SLICE",
+    # web 预览格式 realType(带 type 佐证)
+    "shapelayer": "VECTOR", "layersection": "FRAME", "textlayer": "TEXT",
+}
+
+# 小写格式 fontWeight 是 "W6" 这类字符串(Sketch 格式是 "Semibold")。
+WEIGHT_STR_MAP = {
+    "Regular": 400, "Medium": 500, "Semibold": 600, "Bold": 700,
+    "Light": 300, "Thin": 200, "Black": 900, "Heavy": 900,
+}
+
+
+def _normalize_weight(w):
+    """'W6' → 600;'Semibold' → 600;数字原样;其余字符串原样返回。"""
+    if isinstance(w, (int, float)):
+        return w
+    if not isinstance(w, str):
+        return None
+    s = w.strip()
+    m = re.fullmatch(r"[Ww](\d)", s)
+    if m:
+        return int(m.group(1)) * 100
+    return WEIGHT_STR_MAP.get(s, s or None)
+
+
+def _slice_bitmap_url(slice_: dict) -> Optional[str]:
+    """slice.bitmapURL 兼容 str 与 dict 两种真实形态。
+    Sketch 格式是 URL 字符串;小写格式是 {1: {url}, 2: {url}, ...}(按倍率)。
+    dict 形态取最高倍率 url。"""
+    u = slice_.get("bitmapURL")
+    if isinstance(u, str) and u:
+        return u
+    if isinstance(u, dict):
+        keys = [k for k in u.keys() if u[k]]
+        if not keys:
+            return None
+        best = keys[-1]
+        if all(str(k).isdigit() for k in keys):  # 倍率字典 → 取最大
+            best = max(keys, key=lambda k: int(k))
+        v = u[best]
+        if isinstance(v, dict):
+            return v.get("url")
+        if isinstance(v, str):
+            return v
+    return None
 
 
 class TransformContext:
@@ -326,13 +391,23 @@ class TransformContext:
         self.input_field_count = 0
         self.seen_symbol_ids = set()
         self.components = {}  # libId/path → {id, name, libraryName}
+        self.unknown_types = {}  # _UNKNOWN_XXX → count
+        self.node_count = 0
+        self.error_count = 0
 
     def warn(self, msg: str):
         self.warnings.append(msg)
 
 
-def _v5_type(real_type: str) -> str:
-    return REAL_TYPE_TO_V5.get(real_type, f"_UNKNOWN_{real_type.upper()}")
+def _v5_type(real_type: str, type_: str = "") -> str:
+    """类型双通道:Sketch realType 优先,缺失/未知时回退 basic.type(小写/预览格式)。"""
+    t = REAL_TYPE_TO_V5.get(real_type) if real_type else None
+    if t is None and type_:
+        t = LOWER_TYPE_TO_V5.get(type_.lower())
+    if t:
+        return t
+    unknown = real_type or type_ or ""
+    return f"_UNKNOWN_{unknown.upper()}" if unknown else "_UNKNOWN_"
 
 
 def _border_radius_str(radius: List[int]) -> Optional[str]:
@@ -349,18 +424,27 @@ def extract_node(node: dict, ctx: TransformContext,
                  parent_path: List[str]) -> dict:
     basic = node.get("basic") or {}
     name = basic.get("name", "")
-    real_type = basic.get("realType", "")
+    real_type = basic.get("realType", "") or ""
+    type_ = basic.get("type", "") or ""
     opacity = basic.get("opacity", 1)
     bounds = node.get("bounds") or {}
 
-    nid = basic.get("sourceID") or stable_id(name, bounds, parent_path)
-    if not basic.get("sourceID"):
-        ctx.warn(f"node {nid} 缺 sourceID,用 stable hash")
+    # id 兜底链:sourceID(Sketch) → id 前 8 位(小写格式 UUID,与 distill 截断口径一致) → stable hash
+    nid = basic.get("sourceID")
+    if not nid:
+        raw_id = basic.get("id") or ""
+        nid = raw_id[:8] if raw_id else stable_id(name, bounds, parent_path)
+        if not raw_id:
+            ctx.warn(f"node {nid} 缺 sourceID/id,用 stable hash")
+
+    v5_type = _v5_type(real_type, type_)
+    if v5_type.startswith("_UNKNOWN"):
+        ctx.unknown_types[v5_type] = ctx.unknown_types.get(v5_type, 0) + 1
 
     out = {
         "id": nid,
         "name": name,
-        "type": _v5_type(real_type),
+        "type": v5_type,
     }
 
     # opacity < 1 才输出
@@ -405,63 +489,70 @@ def extract_node(node: dict, ctx: TransformContext,
             out["textStyle"] = ts_key
         out["text"] = st.get("value", "")
 
-    # fills: 单一引用(数组本身在 globalVars 里)
+    # fills: 单一引用(数组本身在 globalVars 里);多 fill 收集为数组引用
     # 切图节点:把 IMAGE fill 注入到 fills 数组里
     slice_ = node.get("slice")
     slice_image_fill = None
     if isinstance(slice_, dict):
-        bitmap_url = slice_.get("bitmapURL")
+        bitmap_url = _slice_bitmap_url(slice_)
         if bitmap_url:
             slice_image_fill = ctx.bank.fill_image(bitmap_url, scale_mode="FILL")
 
     fill = node.get("fill") or {}
     fill_colors = fill.get("colors") or []
-    if fill_colors or slice_image_fill:
-        # 取第一个 fill 作为节点引用(Mockplus 通常每节点单一 fill);多 fill 暂不支持
-        primary = None
-        for c in fill_colors:
-            t = c.get("type", "normal")
-            if t == "normal":
-                k = ctx.bank.fill_solid(c)
-            elif t == "linearGradient":
-                v = c.get("value") or {}
-                k = ctx.bank.fill_gradient_linear(v)
-            elif t == "radialGradient":
-                v = c.get("value") or {}
-                k = ctx.bank.fill_gradient_radial(v)
-            else:
-                k = None
-            if k:
-                primary = k
-                break
-        if slice_image_fill:
-            primary = slice_image_fill  # 切图覆盖普通 fill
-        if primary:
-            out["fills"] = primary
+    fill_keys = []
+    for c in fill_colors:
+        t = c.get("type", "normal")
+        if t == "normal":
+            k = ctx.bank.fill_solid(c)
+        elif t == "linearGradient":
+            k = ctx.bank.fill_gradient_linear(c.get("value") or {})
+        elif t == "radialGradient":
+            k = ctx.bank.fill_gradient_radial(c.get("value") or {})
+        else:
+            k = None
+        if k:
+            fill_keys.append(k)
+    if slice_image_fill:
+        fill_keys.insert(0, slice_image_fill)  # 切图作为主填充
+    if len(fill_keys) == 1:
+        out["fills"] = fill_keys[0]
+    elif len(fill_keys) > 1:
+        out["fills"] = fill_keys
 
-    # strokes
+    # strokes(多 border 全部收集;dash 兼容外层与 border 内两种形态)
     stroke = node.get("stroke") or {}
     borders = stroke.get("borders") or []
     dash = stroke.get("dash") or []
+    if not dash:
+        for b in borders:
+            d = b.get("dash")
+            if d:
+                dash = d
+                break
     if borders:
         s_keys = [ctx.bank.stroke(b, dash=dash) for b in borders]
         s_keys = [k for k in s_keys if k]
-        if s_keys:
-            out["strokes"] = s_keys[0]  # 单一引用
+        if len(s_keys) == 1:
+            out["strokes"] = s_keys[0]
+        elif len(s_keys) > 1:
+            out["strokes"] = s_keys
 
     radius = stroke.get("radius")
     br = _border_radius_str(radius) if radius else None
     if br:
         out["borderRadius"] = br
 
-    # effects (shadows)
+    # effects (shadows, 多 shadow 全部收集)
     eff = node.get("effect") or {}
     shadows = eff.get("shadows") or []
     if shadows:
         e_keys = [ctx.bank.shadow(s) for s in shadows]
         e_keys = [k for k in e_keys if k]
-        if e_keys:
+        if len(e_keys) == 1:
             out["effects"] = e_keys[0]
+        elif len(e_keys) > 1:
+            out["effects"] = e_keys
 
     # unhandled 字段探针
     for k in node.keys():
@@ -471,6 +562,7 @@ def extract_node(node: dict, ctx: TransformContext,
         if k not in BASIC_HANDLED:
             ctx.unhandled.add(f"layer.basic.{k}")
     ctx.input_field_count += len(node) + len(basic)
+    ctx.node_count += 1
 
     # 递归 children(容错降级:单 child 异常不影响其他)
     children = node.get("children") or []
@@ -486,6 +578,7 @@ def extract_node(node: dict, ctx: TransformContext,
                     "_error": str(e),
                 })
                 ctx.warn(f"node {nid} child[{i}] transform 失败: {e}")
+                ctx.error_count += 1
         out["children"] = safe_children
 
     return compact(out)
@@ -542,6 +635,7 @@ def transform(data: dict, page_meta: dict, app_id: str,
                 "_error": str(e),
             })
             ctx.warn(f"root[{i}] transform 失败: {e}")
+            ctx.error_count += 1
 
     result = {
         "metadata": build_metadata(data, page_meta, app_id, ctx.components),
@@ -556,6 +650,12 @@ def transform(data: dict, page_meta: dict, app_id: str,
             "documentVersion": data.get("documentVersion", ""),
             "inputFieldsTotal": ctx.input_field_count,
             "unhandledFields": sorted(ctx.unhandled),
+            "unknownTypes": ctx.unknown_types or None,
+            "stats": {
+                "nodes": ctx.node_count,
+                "errors": ctx.error_count,
+                "warnings": len(ctx.warnings),
+            },
             "warnings": ctx.warnings,
         },
     }

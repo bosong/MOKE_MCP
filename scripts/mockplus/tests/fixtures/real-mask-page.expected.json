@@ -1,0 +1,4415 @@
+{
+ "_meta": {
+  "coordinateSpace": "parent-relative",
+  "unhandledFields": [],
+  "unknownTypes": null
+ },
+ "globalVars": {
+  "styles": {
+   "S[\"'#000000'\"]": [
+    "#000000"
+   ],
+   "S[\"'#1F1F1F'\"]": [
+    "#1F1F1F"
+   ],
+   "S[\"'#30C779'\"]": [
+    "#30C779"
+   ],
+   "S[\"'#EB333B'\"]": [
+    "#EB333B"
+   ],
+   "S[\"'#EFEFF4'\"]": [
+    "#EFEFF4"
+   ],
+   "S[\"'#F5EC6E'\"]": [
+    "#F5EC6E"
+   ],
+   "S[\"'#FFFFFF'\"]": [
+    "#FFFFFF"
+   ],
+   "S[\"'rgba(0, 0, 0, 0.00)'\"]": [
+    "rgba(0, 0, 0, 0.00)"
+   ],
+   "S['[(\\'gradient\\', \"\\'linear-gradient(199deg, #AE1E23 38%, #B51F24 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']": [
+    {
+     "gradient": "linear-gradient(199deg, #AE1E23 38%, #B51F24 100%)",
+     "type": "GRADIENT_LINEAR"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'linear-gradient(250deg, #841618 0%, #B41F24 49%, #841618 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']": [
+    {
+     "gradient": "linear-gradient(250deg, #841618 0%, #B41F24 49%, #841618 100%)",
+     "type": "GRADIENT_LINEAR"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'linear-gradient(270deg, #D61E25 0%, #9C1C1F 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']": [
+    {
+     "gradient": "linear-gradient(270deg, #D61E25 0%, #9C1C1F 100%)",
+     "type": "GRADIENT_LINEAR"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #791013 16%, #9F1C20 52%, #770F12 93%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']": [
+    {
+     "gradient": "linear-gradient(90deg, #791013 16%, #9F1C20 52%, #770F12 93%)",
+     "type": "GRADIENT_LINEAR"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #AC1E23 0%, #BA1F23 8%, #CB2124 22%, #D52224 37%, #D92325 54%, #C51F26 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']": [
+    {
+     "gradient": "linear-gradient(90deg, #AC1E23 0%, #BA1F23 8%, #CB2124 22%, #D52224 37%, #D92325 54%, #C51F26 100%)",
+     "type": "GRADIENT_LINEAR"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #BA1F25 0%, #CB2624 10%, #DC2E23 23%, #E63223 38%, #EA3423 56%, #EA3523 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']": [
+    {
+     "gradient": "linear-gradient(90deg, #BA1F25 0%, #CB2624 10%, #DC2E23 23%, #E63223 38%, #EA3423 56%, #EA3523 100%)",
+     "type": "GRADIENT_LINEAR"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #CC2426 6%, #EA3623 43%, #EA3623 72%, #CA2126 98%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']": [
+    {
+     "gradient": "linear-gradient(90deg, #CC2426 6%, #EA3623 43%, #EA3623 72%, #CA2126 98%)",
+     "type": "GRADIENT_LINEAR"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #181D1A 0%, #1D1E25 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #181D1A 0%, #1D1E25 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #202020 0%, #000000 85%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #202020 0%, #000000 85%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #221E2D 0%, #19161B 46%, #221E2D 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #221E2D 0%, #19161B 46%, #221E2D 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #292929 0%, #000000 48%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #292929 0%, #000000 48%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #4D404F 0%, #211A24 33%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D557B 1%, #221E2D 25%, #211D26 61%, #211D22 90%, #314257 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #4D557B 1%, #221E2D 25%, #211D26 61%, #211D22 90%, #314257 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #CC6A27 0%, #6B1F0E 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #CC6A27 0%, #6B1F0E 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #D41E26 19%, #770F12 94%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #D41E26 19%, #770F12 94%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #D41E26 37%, #770F12 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #D41E26 37%, #770F12 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #D41E26 9%, #770F12 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #D41E26 9%, #770F12 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #EE6B6F 0%, #EC5037 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #EE6B6F 0%, #EC5037 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #EF7220 1%, #DE6524 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #EF7220 1%, #DE6524 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F4921C 0%, #EB6B22 80%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #F4921C 0%, #EB6B22 80%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F6A215 0%, #F39417 36%, #EE7D1E 80%, #EE7A20 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #F6A215 0%, #F39417 36%, #EE7D1E 80%, #EE7A20 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F6A215 0%, #F39417 36%, #EF7F1D 80%, #EE7C1F 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #F6A215 0%, #F39417 36%, #EF7F1D 80%, #EE7C1F 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F7B10E 0%, #F5A810 36%, #F28F19 80%, #F1881D 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #F7B10E 0%, #F5A810 36%, #F28F19 80%, #F1881D 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F7B10E 0%, #F5A810 36%, #F29218 80%, #F28D1B 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #F7B10E 0%, #F5A810 36%, #F29218 80%, #F28D1B 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F9C107 0%, #F7BC08 36%, #F5A114 80%, #F4971A 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #F9C107 0%, #F7BC08 36%, #F5A114 80%, #F4971A 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F9C107 0%, #F7BC08 36%, #F5A513 80%, #F59E18 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #F9C107 0%, #F7BC08 36%, #F5A513 80%, #F59E18 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FAD000 36%, #F7A518 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #FAD000 36%, #F7A518 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FAD000 36%, #F8AF14 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #FAD000 36%, #F8AF14 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFDC22 4%, #F5981B 80%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #FFDC22 4%, #F5981B 80%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFFFFF 0%, #000000 73%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #FFFFFF 0%, #000000 73%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFFFFF 59%, #BBCDE8 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #FFFFFF 59%, #BBCDE8 100%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFFFFF 70%, #C8D5E2 95%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']": [
+    {
+     "gradient": "radial-gradient(circle, #FFFFFF 70%, #C8D5E2 95%)",
+     "type": "GRADIENT_RADIAL"
+    }
+   ],
+   "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HarmonyOS_Sans_SC'\"), ('fontSize', '36'), ('letterSpacing', '0'), ('lineHeight', '120'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#1F1F1F",
+    "fontFamily": "HarmonyOS_Sans_SC",
+    "fontSize": 36,
+    "letterSpacing": 0,
+    "lineHeight": 120,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#30C779'\"), ('position', \"'center'\"), ('width', '1')]": {
+    "color": "#30C779",
+    "position": "center",
+    "width": 1
+   },
+   "S[('color', \"'#437FBE'\"), ('position', \"'center'\"), ('width', '1')]": {
+    "color": "#437FBE",
+    "position": "center",
+    "width": 1
+   },
+   "S[('color', \"'#646464'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '32'), ('letterSpacing', '0'), ('lineHeight', '38.4'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#646464",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 32,
+    "letterSpacing": 0,
+    "lineHeight": 38.4,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#646464'\"), ('position', \"'center'\"), ('width', '1')]": {
+    "color": "#646464",
+    "position": "center",
+    "width": 1
+   },
+   "S[('color', \"'#646464'\"), ('position', \"'center'\"), ('width', '1.99')]": {
+    "color": "#646464",
+    "position": "center",
+    "width": 1.99
+   },
+   "S[('color', \"'#646464'\"), ('position', \"'center'\"), ('width', '2')]": {
+    "color": "#646464",
+    "position": "center",
+    "width": 2
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '20'), ('letterSpacing', '25'), ('lineHeight', '24'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 20,
+    "letterSpacing": 25,
+    "lineHeight": 24,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '26.4'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 22,
+    "letterSpacing": 25,
+    "lineHeight": 26.4,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '24'), ('letterSpacing', '0'), ('lineHeight', '28.8'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 24,
+    "letterSpacing": 0,
+    "lineHeight": 28.8,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#B3B3B3'\"), ('position', \"'center'\"), ('width', '1')]": {
+    "color": "#B3B3B3",
+    "position": "center",
+    "width": 1
+   },
+   "S[('color', \"'#BD2A30'\"), ('position', \"'center'\"), ('width', '1')]": {
+    "color": "#BD2A30",
+    "position": "center",
+    "width": 1
+   },
+   "S[('color', \"'#EB333B'\"), ('position', \"'center'\"), ('width', '1')]": {
+    "color": "#EB333B",
+    "position": "center",
+    "width": 1
+   },
+   "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HelveticaLTStd-Bold'\"), ('fontSize', '21.366870880126953'), ('letterSpacing', '0'), ('lineHeight', '25.64'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#FFFFFF",
+    "fontFamily": "HelveticaLTStd-Bold",
+    "fontSize": 21.366870880126953,
+    "letterSpacing": 0,
+    "lineHeight": 25.64,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '32'), ('letterSpacing', '0'), ('lineHeight', '38.4'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#FFFFFF",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 32,
+    "letterSpacing": 0,
+    "lineHeight": 38.4,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '0.19')]": {
+    "color": "#FFFFFF",
+    "position": "center",
+    "width": 0.19
+   },
+   "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '1.75')]": {
+    "color": "#FFFFFF",
+    "position": "center",
+    "width": 1.75
+   },
+   "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '2')]": {
+    "color": "#FFFFFF",
+    "position": "center",
+    "width": 2
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '33')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 24
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 33
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '6')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 24
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 6
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '50'), ('y', '317.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 650
+    },
+    "locationRelativeToParent": {
+     "x": 50,
+     "y": 317.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '50'), ('y', '437.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 650
+    },
+    "locationRelativeToParent": {
+     "x": 50,
+     "y": 437.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '127.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 127.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0.5'), ('width', '0.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0.5,
+     "width": 0.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 2
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0.5'), ('width', '0.5')]\"), ('locationRelativeToParent', \"[('x', '1.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0.5,
+     "width": 0.5
+    },
+    "locationRelativeToParent": {
+     "x": 1.5,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.0'), ('width', '0.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.0,
+     "width": 0.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.0'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.0,
+     "width": 1.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.0'), ('width', '4.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.0,
+     "width": 4.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.5'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.5,
+     "width": 1.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.5'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.5,
+     "width": 1.0
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.5'), ('width', '2.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.5,
+     "width": 2.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.5'), ('width', '2.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.5,
+     "width": 2.0
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1.5,
+     "width": 5.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 33.0
+    },
+    "locationRelativeToParent": {
+     "x": -0.5,
+     "y": 3
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 33.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '24.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 8.0
+    },
+    "locationRelativeToParent": {
+     "x": 24.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '11.0'), ('width', '15.5')]\"), ('locationRelativeToParent', \"[('x', '-2'), ('y', '-2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 11.0,
+     "width": 15.5
+    },
+    "locationRelativeToParent": {
+     "x": -2,
+     "y": -2.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '11.0'), ('width', '15.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 11.0,
+     "width": 15.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '11.5'), ('width', '4.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 11.5,
+     "width": 4.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '11.5'), ('width', '4.5')]\"), ('locationRelativeToParent', \"[('x', '2.5'), ('y', '-0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 11.5,
+     "width": 4.5
+    },
+    "locationRelativeToParent": {
+     "x": 2.5,
+     "y": -0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '11.5'), ('width', '7.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 11.5,
+     "width": 7.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '12'), ('width', '7.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 12,
+     "width": 7.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '12.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '-2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 12.0,
+     "width": 15.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": -2.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '12.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 12.0,
+     "width": 15.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '12.5'), ('width', '12.5')]\"), ('locationRelativeToParent', \"[('x', '7.5'), ('y', '8')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 12.5,
+     "width": 12.5
+    },
+    "locationRelativeToParent": {
+     "x": 7.5,
+     "y": 8
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '12.5'), ('width', '7.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 12.5,
+     "width": 7.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '12.5'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 12.5,
+     "width": 8.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '128'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 128,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13,
+     "width": 8.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13'), ('width', '8.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13,
+     "width": 8.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13'), ('width', '8.5')]\"), ('locationRelativeToParent', \"[('x', '9.5'), ('y', '10.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13,
+     "width": 8.5
+    },
+    "locationRelativeToParent": {
+     "x": 9.5,
+     "y": 10.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '32.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '-1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 32.0
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": -1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 33.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 33.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 33.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '-0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 33.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": -0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '1.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 33.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 1.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 33.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.0'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.0,
+     "width": 33.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.5'), ('width', '36.5')]\"), ('locationRelativeToParent', \"[('x', '674.5'), ('y', '6.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.5,
+     "width": 36.5
+    },
+    "locationRelativeToParent": {
+     "x": 674.5,
+     "y": 6.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '14'), ('width', '7')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 14,
+     "width": 7
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 8.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '14'), ('width', '8')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '12.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 14,
+     "width": 8
+    },
+    "locationRelativeToParent": {
+     "x": 30,
+     "y": 12.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '14'), ('width', '8')]\"), ('locationRelativeToParent', \"[('x', '34'), ('y', '6.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 14,
+     "width": 8
+    },
+    "locationRelativeToParent": {
+     "x": 34,
+     "y": 6.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '14.0'), ('width', '24.0')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 14.0,
+     "width": 24.0
+    },
+    "locationRelativeToParent": {
+     "x": -0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '14.5'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '65'), ('y', '5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 14.5,
+     "width": 20.5
+    },
+    "locationRelativeToParent": {
+     "x": 65,
+     "y": 5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '14.5'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 14.5,
+     "width": 33.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 1.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '14.5'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 14.5,
+     "width": 34.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '15.5'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '4.5'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 15.5,
+     "width": 34.0
+    },
+    "locationRelativeToParent": {
+     "x": 4.5,
+     "y": 2
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '16.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '36'), ('y', '6.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 16.0,
+     "width": 6.5
+    },
+    "locationRelativeToParent": {
+     "x": 36,
+     "y": 6.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '16.0'), ('width', '7.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 16.0,
+     "width": 7.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 7
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1666'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1666,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '17.5'), ('width', '43.0')]\"), ('locationRelativeToParent', \"[('x', '673'), ('y', '4.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 17.5,
+     "width": 43.0
+    },
+    "locationRelativeToParent": {
+     "x": 673,
+     "y": 4.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '18'), ('width', '8')]\"), ('locationRelativeToParent', \"[('x', '22'), ('y', '6')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 18,
+     "width": 8
+    },
+    "locationRelativeToParent": {
+     "x": 22,
+     "y": 6
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '2.0'), ('width', '3.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 2.0,
+     "width": 3.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '2.0'), ('width', '3.5')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 2.0,
+     "width": 3.5
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '2.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 2.0,
+     "width": 6.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '2.5'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 2.5,
+     "width": 8.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '23'), ('width', '32')]\"), ('locationRelativeToParent', \"[('x', '579'), ('y', '1529.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 23,
+     "width": 32
+    },
+    "locationRelativeToParent": {
+     "x": 579,
+     "y": 1529.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '23'), ('width', '41')]\"), ('locationRelativeToParent', \"[('x', '355'), ('y', '1529.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 23,
+     "width": 41
+    },
+    "locationRelativeToParent": {
+     "x": 355,
+     "y": 1529.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '23'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '114.5'), ('y', '1529.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 23,
+     "width": 82
+    },
+    "locationRelativeToParent": {
+     "x": 114.5,
+     "y": 1529.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26'), ('width', '135')]\"), ('locationRelativeToParent', \"[('x', '307.5'), ('y', '1381.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26,
+     "width": 135
+    },
+    "locationRelativeToParent": {
+     "x": 307.5,
+     "y": 1381.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26'), ('width', '54')]\"), ('locationRelativeToParent', \"[('x', '613'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26,
+     "width": 54
+    },
+    "locationRelativeToParent": {
+     "x": 613,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26'), ('width', '716.0')]\"), ('locationRelativeToParent', \"[('x', '12'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26,
+     "width": 716.0
+    },
+    "locationRelativeToParent": {
+     "x": 12,
+     "y": 7
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26'), ('width', '81')]\"), ('locationRelativeToParent', \"[('x', '322'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26,
+     "width": 81
+    },
+    "locationRelativeToParent": {
+     "x": 322,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26.5'), ('width', '28.5')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '3.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26.5,
+     "width": 28.5
+    },
+    "locationRelativeToParent": {
+     "x": 7,
+     "y": 3.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '27'), ('width', '28')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '3.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 27,
+     "width": 28
+    },
+    "locationRelativeToParent": {
+     "x": 7,
+     "y": 3.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '27.0'), ('width', '29.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 27.0,
+     "width": 29.0
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '27.0'), ('width', '29.5')]\"), ('locationRelativeToParent', \"[('x', '20'), ('y', '13')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 27.0,
+     "width": 29.5
+    },
+    "locationRelativeToParent": {
+     "x": 20,
+     "y": 13
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28.0'), ('width', '28')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28.0,
+     "width": 28
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28.0'), ('width', '28')]\"), ('locationRelativeToParent', \"[('x', '49.5'), ('y', '1043.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28.0,
+     "width": 28
+    },
+    "locationRelativeToParent": {
+     "x": 49.5,
+     "y": 1043.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28.0'), ('width', '30.5')]\"), ('locationRelativeToParent', \"[('x', '6'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28.0,
+     "width": 30.5
+    },
+    "locationRelativeToParent": {
+     "x": 6,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.0'), ('width', '3.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.0,
+     "width": 3.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.0'), ('width', '3.0')]\"), ('locationRelativeToParent', \"[('x', '1.5'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.0,
+     "width": 3.0
+    },
+    "locationRelativeToParent": {
+     "x": 1.5,
+     "y": 3
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.0'), ('width', '4.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.0,
+     "width": 4.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.0'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.0,
+     "width": 5.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.0'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '9.5'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.0,
+     "width": 5.0
+    },
+    "locationRelativeToParent": {
+     "x": 9.5,
+     "y": 2.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.0'), ('width', '9.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.0,
+     "width": 9.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.5'), ('width', '10.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.5,
+     "width": 10.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.5'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.5,
+     "width": 11.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.5'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.5,
+     "width": 11.5
+    },
+    "locationRelativeToParent": {
+     "x": 3,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.5'), ('width', '2.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.5,
+     "width": 2.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.5'), ('width', '2.5')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.5,
+     "width": 2.5
+    },
+    "locationRelativeToParent": {
+     "x": 3,
+     "y": 3
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.5,
+     "width": 5.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '3.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '1.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 3.5,
+     "width": 5.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 1.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '17.0')]\"), ('locationRelativeToParent', \"[('x', '32.5'), ('y', '72.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 17.0
+    },
+    "locationRelativeToParent": {
+     "x": 32.5,
+     "y": 72.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '31.0'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '4'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 31.0,
+     "width": 34.0
+    },
+    "locationRelativeToParent": {
+     "x": 4,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '31.0'), ('width', '42.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 31.0,
+     "width": 42.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '31.5'), ('width', '35.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 31.5,
+     "width": 35.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '35.0'), ('width', '42.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '13.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 35.0,
+     "width": 42.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 13.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '37'), ('width', '128')]\"), ('locationRelativeToParent', \"[('x', '261.5'), ('y', '28.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 37,
+     "width": 128
+    },
+    "locationRelativeToParent": {
+     "x": 261.5,
+     "y": 28.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '37'), ('width', '160')]\"), ('locationRelativeToParent', \"[('x', '245.5'), ('y', '28.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 37,
+     "width": 160
+    },
+    "locationRelativeToParent": {
+     "x": 245.5,
+     "y": 28.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '37'), ('width', '192')]\"), ('locationRelativeToParent', \"[('x', '277'), ('y', '69')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 37,
+     "width": 192
+    },
+    "locationRelativeToParent": {
+     "x": 277,
+     "y": 69
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '37'), ('width', '31.5')]\"), ('locationRelativeToParent', \"[('x', '69.5'), ('y', '371.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 37,
+     "width": 31.5
+    },
+    "locationRelativeToParent": {
+     "x": 69.5,
+     "y": 371.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '37.0'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '67'), ('y', '250')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 37.0,
+     "width": 34.0
+    },
+    "locationRelativeToParent": {
+     "x": 67,
+     "y": 250
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '4.5'), ('width', '14.5')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '4.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 4.5,
+     "width": 14.5
+    },
+    "locationRelativeToParent": {
+     "x": 3,
+     "y": 4.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '40'), ('width', '49.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 40,
+     "width": 49.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '40'), ('width', '49.5')]\"), ('locationRelativeToParent', \"[('x', '16.5'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 40,
+     "width": 49.5
+    },
+    "locationRelativeToParent": {
+     "x": 16.5,
+     "y": 21
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '41'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 41,
+     "width": 24
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '41'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '29'), ('y', '21.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 41,
+     "width": 24
+    },
+    "locationRelativeToParent": {
+     "x": 29,
+     "y": 21.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '48'), ('width', '171')]\"), ('locationRelativeToParent', \"[('x', '126'), ('y', '241')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 48,
+     "width": 171
+    },
+    "locationRelativeToParent": {
+     "x": 126,
+     "y": 241
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '48'), ('width', '41')]\"), ('locationRelativeToParent', \"[('x', '126'), ('y', '363')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 48,
+     "width": 41
+    },
+    "locationRelativeToParent": {
+     "x": 126,
+     "y": 363
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '48.5'), ('width', '42.5')]\"), ('locationRelativeToParent', \"[('x', '19.5'), ('y', '17.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 48.5,
+     "width": 42.5
+    },
+    "locationRelativeToParent": {
+     "x": 19.5,
+     "y": 17.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '5.0'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 5.0,
+     "width": 1.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '5.0'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '4'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 5.0,
+     "width": 1.0
+    },
+    "locationRelativeToParent": {
+     "x": 4,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '57'), ('width', '600')]\"), ('locationRelativeToParent', \"[('x', '101.5'), ('y', '1043.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 57,
+     "width": 600
+    },
+    "locationRelativeToParent": {
+     "x": 101.5,
+     "y": 1043.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.0'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.0,
+     "width": 11.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.0'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.0,
+     "width": 11.5
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.0'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.0,
+     "width": 20.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.0'), ('width', '7.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.0,
+     "width": 7.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 2.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.0'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '6'), ('y', '9')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.0,
+     "width": 8.0
+    },
+    "locationRelativeToParent": {
+     "x": 6,
+     "y": 9
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.5'), ('width', '12.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.5,
+     "width": 12.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.5'), ('width', '12.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.5,
+     "width": 12.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.5'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.5,
+     "width": 20.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.5'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.5,
+     "width": 20.5
+    },
+    "locationRelativeToParent": {
+     "x": 7,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '7.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 7.0,
+     "width": 13.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '7.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 7.0,
+     "width": 13.0
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '7.5'), ('width', '14.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 7.5,
+     "width": 14.0
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '7.5'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 7.5,
+     "width": 5.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '7.5'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 7.5,
+     "width": 5.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8'), ('width', '31')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8,
+     "width": 31
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.0,
+     "width": 13.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '2'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.0,
+     "width": 13.0
+    },
+    "locationRelativeToParent": {
+     "x": 2,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.0'), ('width', '15')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.0,
+     "width": 15
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.0'), ('width', '15')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.0,
+     "width": 15
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.0,
+     "width": 15.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.0,
+     "width": 15.0
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.0'), ('width', '35.0')]\"), ('locationRelativeToParent', \"[('x', '4'), ('y', '27')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.0,
+     "width": 35.0
+    },
+    "locationRelativeToParent": {
+     "x": 4,
+     "y": 27
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.5,
+     "width": 16.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '21.5'), ('y', '25')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.5,
+     "width": 16.5
+    },
+    "locationRelativeToParent": {
+     "x": 21.5,
+     "y": 25
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '4.5'), ('y', '25')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.5,
+     "width": 16.5
+    },
+    "locationRelativeToParent": {
+     "x": 4.5,
+     "y": 25
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '8.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 8.5,
+     "width": 5.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 82,
+     "width": 82
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '114'), ('y', '1435.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 82,
+     "width": 82
+    },
+    "locationRelativeToParent": {
+     "x": 114,
+     "y": 1435.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '334'), ('y', '1435.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 82,
+     "width": 82
+    },
+    "locationRelativeToParent": {
+     "x": 334,
+     "y": 1435.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '554'), ('y', '1435.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 82,
+     "width": 82
+    },
+    "locationRelativeToParent": {
+     "x": 554,
+     "y": 1435.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.0'), ('width', '6.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.0,
+     "width": 6.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.0'), ('width', '6.0')]\"), ('locationRelativeToParent', \"[('x', '15'), ('y', '5.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.0,
+     "width": 6.0
+    },
+    "locationRelativeToParent": {
+     "x": 15,
+     "y": 5.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.0,
+     "width": 6.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.0,
+     "width": 6.5
+    },
+    "locationRelativeToParent": {
+     "x": 0.5,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '5.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.0,
+     "width": 6.5
+    },
+    "locationRelativeToParent": {
+     "x": 7,
+     "y": 5.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.5,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 8.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '12'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.5,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 12,
+     "y": 8.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '24.5'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.5,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 24.5,
+     "y": 8.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '36.5'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.5,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 36.5,
+     "y": 8.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '48.5'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 9.5,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 48.5,
+     "y": 8.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '90'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '49'), ('y', '736')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 90,
+     "width": 650
+    },
+    "locationRelativeToParent": {
+     "x": 49,
+     "y": 736
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '90'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '49'), ('y', '856')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 90,
+     "width": 650
+    },
+    "locationRelativeToParent": {
+     "x": 49,
+     "y": 856
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   }
+  }
+ },
+ "metadata": {
+  "appId": "golden-app",
+  "device": "ios2x",
+  "name": "golden",
+  "pageId": "golden-page",
+  "path": "golden",
+  "size": {
+   "height": 1666,
+   "width": 750
+  }
+ },
+ "nodes": [
+  {
+   "id": "6d4bc7ce",
+   "layout": "S[('dimensions', \"[('height', '57'), ('width', '600')]\"), ('locationRelativeToParent', \"[('x', '101.5'), ('y', '1043.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0003",
+   "text": "我已阅读并同意",
+   "textSegments": 3,
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '24'), ('letterSpacing', '0'), ('lineHeight', '28.8'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "fills": "S[\"'#1F1F1F'\"]",
+   "id": "cc8d3dbc",
+   "layout": "S[('dimensions', \"[('height', '37'), ('width', '31.5')]\"), ('locationRelativeToParent', \"[('x', '69.5'), ('y', '371.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0004",
+   "type": "VECTOR"
+  },
+  {
+   "fills": "S[\"'#1F1F1F'\"]",
+   "id": "bd64ffb6",
+   "layout": "S[('dimensions', \"[('height', '37.0'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '67'), ('y', '250')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0005",
+   "type": "VECTOR"
+  },
+  {
+   "id": "8f615f44",
+   "layout": "S[('dimensions', \"[('height', '0'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '50'), ('y', '437.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0006",
+   "strokes": "S[('color', \"'#B3B3B3'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "LINE"
+  },
+  {
+   "id": "52e90eff",
+   "layout": "S[('dimensions', \"[('height', '0'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '50'), ('y', '317.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0007",
+   "strokes": "S[('color', \"'#B3B3B3'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "LINE"
+  },
+  {
+   "absolutePosition": {
+    "x": 49.5,
+    "y": 1043.5
+   },
+   "children": [
+    {
+     "absolutePosition": {
+      "x": 49.5,
+      "y": 1043.5
+     },
+     "children": [
+      {
+       "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+       "id": "c835692f",
+       "layout": "S[('dimensions', \"[('height', '12.5'), ('width', '12.5')]\"), ('locationRelativeToParent', \"[('x', '7.5'), ('y', '8')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0008",
+       "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '1.75')]",
+       "type": "VECTOR"
+      }
+     ],
+     "fills": "S[\"'#EB333B'\"]",
+     "id": "d1edd0b5",
+     "layout": "S[('dimensions', \"[('height', '28.0'), ('width', '28')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0009",
+     "strokes": "S[('color', \"'#EB333B'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "ELLIPSE"
+    }
+   ],
+   "id": "f7dd2790",
+   "layout": "S[('dimensions', \"[('height', '28.0'), ('width', '28')]\"), ('locationRelativeToParent', \"[('x', '49.5'), ('y', '1043.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0010",
+   "type": "FRAME"
+  },
+  {
+   "id": "a6bdbc57",
+   "layout": "S[('dimensions', \"[('height', '48'), ('width', '41')]\"), ('locationRelativeToParent', \"[('x', '126'), ('y', '363')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0011",
+   "text": "31",
+   "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HarmonyOS_Sans_SC'\"), ('fontSize', '36'), ('letterSpacing', '0'), ('lineHeight', '120'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "23fb6100",
+   "layout": "S[('dimensions', \"[('height', '48'), ('width', '171')]\"), ('locationRelativeToParent', \"[('x', '126'), ('y', '241')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0012",
+   "text": "emy80002",
+   "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HarmonyOS_Sans_SC'\"), ('fontSize', '36'), ('letterSpacing', '0'), ('lineHeight', '120'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 334,
+    "y": 1435.5
+   },
+   "children": [
+    {
+     "absolutePosition": {
+      "x": 334,
+      "y": 1435.5
+     },
+     "children": [
+      {
+       "absolutePosition": {
+        "x": 350.5,
+        "y": 1456.5
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 350.5,
+          "y": 1456.5
+         },
+         "children": [
+          {
+           "fills": "S[\"'#30C779'\"]",
+           "id": "e9249816",
+           "layout": "S[('dimensions', \"[('height', '27.0'), ('width', '29.5')]\"), ('locationRelativeToParent', \"[('x', '20'), ('y', '13')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0014",
+           "type": "VECTOR"
+          },
+          {
+           "fills": "S[\"'#30C779'\"]",
+           "id": "f345c93d",
+           "layout": "S[('dimensions', \"[('height', '31.5'), ('width', '35.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0015",
+           "type": "VECTOR"
+          }
+         ],
+         "id": "5331da36",
+         "layout": "S[('dimensions', \"[('height', '40'), ('width', '49.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0016",
+         "type": "FRAME"
+        }
+       ],
+       "id": "c47b094a",
+       "layout": "S[('dimensions', \"[('height', '40'), ('width', '49.5')]\"), ('locationRelativeToParent', \"[('x', '16.5'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0017",
+       "type": "FRAME"
+      }
+     ],
+     "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+     "id": "bec083ae",
+     "layout": "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0018",
+     "strokes": "S[('color', \"'#30C779'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "ELLIPSE"
+    }
+   ],
+   "id": "a58b40ec",
+   "layout": "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '334'), ('y', '1435.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0019",
+   "type": "FRAME"
+  },
+  {
+   "id": "87ca12ca",
+   "layout": "S[('dimensions', \"[('height', '23'), ('width', '41')]\"), ('locationRelativeToParent', \"[('x', '355'), ('y', '1529.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0020",
+   "text": "微信",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '20'), ('letterSpacing', '25'), ('lineHeight', '24'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 114,
+    "y": 1435.5
+   },
+   "children": [
+    {
+     "absolutePosition": {
+      "x": 114,
+      "y": 1435.5
+     },
+     "children": [
+      {
+       "absolutePosition": {
+        "x": 143,
+        "y": 1457
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 143,
+          "y": 1457
+         },
+         "borderRadius": "2.5px",
+         "children": [
+          {
+           "id": "d8455642",
+           "layout": "S[('dimensions', \"[('height', '0'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '33')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0021",
+           "strokes": "S[('color', \"'#646464'\"), ('position', \"'center'\"), ('width', '2')]",
+           "type": "LINE"
+          },
+          {
+           "id": "dc97815e",
+           "layout": "S[('dimensions', \"[('height', '0'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '6')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0022",
+           "strokes": "S[('color', \"'#646464'\"), ('position', \"'center'\"), ('width', '2')]",
+           "type": "LINE"
+          }
+         ],
+         "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+         "id": "1e5ead71",
+         "layout": "S[('dimensions', \"[('height', '41'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0023",
+         "strokes": "S[('color', \"'#646464'\"), ('position', \"'center'\"), ('width', '1.99')]",
+         "type": "IMAGE"
+        }
+       ],
+       "id": "e23df14c",
+       "layout": "S[('dimensions', \"[('height', '41'), ('width', '24')]\"), ('locationRelativeToParent', \"[('x', '29'), ('y', '21.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0024",
+       "type": "FRAME"
+      }
+     ],
+     "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+     "id": "844e8c00",
+     "layout": "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0025",
+     "strokes": "S[('color', \"'#646464'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "ELLIPSE"
+    }
+   ],
+   "id": "5875bad5",
+   "layout": "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '114'), ('y', '1435.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0026",
+   "type": "FRAME"
+  },
+  {
+   "id": "84480364",
+   "layout": "S[('dimensions', \"[('height', '23'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '114.5'), ('y', '1529.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0027",
+   "text": "一键登录",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '20'), ('letterSpacing', '25'), ('lineHeight', '24'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 554,
+    "y": 1435.5
+   },
+   "children": [
+    {
+     "absolutePosition": {
+      "x": 554,
+      "y": 1435.5
+     },
+     "children": [
+      {
+       "absolutePosition": {
+        "x": 573.5,
+        "y": 1453
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 579.5,
+          "y": 1453
+         },
+         "children": [
+          {
+           "absolutePosition": {
+            "x": 580.5,
+            "y": 1454
+           },
+           "children": [
+            {
+             "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFFFFF 0%, #000000 73%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+             "id": "511d67dc",
+             "layout": "S[('dimensions', \"[('height', '14.0'), ('width', '24.0')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0028",
+             "opacity": 0.14,
+             "type": "VECTOR"
+            },
+            {
+             "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+             "id": "14d80754",
+             "layout": "S[('dimensions', \"[('height', '18'), ('width', '8')]\"), ('locationRelativeToParent', \"[('x', '22'), ('y', '6')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0065",
+             "opacity": 0.8,
+             "type": "IMAGE"
+            },
+            {
+             "absolutePosition": {
+              "x": 595.5,
+              "y": 1459.5
+             },
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 597,
+                "y": 1462.5
+               },
+               "adoptedBy": "geometry",
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 597,
+                  "y": 1462.5
+                 },
+                 "children": [
+                  {
+                   "adoptedBy": "geometry",
+                   "fills": "S[\"'#FFFFFF'\"]",
+                   "id": "9eadc314",
+                   "layout": "S[('dimensions', \"[('height', '0.5'), ('width', '0.5')]\"), ('locationRelativeToParent', \"[('x', '1.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0079",
+                   "opacity": 0.29,
+                   "type": "VECTOR"
+                  },
+                  {
+                   "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #292929 0%, #000000 48%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                   "id": "24afc6bd",
+                   "layout": "S[('dimensions', \"[('height', '3.0'), ('width', '3.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0080",
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "aba86a6d",
+                 "layout": "S[('dimensions', \"[('height', '3.0'), ('width', '3.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0081",
+                 "type": "FRAME"
+                }
+               ],
+               "id": "d397e5cb",
+               "layout": "S[('dimensions', \"[('height', '3.0'), ('width', '3.0')]\"), ('locationRelativeToParent', \"[('x', '1.5'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0082",
+               "type": "FRAME"
+              },
+              {
+               "absolutePosition": {
+                "x": 596,
+                "y": 1460
+               },
+               "children": [
+                {
+                 "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFFFFF 59%, #BBCDE8 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                 "id": "69962587",
+                 "layout": "S[('dimensions', \"[('height', '7.5'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0090",
+                 "opacity": 0.4,
+                 "type": "VECTOR"
+                }
+               ],
+               "fills": "S[\"'#FFFFFF'\"]",
+               "id": "03976306",
+               "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0091",
+               "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '0.19')]",
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S[\"'#000000'\"]",
+               "id": "7909a614",
+               "layout": "S[('dimensions', \"[('height', '9.0'), ('width', '6.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0092",
+               "opacity": 0.6,
+               "type": "VECTOR"
+              }
+             ],
+             "id": "5dc77ca4",
+             "layout": "S[('dimensions', \"[('height', '9.0'), ('width', '6.0')]\"), ('locationRelativeToParent', \"[('x', '15'), ('y', '5.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0093",
+             "type": "FRAME"
+            },
+            {
+             "absolutePosition": {
+              "x": 587.5,
+              "y": 1459.5
+             },
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 590.5,
+                "y": 1462.5
+               },
+               "adoptedBy": "geometry",
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 590.5,
+                  "y": 1462.5
+                 },
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 591.5,
+                    "y": 1463.5
+                   },
+                   "children": [
+                    {
+                     "fills": "S[\"'#FFFFFF'\"]",
+                     "id": "c9dd31a3",
+                     "layout": "S[('dimensions', \"[('height', '1.0'), ('width', '0.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0083",
+                     "type": "VECTOR"
+                    },
+                    {
+                     "fills": "S[\"'#FFFFFF'\"]",
+                     "id": "58d40cda",
+                     "layout": "S[('dimensions', \"[('height', '1.0'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0084",
+                     "opacity": 0.5,
+                     "type": "VECTOR"
+                    },
+                    {
+                     "fills": "S[\"'#FFFFFF'\"]",
+                     "id": "4f7657e6",
+                     "layout": "S[('dimensions', \"[('height', '1.5'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0085",
+                     "opacity": 0,
+                     "type": "VECTOR"
+                    }
+                   ],
+                   "id": "5c5ad05f",
+                   "layout": "S[('dimensions', \"[('height', '1.5'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0086",
+                   "type": "FRAME"
+                  },
+                  {
+                   "fills": "S[\"'#FFFFFF'\"]",
+                   "id": "90227513",
+                   "layout": "S[('dimensions', \"[('height', '0.5'), ('width', '0.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0087",
+                   "opacity": 0.45,
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #202020 0%, #000000 85%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                 "id": "3ce7222e",
+                 "layout": "S[('dimensions', \"[('height', '3.5'), ('width', '2.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0088",
+                 "type": "VECTOR"
+                }
+               ],
+               "id": "e696003e",
+               "layout": "S[('dimensions', \"[('height', '3.5'), ('width', '2.5')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0089",
+               "type": "FRAME"
+              },
+              {
+               "absolutePosition": {
+                "x": 587.5,
+                "y": 1459.5
+               },
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 588,
+                  "y": 1460
+                 },
+                 "children": [
+                  {
+                   "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFFFFF 59%, #BBCDE8 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                   "id": "c45e51de",
+                   "layout": "S[('dimensions', \"[('height', '7.5'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0094",
+                   "opacity": 0.4,
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "fills": "S[\"'#FFFFFF'\"]",
+                 "id": "90b1a149",
+                 "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0095",
+                 "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '0.19')]",
+                 "type": "VECTOR"
+                }
+               ],
+               "fills": "S[\"'#000000'\"]",
+               "id": "91b6d61b",
+               "layout": "S[('dimensions', \"[('height', '9.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0096",
+               "opacity": 0.6,
+               "type": "VECTOR"
+              }
+             ],
+             "id": "cdff4186",
+             "layout": "S[('dimensions', \"[('height', '9.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '5.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0097",
+             "type": "FRAME"
+            }
+           ],
+           "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D557B 1%, #221E2D 25%, #211D26 61%, #211D22 90%, #314257 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+           "id": "a20e7cb3",
+           "layout": "S[('dimensions', \"[('height', '27.0'), ('width', '29.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0098",
+           "opacity": 0.8,
+           "type": "VECTOR"
+          }
+         ],
+         "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #181D1A 0%, #1D1E25 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+         "id": "c2ed6de1",
+         "layout": "S[('dimensions', \"[('height', '28.0'), ('width', '30.5')]\"), ('locationRelativeToParent', \"[('x', '6'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0099",
+         "type": "VECTOR"
+        },
+        {
+         "absolutePosition": {
+          "x": 573.5,
+          "y": 1466.5
+         },
+         "children": [
+          {
+           "absolutePosition": {
+            "x": 578,
+            "y": 1468.5
+           },
+           "adoptedBy": "geometry",
+           "children": [
+            {
+             "absolutePosition": {
+              "x": 578,
+              "y": 1469.5
+             },
+             "adoptedBy": "geometry",
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 578,
+                "y": 1469.5
+               },
+               "children": [
+                {
+                 "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #D41E26 9%, #770F12 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                 "id": "513b3197",
+                 "layout": "S[('dimensions', \"[('height', '9.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0029",
+                 "type": "VECTOR"
+                }
+               ],
+               "id": "9f48e407",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0030",
+               "type": "FRAME"
+              }
+             ],
+             "id": "d986f9c4",
+             "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0031",
+             "type": "FRAME"
+            },
+            {
+             "absolutePosition": {
+              "x": 578,
+              "y": 1469.5
+             },
+             "adoptedBy": "geometry",
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 578,
+                "y": 1469.5
+               },
+               "children": [
+                {
+                 "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #D41E26 19%, #770F12 94%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                 "id": "9112abc8",
+                 "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '24.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0032",
+                 "type": "VECTOR"
+                }
+               ],
+               "id": "7367e088",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0033",
+               "type": "FRAME"
+              }
+             ],
+             "id": "a4117e1e",
+             "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0034",
+             "type": "FRAME"
+            },
+            {
+             "absolutePosition": {
+              "x": 585,
+              "y": 1469
+             },
+             "adoptedBy": "geometry",
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 585,
+                "y": 1469
+               },
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 588,
+                  "y": 1469.5
+                 },
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 588,
+                    "y": 1469.5
+                   },
+                   "children": [
+                    {
+                     "absolutePosition": {
+                      "x": 588.5,
+                      "y": 1470
+                     },
+                     "children": [
+                      {
+                       "absolutePosition": {
+                        "x": 589,
+                        "y": 1470
+                       },
+                       "children": [
+                        {
+                         "absolutePosition": {
+                          "x": 589.5,
+                          "y": 1470
+                         },
+                         "children": [
+                          {
+                           "absolutePosition": {
+                            "x": 589.5,
+                            "y": 1470.5
+                           },
+                           "children": [
+                            {
+                             "absolutePosition": {
+                              "x": 590,
+                              "y": 1470.5
+                             },
+                             "children": [
+                              {
+                               "fills": "S[\"'#F5EC6E'\"]",
+                               "id": "c1391620",
+                               "layout": "S[('dimensions', \"[('height', '1.0'), ('width', '4.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                               "name": "ANON0035",
+                               "opacity": 0.75,
+                               "type": "VECTOR"
+                              }
+                             ],
+                             "fills": "S[\"'#F5EC6E'\"]",
+                             "id": "72ee5bf7",
+                             "layout": "S[('dimensions', \"[('height', '1.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                             "name": "ANON0036",
+                             "opacity": 0.63,
+                             "type": "VECTOR"
+                            }
+                           ],
+                           "fills": "S[\"'#F5EC6E'\"]",
+                           "id": "9a2393cb",
+                           "layout": "S[('dimensions', \"[('height', '2.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                           "name": "ANON0037",
+                           "opacity": 0.5,
+                           "type": "VECTOR"
+                          }
+                         ],
+                         "fills": "S[\"'#F5EC6E'\"]",
+                         "id": "34ba8a0f",
+                         "layout": "S[('dimensions', \"[('height', '2.5'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0038",
+                         "opacity": 0.38,
+                         "type": "VECTOR"
+                        }
+                       ],
+                       "fills": "S[\"'#F5EC6E'\"]",
+                       "id": "e0cc8d93",
+                       "layout": "S[('dimensions', \"[('height', '3.0'), ('width', '9.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                       "name": "ANON0039",
+                       "opacity": 0.25,
+                       "type": "VECTOR"
+                      }
+                     ],
+                     "fills": "S[\"'#F5EC6E'\"]",
+                     "id": "dc24bfef",
+                     "layout": "S[('dimensions', \"[('height', '3.5'), ('width', '10.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0040",
+                     "opacity": 0.13,
+                     "type": "VECTOR"
+                    }
+                   ],
+                   "fills": "S[\"'#F5EC6E'\"]",
+                   "id": "5ea947aa",
+                   "layout": "S[('dimensions', \"[('height', '3.5'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0041",
+                   "opacity": 0,
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "8e0ecd03",
+                 "layout": "S[('dimensions', \"[('height', '3.5'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0042",
+                 "type": "FRAME"
+                }
+               ],
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFDC22 4%, #F5981B 80%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "035eb149",
+               "layout": "S[('dimensions', \"[('height', '6.5'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0043",
+               "type": "VECTOR"
+              }
+             ],
+             "id": "f9081a70",
+             "layout": "S[('dimensions', \"[('height', '6.5'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0044",
+             "type": "FRAME"
+            },
+            {
+             "fills": "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #791013 16%, #9F1C20 52%, #770F12 93%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']",
+             "id": "13270750",
+             "layout": "S[('dimensions', \"[('height', '14.5'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0053",
+             "type": "VECTOR"
+            },
+            {
+             "absolutePosition": {
+              "x": 578,
+              "y": 1470
+             },
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 578.5,
+                "y": 1469.5
+               },
+               "adoptedBy": "geometry",
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 578.5,
+                  "y": 1469.5
+                 },
+                 "children": [
+                  {
+                   "fills": "S['[(\\'gradient\\', \"\\'linear-gradient(250deg, #841618 0%, #B41F24 49%, #841618 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']",
+                   "id": "274564c0",
+                   "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0045",
+                   "opacity": 0.4,
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "db5752cd",
+                 "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0046",
+                 "type": "FRAME"
+                }
+               ],
+               "id": "0a32b8b6",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '-0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0047",
+               "type": "FRAME"
+              },
+              {
+               "adoptedBy": "geometry",
+               "fills": "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #CC2426 6%, #EA3623 43%, #EA3623 72%, #CA2126 98%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']",
+               "id": "c46af8de",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '-0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0051",
+               "type": "VECTOR"
+              },
+              {
+               "absolutePosition": {
+                "x": 579,
+                "y": 1469
+               },
+               "adoptedBy": "geometry",
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 578.5,
+                  "y": 1472
+                 },
+                 "children": [
+                  {
+                   "fills": "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #AC1E23 0%, #BA1F23 8%, #CB2124 22%, #D52224 37%, #D92325 54%, #C51F26 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']",
+                   "id": "e8842dad",
+                   "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0048",
+                   "opacity": 0,
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "6d604ffd",
+                 "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0049",
+                 "type": "FRAME"
+                },
+                {
+                 "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+                 "id": "ca48db0a",
+                 "layout": "S[('dimensions', \"[('height', '8'), ('width', '31')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0050",
+                 "opacity": 0.4,
+                 "type": "IMAGE"
+                }
+               ],
+               "fills": "S[\"'#000000'\"]",
+               "id": "921765d9",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '32.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '-1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0052",
+               "opacity": 0.8,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "405554e5",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0054",
+               "opacity": 0.4,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "0e165c6c",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0055",
+               "opacity": 0.35,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "b344b10e",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0056",
+               "opacity": 0.3,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "0e465d71",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0057",
+               "opacity": 0.25,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "bd9002c0",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0058",
+               "opacity": 0.2,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "7bb207d9",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0059",
+               "opacity": 0.15,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "04948834",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0060",
+               "opacity": 0.1,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "6810d33a",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0061",
+               "opacity": 0.05,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "9211d6c9",
+               "layout": "S[('dimensions', \"[('height', '13.0'), ('width', '33.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '1.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0062",
+               "opacity": 0,
+               "type": "VECTOR"
+              }
+             ],
+             "id": "1643eeb5",
+             "layout": "S[('dimensions', \"[('height', '14.5'), ('width', '33.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0063",
+             "type": "FRAME"
+            }
+           ],
+           "id": "ed63f665",
+           "layout": "S[('dimensions', \"[('height', '15.5'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '4.5'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0064",
+           "type": "FRAME"
+          },
+          {
+           "absolutePosition": {
+            "x": 583,
+            "y": 1477
+           },
+           "adoptedBy": "geometry",
+           "children": [
+            {
+             "absolutePosition": {
+              "x": 583,
+              "y": 1477
+             },
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 583,
+                "y": 1477.5
+               },
+               "adoptedBy": "geometry",
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 585.5,
+                  "y": 1477
+                 },
+                 "children": [
+                  {
+                   "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #EE6B6F 0%, #EC5037 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                   "id": "ea95d22b",
+                   "layout": "S[('dimensions', \"[('height', '11.5'), ('width', '4.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0068",
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "1c377771",
+                 "layout": "S[('dimensions', \"[('height', '11.5'), ('width', '4.5')]\"), ('locationRelativeToParent', \"[('x', '2.5'), ('y', '-0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0069",
+                 "opacity": 0.5,
+                 "type": "FRAME"
+                },
+                {
+                 "absolutePosition": {
+                  "x": 583,
+                  "y": 1480
+                 },
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 587,
+                    "y": 1481
+                   },
+                   "children": [
+                    {
+                     "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #D41E26 37%, #770F12 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                     "id": "fda5fbdc",
+                     "layout": "S[('dimensions', \"[('height', '5.0'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0066",
+                     "opacity": 0.7,
+                     "type": "VECTOR"
+                    }
+                   ],
+                   "id": "d53ef820",
+                   "layout": "S[('dimensions', \"[('height', '5.0'), ('width', '1.0')]\"), ('locationRelativeToParent', \"[('x', '4'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0067",
+                   "type": "FRAME"
+                  }
+                 ],
+                 "fills": "S['[(\\'gradient\\', \"\\'linear-gradient(270deg, #D61E25 0%, #9C1C1F 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']",
+                 "id": "33685367",
+                 "layout": "S[('dimensions', \"[('height', '6.0'), ('width', '7.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0070",
+                 "opacity": 0.4,
+                 "type": "VECTOR"
+                }
+               ],
+               "fills": "S['[(\\'gradient\\', \"\\'linear-gradient(90deg, #BA1F25 0%, #CB2624 10%, #DC2E23 23%, #E63223 38%, #EA3423 56%, #EA3523 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']",
+               "id": "98d6d179",
+               "layout": "S[('dimensions', \"[('height', '11.5'), ('width', '7.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0071",
+               "type": "VECTOR"
+              },
+              {
+               "adoptedBy": "geometry",
+               "fills": "S['[(\\'gradient\\', \"\\'linear-gradient(199deg, #AE1E23 38%, #B51F24 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_LINEAR\\'\")]']",
+               "id": "f7b41847",
+               "layout": "S[('dimensions', \"[('height', '11.5'), ('width', '7.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0072",
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "fa6bb917",
+               "layout": "S[('dimensions', \"[('height', '12.5'), ('width', '7.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0074",
+               "opacity": 0.19,
+               "type": "VECTOR"
+              },
+              {
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "78f0219b",
+               "layout": "S[('dimensions', \"[('height', '12.5'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0075",
+               "opacity": 0.11,
+               "type": "VECTOR"
+              },
+              {
+               "absolutePosition": {
+                "x": 583,
+                "y": 1477
+               },
+               "children": [
+                {
+                 "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                 "id": "11fd16c9",
+                 "layout": "S[('dimensions', \"[('height', '12'), ('width', '7.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0073",
+                 "opacity": 0.28,
+                 "type": "VECTOR"
+                }
+               ],
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #4D404F 0%, #211A24 33%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "2c326465",
+               "layout": "S[('dimensions', \"[('height', '13'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0076",
+               "opacity": 0.02,
+               "type": "VECTOR"
+              }
+             ],
+             "id": "cfcbdfe9",
+             "layout": "S[('dimensions', \"[('height', '13'), ('width', '8.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0077",
+             "type": "FRAME"
+            }
+           ],
+           "id": "be467e48",
+           "layout": "S[('dimensions', \"[('height', '13'), ('width', '8.5')]\"), ('locationRelativeToParent', \"[('x', '9.5'), ('y', '10.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0078",
+           "type": "FRAME"
+          },
+          {
+           "absolutePosition": {
+            "x": 573.5,
+            "y": 1466.5
+           },
+           "children": [
+            {
+             "adoptedBy": "geometry",
+             "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+             "id": "6872999c",
+             "layout": "S[('dimensions', \"[('height', '14'), ('width', '7')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0100",
+             "opacity": 0.5,
+             "type": "IMAGE"
+            },
+            {
+             "adoptedBy": "geometry",
+             "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+             "id": "25bf892c",
+             "layout": "S[('dimensions', \"[('height', '14'), ('width', '8')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '12.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0101",
+             "opacity": 0.6,
+             "type": "IMAGE"
+            },
+            {
+             "adoptedBy": "geometry",
+             "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+             "id": "c34fbb46",
+             "layout": "S[('dimensions', \"[('height', '14'), ('width', '8')]\"), ('locationRelativeToParent', \"[('x', '34'), ('y', '6.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0102",
+             "opacity": 0.5,
+             "type": "IMAGE"
+            },
+            {
+             "adoptedBy": "geometry",
+             "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+             "id": "14b482b2",
+             "layout": "S[('dimensions', \"[('height', '27'), ('width', '28')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '3.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0103",
+             "opacity": 0.5,
+             "type": "IMAGE"
+            },
+            {
+             "adoptedBy": "geometry",
+             "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FFFFFF 70%, #C8D5E2 95%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+             "id": "4a821a69",
+             "layout": "S[('dimensions', \"[('height', '26.5'), ('width', '28.5')]\"), ('locationRelativeToParent', \"[('x', '7'), ('y', '3.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0104",
+             "type": "VECTOR"
+            },
+            {
+             "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #221E2D 0%, #19161B 46%, #221E2D 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+             "id": "3338cf6d",
+             "layout": "S[('dimensions', \"[('height', '16.0'), ('width', '6.5')]\"), ('locationRelativeToParent', \"[('x', '36'), ('y', '6.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0105",
+             "type": "VECTOR"
+            },
+            {
+             "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #221E2D 0%, #19161B 46%, #221E2D 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+             "id": "3f60d6f7",
+             "layout": "S[('dimensions', \"[('height', '16.0'), ('width', '7.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0106",
+             "type": "VECTOR"
+            },
+            {
+             "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #221E2D 0%, #19161B 46%, #221E2D 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+             "id": "53be1303",
+             "layout": "S[('dimensions', \"[('height', '31.0'), ('width', '34.0')]\"), ('locationRelativeToParent', \"[('x', '4'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0107",
+             "type": "VECTOR"
+            }
+           ],
+           "id": "a55abb51",
+           "layout": "S[('dimensions', \"[('height', '31.0'), ('width', '42.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0108",
+           "type": "FRAME"
+          },
+          {
+           "absolutePosition": {
+            "x": 578,
+            "y": 1491.5
+           },
+           "children": [
+            {
+             "absolutePosition": {
+              "x": 578,
+              "y": 1491.5
+             },
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 578,
+                "y": 1491.5
+               },
+               "adoptedBy": "geometry",
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 578.5,
+                  "y": 1493
+                 },
+                 "adoptedBy": "geometry",
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 578.5,
+                    "y": 1493
+                   },
+                   "children": [
+                    {
+                     "absolutePosition": {
+                      "x": 579,
+                      "y": 1493.5
+                     },
+                     "children": [
+                      {
+                       "absolutePosition": {
+                        "x": 579,
+                        "y": 1493.5
+                       },
+                       "children": [
+                        {
+                         "fills": "S[\"'#FFFFFF'\"]",
+                         "id": "e665bd3a",
+                         "layout": "S[('dimensions', \"[('height', '1.5'), ('width', '2.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0109",
+                         "opacity": 0.75,
+                         "type": "VECTOR"
+                        }
+                       ],
+                       "fills": "S[\"'#FFFFFF'\"]",
+                       "id": "bed68f32",
+                       "layout": "S[('dimensions', \"[('height', '2.0'), ('width', '3.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                       "name": "ANON0110",
+                       "opacity": 0.5,
+                       "type": "VECTOR"
+                      }
+                     ],
+                     "fills": "S[\"'#FFFFFF'\"]",
+                     "id": "ad0f6a79",
+                     "layout": "S[('dimensions', \"[('height', '3.0'), ('width', '4.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0111",
+                     "opacity": 0.25,
+                     "type": "VECTOR"
+                    }
+                   ],
+                   "fills": "S[\"'#FFFFFF'\"]",
+                   "id": "bceeabe3",
+                   "layout": "S[('dimensions', \"[('height', '3.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0112",
+                   "opacity": 0,
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "87a5435c",
+                 "layout": "S[('dimensions', \"[('height', '3.5'), ('width', '5.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '1.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0113",
+                 "opacity": 0.7,
+                 "type": "FRAME"
+                },
+                {
+                 "absolutePosition": {
+                  "x": 578,
+                  "y": 1491.5
+                 },
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 580,
+                    "y": 1491.5
+                   },
+                   "children": [
+                    {
+                     "absolutePosition": {
+                      "x": 580,
+                      "y": 1489
+                     },
+                     "children": [
+                      {
+                       "absolutePosition": {
+                        "x": 580,
+                        "y": 1489
+                       },
+                       "children": [
+                        {
+                         "absolutePosition": {
+                          "x": 580,
+                          "y": 1489
+                         },
+                         "children": [
+                          {
+                           "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #EF7220 1%, #DE6524 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                           "id": "442b562c",
+                           "layout": "S[('dimensions', \"[('height', '12.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                           "name": "ANON0114",
+                           "opacity": 0.8,
+                           "type": "VECTOR"
+                          }
+                         ],
+                         "id": "2e93adf2",
+                         "layout": "S[('dimensions', \"[('height', '12.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0115",
+                         "type": "FRAME"
+                        }
+                       ],
+                       "id": "716346f3",
+                       "layout": "S[('dimensions', \"[('height', '12.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                       "name": "ANON0116",
+                       "type": "FRAME"
+                      }
+                     ],
+                     "id": "ebd1def0",
+                     "layout": "S[('dimensions', \"[('height', '12.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '-2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0117",
+                     "type": "FRAME"
+                    }
+                   ],
+                   "id": "0e085419",
+                   "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '2'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0118",
+                   "opacity": 0.64,
+                   "type": "FRAME"
+                  }
+                 ],
+                 "id": "519edbc2",
+                 "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0119",
+                 "type": "FRAME"
+                }
+               ],
+               "id": "6a5a4058",
+               "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0120",
+               "type": "FRAME"
+              },
+              {
+               "absolutePosition": {
+                "x": 578,
+                "y": 1491.5
+               },
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 578,
+                  "y": 1491.5
+                 },
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 578,
+                    "y": 1491.5
+                   },
+                   "children": [
+                    {
+                     "absolutePosition": {
+                      "x": 578.5,
+                      "y": 1491.5
+                     },
+                     "children": [
+                      {
+                       "absolutePosition": {
+                        "x": 579,
+                        "y": 1492
+                       },
+                       "children": [
+                        {
+                         "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FAD000 36%, #F8AF14 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                         "id": "a426d0c8",
+                         "layout": "S[('dimensions', \"[('height', '6.0'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0121",
+                         "type": "VECTOR"
+                        },
+                        {
+                         "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F9C107 0%, #F7BC08 36%, #F5A513 80%, #F59E18 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                         "id": "357469a0",
+                         "layout": "S[('dimensions', \"[('height', '6.5'), ('width', '12.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0122",
+                         "type": "VECTOR"
+                        }
+                       ],
+                       "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F7B10E 0%, #F5A810 36%, #F29218 80%, #F28D1B 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                       "id": "3a5ab972",
+                       "layout": "S[('dimensions', \"[('height', '7.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                       "name": "ANON0123",
+                       "type": "VECTOR"
+                      }
+                     ],
+                     "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F6A215 0%, #F39417 36%, #EF7F1D 80%, #EE7C1F 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                     "id": "9ee13740",
+                     "layout": "S[('dimensions', \"[('height', '7.5'), ('width', '14.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0124",
+                     "type": "VECTOR"
+                    }
+                   ],
+                   "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F4921C 0%, #EB6B22 80%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                   "id": "cc65147a",
+                   "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0125",
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "0305be26",
+                 "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0126",
+                 "type": "FRAME"
+                }
+               ],
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #CC6A27 0%, #6B1F0E 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "5ff2fccc",
+               "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0127",
+               "type": "VECTOR"
+              }
+             ],
+             "id": "cf6fe303",
+             "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0128",
+             "type": "FRAME"
+            }
+           ],
+           "id": "39352285",
+           "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '4.5'), ('y', '25')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0129",
+           "type": "FRAME"
+          },
+          {
+           "absolutePosition": {
+            "x": 595,
+            "y": 1491.5
+           },
+           "children": [
+            {
+             "absolutePosition": {
+              "x": 595,
+              "y": 1491.5
+             },
+             "children": [
+              {
+               "absolutePosition": {
+                "x": 596,
+                "y": 1491.5
+               },
+               "adoptedBy": "geometry",
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 605.5,
+                  "y": 1494
+                 },
+                 "adoptedBy": "geometry",
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 605.5,
+                    "y": 1494
+                   },
+                   "children": [
+                    {
+                     "absolutePosition": {
+                      "x": 606.5,
+                      "y": 1494
+                     },
+                     "children": [
+                      {
+                       "fills": "S[\"'#FFFFFF'\"]",
+                       "id": "4d340a26",
+                       "layout": "S[('dimensions', \"[('height', '1.5'), ('width', '2.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                       "name": "ANON0130",
+                       "opacity": 0.4,
+                       "type": "VECTOR"
+                      }
+                     ],
+                     "fills": "S[\"'#FFFFFF'\"]",
+                     "id": "e83b290d",
+                     "layout": "S[('dimensions', \"[('height', '2.0'), ('width', '3.5')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0131",
+                     "opacity": 0.2,
+                     "type": "VECTOR"
+                    }
+                   ],
+                   "fills": "S[\"'#FFFFFF'\"]",
+                   "id": "ed2077a0",
+                   "layout": "S[('dimensions', \"[('height', '3.0'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0132",
+                   "opacity": 0,
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "5772416e",
+                 "layout": "S[('dimensions', \"[('height', '3.0'), ('width', '5.0')]\"), ('locationRelativeToParent', \"[('x', '9.5'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0133",
+                 "type": "FRAME"
+                },
+                {
+                 "absolutePosition": {
+                  "x": 596,
+                  "y": 1491.5
+                 },
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 596,
+                    "y": 1491.5
+                   },
+                   "children": [
+                    {
+                     "absolutePosition": {
+                      "x": 594,
+                      "y": 1489
+                     },
+                     "children": [
+                      {
+                       "absolutePosition": {
+                        "x": 594,
+                        "y": 1489
+                       },
+                       "children": [
+                        {
+                         "absolutePosition": {
+                          "x": 594,
+                          "y": 1489
+                         },
+                         "children": [
+                          {
+                           "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #EF7220 1%, #DE6524 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                           "id": "ebea20b4",
+                           "layout": "S[('dimensions', \"[('height', '11.0'), ('width', '15.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                           "name": "ANON0134",
+                           "opacity": 0.8,
+                           "type": "VECTOR"
+                          }
+                         ],
+                         "id": "f0890066",
+                         "layout": "S[('dimensions', \"[('height', '11.0'), ('width', '15.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0135",
+                         "type": "FRAME"
+                        }
+                       ],
+                       "id": "b7054e66",
+                       "layout": "S[('dimensions', \"[('height', '11.0'), ('width', '15.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                       "name": "ANON0136",
+                       "type": "FRAME"
+                      }
+                     ],
+                     "id": "c8f4fed2",
+                     "layout": "S[('dimensions', \"[('height', '11.0'), ('width', '15.5')]\"), ('locationRelativeToParent', \"[('x', '-2'), ('y', '-2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0137",
+                     "type": "FRAME"
+                    }
+                   ],
+                   "id": "f4d3279a",
+                   "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0138",
+                   "opacity": 0.75,
+                   "type": "FRAME"
+                  }
+                 ],
+                 "id": "341288f4",
+                 "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0139",
+                 "type": "FRAME"
+                }
+               ],
+               "id": "93fa5623",
+               "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0140",
+               "type": "FRAME"
+              },
+              {
+               "absolutePosition": {
+                "x": 595,
+                "y": 1491.5
+               },
+               "children": [
+                {
+                 "absolutePosition": {
+                  "x": 596,
+                  "y": 1491.5
+                 },
+                 "children": [
+                  {
+                   "absolutePosition": {
+                    "x": 596,
+                    "y": 1491.5
+                   },
+                   "children": [
+                    {
+                     "absolutePosition": {
+                      "x": 596.5,
+                      "y": 1491.5
+                     },
+                     "children": [
+                      {
+                       "absolutePosition": {
+                        "x": 597.5,
+                        "y": 1492
+                       },
+                       "children": [
+                        {
+                         "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #FAD000 36%, #F7A518 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                         "id": "effcb219",
+                         "layout": "S[('dimensions', \"[('height', '6.0'), ('width', '11.5')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0141",
+                         "type": "VECTOR"
+                        },
+                        {
+                         "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F9C107 0%, #F7BC08 36%, #F5A114 80%, #F4971A 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                         "id": "81b29d05",
+                         "layout": "S[('dimensions', \"[('height', '6.5'), ('width', '12.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                         "name": "ANON0142",
+                         "type": "VECTOR"
+                        }
+                       ],
+                       "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F7B10E 0%, #F5A810 36%, #F28F19 80%, #F1881D 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                       "id": "3913d24d",
+                       "layout": "S[('dimensions', \"[('height', '7.0'), ('width', '13.0')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                       "name": "ANON0143",
+                       "type": "VECTOR"
+                      }
+                     ],
+                     "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F6A215 0%, #F39417 36%, #EE7D1E 80%, #EE7A20 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                     "id": "370159cf",
+                     "layout": "S[('dimensions', \"[('height', '7.5'), ('width', '14.0')]\"), ('locationRelativeToParent', \"[('x', '0.5'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                     "name": "ANON0144",
+                     "type": "VECTOR"
+                    }
+                   ],
+                   "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #F4921C 0%, #EB6B22 80%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+                   "id": "a0708407",
+                   "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                   "name": "ANON0145",
+                   "type": "VECTOR"
+                  }
+                 ],
+                 "id": "df02569e",
+                 "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '15')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+                 "name": "ANON0146",
+                 "type": "FRAME"
+                }
+               ],
+               "fills": "S['[(\\'gradient\\', \"\\'radial-gradient(circle, #CC6A27 0%, #6B1F0E 100%)\\'\"), (\\'type\\', \"\\'GRADIENT_RADIAL\\'\")]']",
+               "id": "2019b7ee",
+               "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+               "name": "ANON0147",
+               "type": "VECTOR"
+              }
+             ],
+             "id": "653555d9",
+             "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0148",
+             "type": "FRAME"
+            }
+           ],
+           "id": "09567e59",
+           "layout": "S[('dimensions', \"[('height', '8.5'), ('width', '16.5')]\"), ('locationRelativeToParent', \"[('x', '21.5'), ('y', '25')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0149",
+           "type": "FRAME"
+          },
+          {
+           "fills": "S[\"'#000000'\"]",
+           "id": "621c9fc2",
+           "layout": "S[('dimensions', \"[('height', '8.0'), ('width', '35.0')]\"), ('locationRelativeToParent', \"[('x', '4'), ('y', '27')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0150",
+           "opacity": 0.6,
+           "type": "VECTOR"
+          }
+         ],
+         "id": "91a7152a",
+         "layout": "S[('dimensions', \"[('height', '35.0'), ('width', '42.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '13.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0151",
+         "type": "FRAME"
+        }
+       ],
+       "id": "d607f454",
+       "layout": "S[('dimensions', \"[('height', '48.5'), ('width', '42.5')]\"), ('locationRelativeToParent', \"[('x', '19.5'), ('y', '17.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0152",
+       "type": "FRAME"
+      }
+     ],
+     "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+     "id": "c42f1d18",
+     "layout": "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0153",
+     "strokes": "S[('color', \"'#437FBE'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "ELLIPSE"
+    }
+   ],
+   "id": "e1b1e342",
+   "layout": "S[('dimensions', \"[('height', '82'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '554'), ('y', '1435.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0154",
+   "type": "FRAME"
+  },
+  {
+   "id": "1ddcc0af",
+   "layout": "S[('dimensions', \"[('height', '23'), ('width', '32')]\"), ('locationRelativeToParent', \"[('x', '579'), ('y', '1529.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0155",
+   "text": "QQ",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '20'), ('letterSpacing', '25'), ('lineHeight', '24'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "efa748e9",
+   "layout": "S[('dimensions', \"[('height', '26'), ('width', '135')]\"), ('locationRelativeToParent', \"[('x', '307.5'), ('y', '1381.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0156",
+   "text": "更多登录方式",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '26.4'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 49,
+    "y": 856
+   },
+   "borderRadius": "8px",
+   "children": [
+    {
+     "id": "8cdde49e",
+     "layout": "S[('dimensions', \"[('height', '37'), ('width', '160')]\"), ('locationRelativeToParent', \"[('x', '245.5'), ('y', '28.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0157",
+     "text": "验证码登录",
+     "textStyle": "S[('color', \"'#646464'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '32'), ('letterSpacing', '0'), ('lineHeight', '38.4'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    }
+   ],
+   "fills": "S[\"'#EFEFF4'\"]",
+   "id": "7e4fcdab",
+   "layout": "S[('dimensions', \"[('height', '90'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '49'), ('y', '856')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0158",
+   "opacity": 0.6,
+   "type": "RECTANGLE"
+  },
+  {
+   "absolutePosition": {
+    "x": 49,
+    "y": 736
+   },
+   "borderRadius": "8px",
+   "children": [
+    {
+     "id": "2c6aabfb",
+     "layout": "S[('dimensions', \"[('height', '37'), ('width', '128')]\"), ('locationRelativeToParent', \"[('x', '261.5'), ('y', '28.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0159",
+     "text": "立即登录",
+     "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '32'), ('letterSpacing', '0'), ('lineHeight', '38.4'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    }
+   ],
+   "fills": "S[\"'#EB333B'\"]",
+   "id": "7b0b227d",
+   "layout": "S[('dimensions', \"[('height', '90'), ('width', '650')]\"), ('locationRelativeToParent', \"[('x', '49'), ('y', '736')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0160",
+   "type": "RECTANGLE"
+  },
+  {
+   "absolutePosition": {
+    "x": 0,
+    "y": 0
+   },
+   "children": [
+    {
+     "id": "ad107d8f",
+     "layout": "S[('dimensions', \"[('height', '37'), ('width', '192')]\"), ('locationRelativeToParent', \"[('x', '277'), ('y', '69')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0013",
+     "text": "账号密码登录",
+     "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '32'), ('letterSpacing', '0'), ('lineHeight', '38.4'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+     "id": "585824ef",
+     "layout": "S[('dimensions', \"[('height', '30'), ('width', '17.0')]\"), ('locationRelativeToParent', \"[('x', '32.5'), ('y', '72.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0161",
+     "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "VECTOR"
+    },
+    {
+     "id": "e94389b0",
+     "layout": "S[('dimensions', \"[('height', '0'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '127.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0162",
+     "strokes": "S[('color', \"'#BD2A30'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "LINE"
+    },
+    {
+     "absolutePosition": {
+      "x": 12,
+      "y": 7
+     },
+     "children": [
+      {
+       "absolutePosition": {
+        "x": 77,
+        "y": 12
+       },
+       "children": [
+        {
+         "fills": "S[\"'#FFFFFF'\"]",
+         "id": "bc87c13f",
+         "layout": "S[('dimensions', \"[('height', '6.0'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0163",
+         "type": "VECTOR"
+        },
+        {
+         "fills": "S[\"'#FFFFFF'\"]",
+         "id": "dfc73e0a",
+         "layout": "S[('dimensions', \"[('height', '4.5'), ('width', '14.5')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '4.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0164",
+         "type": "VECTOR"
+        },
+        {
+         "fills": "S[\"'#FFFFFF'\"]",
+         "id": "12b37adf",
+         "layout": "S[('dimensions', \"[('height', '6.0'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '6'), ('y', '9')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0165",
+         "type": "VECTOR"
+        }
+       ],
+       "id": "9d17d752",
+       "layout": "S[('dimensions', \"[('height', '14.5'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '65'), ('y', '5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0166",
+       "type": "FRAME"
+      },
+      {
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "6cd31ae5",
+       "layout": "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '48.5'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0167",
+       "type": "VECTOR"
+      },
+      {
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "01e97d88",
+       "layout": "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '36.5'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0168",
+       "type": "VECTOR"
+      },
+      {
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "738e22a2",
+       "layout": "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '24.5'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0169",
+       "type": "VECTOR"
+      },
+      {
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "07bb693f",
+       "layout": "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '12'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0170",
+       "type": "VECTOR"
+      },
+      {
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "2e4a4425",
+       "layout": "S[('dimensions', \"[('height', '9.5'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '8.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0171",
+       "type": "VECTOR"
+      },
+      {
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "415472d7",
+       "layout": "S[('dimensions', \"[('height', '17.5'), ('width', '43.0')]\"), ('locationRelativeToParent', \"[('x', '673'), ('y', '4.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0172",
+       "type": "VECTOR"
+      },
+      {
+       "borderRadius": "1.0px",
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "6b3286d8",
+       "layout": "S[('dimensions', \"[('height', '13.5'), ('width', '36.5')]\"), ('locationRelativeToParent', \"[('x', '674.5'), ('y', '6.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0173",
+       "type": "RECTANGLE"
+      },
+      {
+       "id": "e9d07a07",
+       "layout": "S[('dimensions', \"[('height', '26'), ('width', '81')]\"), ('locationRelativeToParent', \"[('x', '322'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0174",
+       "text": "9:41 AM",
+       "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HelveticaLTStd-Bold'\"), ('fontSize', '21.366870880126953'), ('letterSpacing', '0'), ('lineHeight', '25.64'), ('textAlignHorizontal', \"'LEFT'\")]",
+       "type": "TEXT"
+      },
+      {
+       "id": "7ae5cfb7",
+       "layout": "S[('dimensions', \"[('height', '26'), ('width', '54')]\"), ('locationRelativeToParent', \"[('x', '613'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0175",
+       "text": "100%",
+       "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HelveticaLTStd-Bold'\"), ('fontSize', '21.366870880126953'), ('letterSpacing', '0'), ('lineHeight', '25.64'), ('textAlignHorizontal', \"'LEFT'\")]",
+       "type": "TEXT"
+      }
+     ],
+     "id": "23af812c",
+     "layout": "S[('dimensions', \"[('height', '26'), ('width', '716.0')]\"), ('locationRelativeToParent', \"[('x', '12'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0176",
+     "type": "FRAME"
+    }
+   ],
+   "fills": "S[\"'#EB333B'\"]",
+   "id": "eb974182",
+   "layout": "S[('dimensions', \"[('height', '128'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0177",
+   "type": "RECTANGLE"
+  },
+  {
+   "fills": "S[\"'#FFFFFF'\"]",
+   "id": "6e982f1e",
+   "layout": "S[('dimensions', \"[('height', '1666'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0178",
+   "type": "RECTANGLE"
+  }
+ ]
+}

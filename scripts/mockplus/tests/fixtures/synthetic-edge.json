@@ -1,0 +1,123 @@
+{
+  "artboardID": "syn-artboard-0001",
+  "name": "合成边界页",
+  "type": "Artboard",
+  "device": "ios1x",
+  "size": {"width": 375, "height": 667},
+  "backgroundColor": "#FFFFFFFF",
+  "pluginVersion": "1.41.0",
+  "documentVersion": "100",
+  "layers": {
+    "basic": {"id": "syn-root", "sourceID": "syn-root-src", "name": "合成边界页", "type": "Artboard", "realType": "Artboard", "opacity": 1},
+    "bounds": {"left": 0, "top": 0, "width": 375, "height": 667},
+    "children": [
+      {
+        "basic": {"sourceID": "bg-01", "name": "背景", "realType": "Rectangle", "opacity": 1},
+        "bounds": {"left": 0, "top": 0, "width": 375, "height": 667},
+        "fill": {"colors": [{"type": "normal", "value": {"r": 255, "g": 255, "b": 255, "a": 1}}]}
+      },
+      {
+        "basic": {"sourceID": "multi-fill-01", "name": "多填充卡片", "realType": "Rectangle", "opacity": 1},
+        "bounds": {"left": 16, "top": 80, "width": 343, "height": 100},
+        "fill": {"colors": [
+          {"type": "normal", "value": {"r": 240, "g": 240, "b": 240, "a": 1}},
+          {"type": "linearGradient", "value": {
+            "fromX": 0, "fromY": 0, "toX": 1, "toY": 1,
+            "colorStops": [{"position": 0, "color": {"r": 255, "g": 0, "b": 0, "a": 1}},
+                           {"position": 1, "color": {"r": 0, "g": 0, "b": 255, "a": 1}}]}}
+        ]},
+        "stroke": {"radius": [12, 12, 12, 12]}
+      },
+      {
+        "basic": {"sourceID": "multi-stroke-01", "name": "多描边", "realType": "Rectangle", "opacity": 1},
+        "bounds": {"left": 16, "top": 200, "width": 160, "height": 60},
+        "stroke": {
+          "radius": [8, 8, 8, 8],
+          "borders": [
+            {"type": "center", "strokeWidth": 1, "color": {"type": "normal", "value": {"r": 23, "g": 176, "b": 62, "a": 1}}, "dash": [], "offset": 0},
+            {"type": "inside", "strokeWidth": 2, "color": {"type": "normal", "value": {"r": 100, "g": 100, "b": 100, "a": 0.5}}, "dash": [4, 2], "offset": 0}
+          ]
+        }
+      },
+      {
+        "basic": {"sourceID": "multi-effect-01", "name": "多阴影", "realType": "Rectangle", "opacity": 1},
+        "bounds": {"left": 200, "top": 200, "width": 160, "height": 60},
+        "effect": {"shadows": [
+          {"offsetX": 0, "offsetY": 2, "blur": 4, "color": {"type": "normal", "value": {"r": 0, "g": 0, "b": 0, "a": 0.3}}, "spread": 0, "type": "outside"},
+          {"offsetX": 0, "offsetY": 0, "blur": 8, "color": {"type": "normal", "value": {"r": 0, "g": 0, "b": 0, "a": 0.1}}, "spread": 0, "type": "inside"}
+        ]}
+      },
+      {
+        "basic": {"sourceID": "radial-01", "name": "径向渐变", "realType": "Oval", "opacity": 1},
+        "bounds": {"left": 16, "top": 280, "width": 80, "height": 80},
+        "fill": {"colors": [{"type": "radialGradient", "value": {
+          "fromX": 0.5, "fromY": 0.5, "toX": 0.5, "toY": 0.5,
+          "colorStops": [{"position": 0, "color": {"r": 241, "g": 41, "b": 32, "a": 1}},
+                         {"position": 1, "color": {"r": 239, "g": 13, "b": 11, "a": 1}}]}}]}
+      },
+      {
+        "basic": {"sourceID": "mask-01", "name": "圆形蒙版", "realType": "mask", "maskType": "ellipse", "opacity": 1},
+        "bounds": {"left": 120, "top": 280, "width": 80, "height": 80},
+        "children": [
+          {"basic": {"sourceID": "mask-child-01", "name": "蒙版内内容", "realType": "Image", "opacity": 1},
+           "bounds": {"left": 100, "top": 260, "width": 120, "height": 120}}
+        ]
+      },
+      {
+        "basic": {"sourceID": "sym-01", "name": "按钮实例", "realType": "SymbolInstance",
+                  "symbolId": "symid-01", "symbolMasterId": "sm-01",
+                  "libraryName": "设计库", "containerSourceName": "主按钮", "opacity": 1},
+        "bounds": {"left": 16, "top": 380, "width": 120, "height": 44}
+      },
+      {
+        "basic": {"sourceID": "weird-01", "name": "未知组件", "realType": "WeirdWidget", "opacity": 1},
+        "bounds": {"left": 160, "top": 380, "width": 80, "height": 44}
+      },
+      {
+        "basic": {"sourceID": "slice-01", "name": "切图节点", "realType": "MSSliceLayer", "opacity": 1},
+        "bounds": {"left": 260, "top": 380, "width": 64, "height": 64},
+        "slice": {"bitmapURL": "https://img02.mockplus.cn/idoc/sketch/slicehash01/wbyrvwvvlh.png"}
+      },
+      {
+        "basic": {"id": "b1e2c3d4-1111-4222-8333-444455556666", "type": "text", "name": "小写文本", "opacity": 1, "zIndex": 1, "assetId": null},
+        "bounds": {"left": 16, "top": 450, "width": 200, "height": 30},
+        "text": {"styles": [{"font": {"family": "PingFang SC", "weight": "W6", "color": {"type": "normal", "value": {"r": 51, "g": 51, "b": 51, "a": 1}}, "size": 16}, "align": "left", "space": {"paragraph": 0, "lineHeight": 22, "letterSpacing": 0}, "fontStyles": {"underLine": false, "lineThrough": false, "italic": true}, "value": "斜体小写文本"}]}
+      },
+      {
+        "basic": {"id": "c3d4e5f6-2222-4333-8444-555566667777", "type": "rect", "name": "小写矩形", "opacity": 0.5, "zIndex": 2},
+        "bounds": {"left": 16, "top": 500, "width": 100, "height": 100},
+        "fill": {"colors": [{"type": "normal", "value": {"r": 0, "g": 0, "b": 0, "a": 0}}]},
+        "stroke": {"radius": [8, 8, 8, 8], "borders": [{"type": "center", "strokeWidth": 1, "color": {"type": "normal", "value": {"r": 100, "g": 100, "b": 100, "a": 1}}, "dash": [2, 2], "offset": 0}]},
+        "flow": {"action": "none"},
+        "parentID": "syn-root",
+        "interactions": [],
+        "glow": {},
+        "transform": null,
+        "waitForExported": false
+      },
+      {
+        "basic": {"id": "d4e5f6a7-3333-4444-8555-666677778888", "type": "group", "name": "小写分组", "opacity": 1, "zIndex": 3},
+        "bounds": {"left": 130, "top": 500, "width": 200, "height": 100},
+        "children": [
+          {"basic": {"id": "e5f6a7b8-4444-4555-8666-777788889999", "type": "line", "name": "小写直线", "opacity": 1},
+           "bounds": {"left": 140, "top": 520, "width": 100, "height": 2},
+           "stroke": {"borders": [{"type": "center", "strokeWidth": 2, "color": {"type": "normal", "value": {"r": 100, "g": 100, "b": 100, "a": 1}}, "dash": [], "offset": 0}]}}
+        ]
+      },
+      {
+        "basic": {"id": "f6a7b8c9-5555-4666-8777-88889999aaaa", "type": "slice", "name": "小写切图", "opacity": 1},
+        "bounds": {"left": 16, "top": 610, "width": 32, "height": 32},
+        "slice": {"svg": "https://img02.mockplus.cn/idoc/xd/2026-08-03/aaabbbcc-0000-4111-8222-333344445555.svg",
+                  "bitmapURL": {"1": {"url": "https://img02.mockplus.cn/idoc/xd/2026-08-03/bbbbcccc-0000-4222-8333-444455556666.png"}, "2": {"url": "https://img02.mockplus.cn/idoc/xd/2026-08-03/ccccdddd-0000-4333-8444-555566667777.png"}, "3": {"url": "https://img02.mockplus.cn/idoc/xd/2026-08-03/ddddeeee-0000-4444-8555-666677778888.png"}}}
+      },
+      {
+        "basic": {"id": "a1b2c3d4-9999-4777-8999-000011112222", "type": "text", "name": "多段文本", "opacity": 1},
+        "bounds": {"left": 60, "top": 610, "width": 300, "height": 40},
+        "text": {"styles": [
+          {"font": {"family": "PingFang SC", "weight": "W7", "color": {"type": "normal", "value": {"r": 0, "g": 0, "b": 0, "a": 1}}, "size": 18}, "align": "left", "space": {"lineHeight": 24, "letterSpacing": 0}, "fontStyles": {}, "value": "第一段"},
+          {"font": {"family": "PingFang SC", "weight": "Regular", "color": {"type": "normal", "value": {"r": 100, "g": 100, "b": 100, "a": 1}}, "size": 14}, "align": "left", "space": {"lineHeight": 20, "letterSpacing": 0}, "fontStyles": {}, "value": "第二段"}
+        ]}
+      }
+    ]
+  }
+}

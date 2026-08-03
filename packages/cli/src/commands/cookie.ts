@@ -11,7 +11,28 @@ import * as fs from 'fs';
 import * as os from 'os';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const SCRIPTS_DIR = path.resolve(__dirname, '../../../scripts/mockplus');
+
+/**
+ * 定位 mockplus.py:
+ *   1. npm 发布后: cli/scripts/mockplus (通过 cli 的 files 字段打包)
+ *   2. monorepo 编译后: cli/dist/ → ../scripts/mockplus
+ *   3. monorepo 源码: cli/src/commands/ → ../../../scripts/mockplus
+ */
+function resolveScriptsDir(): string {
+  const candidates = [
+    path.resolve(__dirname, '../scripts/mockplus'),
+    path.resolve(__dirname, '../../../scripts/mockplus'),
+    path.resolve(__dirname, '../../../../scripts/mockplus'),
+  ];
+  for (const dir of candidates) {
+    if (fs.existsSync(path.join(dir, 'mockplus.py'))) {
+      return dir;
+    }
+  }
+  return candidates[0];
+}
+
+const SCRIPTS_DIR = resolveScriptsDir();
 
 /** 获取 Python 脚本路径 */
 function getPythonScript(): string {

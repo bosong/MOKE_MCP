@@ -1,0 +1,947 @@
+{
+ "_meta": {
+  "coordinateSpace": "parent-relative",
+  "unhandledFields": [],
+  "unknownTypes": null
+ },
+ "globalVars": {
+  "styles": {
+   "S[\"'#0079FF'\"]": [
+    "#0079FF"
+   ],
+   "S[\"'#141414'\"]": [
+    "#141414"
+   ],
+   "S[\"'#828282'\"]": [
+    "#828282"
+   ],
+   "S[\"'#8C8C8C'\"]": [
+    "#8C8C8C"
+   ],
+   "S[\"'#EB333B'\"]": [
+    "#EB333B"
+   ],
+   "S[\"'#FF3343'\"]": [
+    "#FF3343"
+   ],
+   "S[\"'#FFFFFF'\"]": [
+    "#FFFFFF"
+   ],
+   "S[\"'rgba(149, 149, 149, 0.00)'\"]": [
+    "rgba(149, 149, 149, 0.00)"
+   ],
+   "S[\"'rgba(255, 255, 255, 0.00)'\"]": [
+    "rgba(255, 255, 255, 0.00)"
+   ],
+   "S[('blur', '14'), ('color', \"'#000000'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]": {
+    "blur": 14,
+    "color": "#000000",
+    "offsetX": 0,
+    "offsetY": 0,
+    "spread": 0,
+    "type": "outside"
+   },
+   "S[('blur', '14'), ('color', \"'#FFFFFF'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]": {
+    "blur": 14,
+    "color": "#FFFFFF",
+    "offsetX": 0,
+    "offsetY": 0,
+    "spread": 0,
+    "type": "outside"
+   },
+   "S[('blur', '4'), ('color', \"'#000000'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]": {
+    "blur": 4,
+    "color": "#000000",
+    "offsetX": 0,
+    "offsetY": 0,
+    "spread": 0,
+    "type": "outside"
+   },
+   "S[('blur', '4'), ('color', \"'#FFFFFF'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]": {
+    "blur": 4,
+    "color": "#FFFFFF",
+    "offsetX": 0,
+    "offsetY": 0,
+    "spread": 0,
+    "type": "outside"
+   },
+   "S[('color', \"'#0079FF'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '24'), ('fontWeight', '400'), ('letterSpacing', '0'), ('lineHeight', '30'), ('textAlignHorizontal', \"'RIGHT'\")]": {
+    "color": "#0079FF",
+    "fontFamily": "PingFang SC",
+    "fontSize": 24,
+    "fontWeight": 400,
+    "letterSpacing": 0,
+    "lineHeight": 30,
+    "textAlignHorizontal": "RIGHT"
+   },
+   "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '30'), ('fontWeight', '700'), ('letterSpacing', '0'), ('lineHeight', '30'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#1F1F1F",
+    "fontFamily": "PingFang SC",
+    "fontSize": 30,
+    "fontWeight": 700,
+    "letterSpacing": 0,
+    "lineHeight": 30,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#646464'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '30'), ('fontWeight', '400'), ('letterSpacing', '0'), ('lineHeight', '40'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#646464",
+    "fontFamily": "PingFang SC",
+    "fontSize": 30,
+    "fontWeight": 400,
+    "letterSpacing": 0,
+    "lineHeight": 40,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '24'), ('fontWeight', '400'), ('letterSpacing', '0'), ('lineHeight', '30'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "PingFang SC",
+    "fontSize": 24,
+    "fontWeight": 400,
+    "letterSpacing": 0,
+    "lineHeight": 30,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('dimensions', \"[('height', '12'), ('width', '12')]\"), ('locationRelativeToParent', \"[('x', '10'), ('y', '10')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 12,
+     "width": 12
+    },
+    "locationRelativeToParent": {
+     "x": 10,
+     "y": 10
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '1666'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 1666,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '182'), ('width', '702')]\"), ('locationRelativeToParent', \"[('x', '19'), ('y', '19')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 182,
+     "width": 702
+    },
+    "locationRelativeToParent": {
+     "x": 19,
+     "y": 19
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '19.0'), ('width', '10.5')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 19.0,
+     "width": 10.5
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 2.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '215'), ('width', '735')]\"), ('locationRelativeToParent', \"[('x', '5'), ('y', '1343')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 215,
+     "width": 735
+    },
+    "locationRelativeToParent": {
+     "x": 5,
+     "y": 1343
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '23'), ('width', '45')]\"), ('locationRelativeToParent', \"[('x', '16'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 23,
+     "width": 45
+    },
+    "locationRelativeToParent": {
+     "x": 16,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '23'), ('width', '83')]\"), ('locationRelativeToParent', \"[('x', '2'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 23,
+     "width": 83
+    },
+    "locationRelativeToParent": {
+     "x": 2,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '23.5'), ('width', '30.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 23.5,
+     "width": 30.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 2
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '24'), ('width', '12')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 24,
+     "width": 12
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '24'), ('width', '12')]\"), ('locationRelativeToParent', \"[('x', '70'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 24,
+     "width": 12
+    },
+    "locationRelativeToParent": {
+     "x": 70,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '24'), ('width', '160')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 24,
+     "width": 160
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '24'), ('width', '160')]\"), ('locationRelativeToParent', \"[('x', '194'), ('y', '36')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 24,
+     "width": 160
+    },
+    "locationRelativeToParent": {
+     "x": 194,
+     "y": 36
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '24'), ('width', '62')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 24,
+     "width": 62
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '24'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '596'), ('y', '36')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 24,
+     "width": 82
+    },
+    "locationRelativeToParent": {
+     "x": 596,
+     "y": 36
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '29'), ('width', '87')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 29,
+     "width": 87
+    },
+    "locationRelativeToParent": {
+     "x": 1,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '30')]\"), ('locationRelativeToParent', \"[('x', '9'), ('y', '9')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 30
+    },
+    "locationRelativeToParent": {
+     "x": 9,
+     "y": 9
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '654')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 654
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '654')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '40')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 654
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 40
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '90')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 90
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '90')]\"), ('locationRelativeToParent', \"[('x', '88'), ('y', '33')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 90
+    },
+    "locationRelativeToParent": {
+     "x": 88,
+     "y": 33
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '32'), ('width', '32')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 32,
+     "width": 32
+    },
+    "locationRelativeToParent": {
+     "x": 3,
+     "y": 3
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '39'), ('width', '39')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 39,
+     "width": 39
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '48'), ('width', '48')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 48,
+     "width": 48
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '48'), ('width', '48')]\"), ('locationRelativeToParent', \"[('x', '24'), ('y', '24')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 48,
+     "width": 48
+    },
+    "locationRelativeToParent": {
+     "x": 24,
+     "y": 24
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '67'), ('width', '67')]\"), ('locationRelativeToParent', \"[('x', '443'), ('y', '25')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 67,
+     "width": 67
+    },
+    "locationRelativeToParent": {
+     "x": 443,
+     "y": 25
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '69'), ('width', '658')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 69,
+     "width": 658
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '70'), ('width', '658')]\"), ('locationRelativeToParent', \"[('x', '24'), ('y', '88')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 70,
+     "width": 658
+    },
+    "locationRelativeToParent": {
+     "x": 24,
+     "y": 88
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '98'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1568')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 98,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 1568
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   }
+  }
+ },
+ "metadata": {
+  "appId": "golden-app",
+  "backgroundColor": "#000000",
+  "device": "ios2x",
+  "name": "golden",
+  "pageId": "golden-page",
+  "path": "golden",
+  "size": {
+   "height": 1666,
+   "width": 750
+  }
+ },
+ "nodes": [
+  {
+   "absolutePosition": {
+    "x": 5,
+    "y": 1343
+   },
+   "children": [
+    {
+     "absolutePosition": {
+      "x": 5,
+      "y": 1343
+     },
+     "children": [
+      {
+       "absolutePosition": {
+        "x": 8,
+        "y": 1346
+       },
+       "children": [
+        {
+         "borderRadius": "1.0px",
+         "fills": "S[\"'#8C8C8C'\"]",
+         "id": "50",
+         "layout": "S[('dimensions', \"[('height', '12'), ('width', '12')]\"), ('locationRelativeToParent', \"[('x', '10'), ('y', '10')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0005",
+         "type": "VECTOR"
+        }
+       ],
+       "effects": "S[('blur', '4'), ('color', \"'#000000'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]",
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "49",
+       "layout": "S[('dimensions', \"[('height', '32'), ('width', '32')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0006",
+       "type": "VECTOR"
+      }
+     ],
+     "id": "51",
+     "layout": "S[('dimensions', \"[('height', '39'), ('width', '39')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0004",
+     "type": "FRAME"
+    },
+    {
+     "absolutePosition": {
+      "x": 5,
+      "y": 1343
+     },
+     "children": [
+      {
+       "adoptedBy": "geometry",
+       "fills": "S[\"'#FFFFFF'\"]",
+       "id": "65",
+       "layout": "S[('dimensions', \"[('height', '32'), ('width', '32')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0007",
+       "type": "VECTOR"
+      },
+      {
+       "absolutePosition": {
+        "x": 8,
+        "y": 1346
+       },
+       "children": [
+        {
+         "borderRadius": "1.0px",
+         "fills": "S[\"'#828282'\"]",
+         "id": "63",
+         "layout": "S[('dimensions', \"[('height', '12'), ('width', '12')]\"), ('locationRelativeToParent', \"[('x', '10'), ('y', '10')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0009",
+         "type": "VECTOR"
+        }
+       ],
+       "effects": "S[('blur', '4'), ('color', \"'#FFFFFF'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]",
+       "fills": "S[\"'#141414'\"]",
+       "id": "62",
+       "layout": "S[('dimensions', \"[('height', '32'), ('width', '32')]\"), ('locationRelativeToParent', \"[('x', '3'), ('y', '3')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0010",
+       "type": "VECTOR"
+      }
+     ],
+     "id": "64",
+     "layout": "S[('dimensions', \"[('height', '39'), ('width', '39')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0008",
+     "type": "FRAME"
+    },
+    {
+     "absolutePosition": {
+      "x": 24,
+      "y": 1362
+     },
+     "borderRadius": "16px",
+     "children": [
+      {
+       "absolutePosition": {
+        "x": 48,
+        "y": 1386
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 48,
+          "y": 1386
+         },
+         "children": [
+          {
+           "absolutePosition": {
+            "x": 57,
+            "y": 1395
+           },
+           "children": [
+            {
+             "fills": "S[\"'#FFFFFF'\"]",
+             "id": "43",
+             "layout": "S[('dimensions', \"[('height', '23.5'), ('width', '30.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0012",
+             "type": "VECTOR"
+            }
+           ],
+           "fills": "S[\"'rgba(255, 255, 255, 0.00)'\"]",
+           "id": "25",
+           "layout": "S[('dimensions', \"[('height', '30'), ('width', '30')]\"), ('locationRelativeToParent', \"[('x', '9'), ('y', '9')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0013",
+           "type": "VECTOR"
+          }
+         ],
+         "fills": "S[\"'#EB333B'\"]",
+         "id": "42",
+         "layout": "S[('dimensions', \"[('height', '48'), ('width', '48')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0014",
+         "type": "VECTOR"
+        }
+       ],
+       "id": "27",
+       "layout": "S[('dimensions', \"[('height', '48'), ('width', '48')]\"), ('locationRelativeToParent', \"[('x', '24'), ('y', '24')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0011",
+       "type": "FRAME"
+      },
+      {
+       "absolutePosition": {
+        "x": 48,
+        "y": 1386
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 48,
+          "y": 1386
+         },
+         "children": [
+          {
+           "absolutePosition": {
+            "x": 57,
+            "y": 1395
+           },
+           "children": [
+            {
+             "fills": "S[\"'#FFFFFF'\"]",
+             "id": "59",
+             "layout": "S[('dimensions', \"[('height', '23.5'), ('width', '30.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0016",
+             "type": "VECTOR"
+            }
+           ],
+           "fills": "S[\"'rgba(255, 255, 255, 0.00)'\"]",
+           "id": "58",
+           "layout": "S[('dimensions', \"[('height', '30'), ('width', '30')]\"), ('locationRelativeToParent', \"[('x', '9'), ('y', '9')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0017",
+           "type": "VECTOR"
+          }
+         ],
+         "fills": "S[\"'#FF3343'\"]",
+         "id": "57",
+         "layout": "S[('dimensions', \"[('height', '48'), ('width', '48')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0018",
+         "type": "VECTOR"
+        }
+       ],
+       "id": "60",
+       "layout": "S[('dimensions', \"[('height', '48'), ('width', '48')]\"), ('locationRelativeToParent', \"[('x', '24'), ('y', '24')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0015",
+       "type": "FRAME"
+      },
+      {
+       "absolutePosition": {
+        "x": 112,
+        "y": 1395
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 112,
+          "y": 1395
+         },
+         "children": [
+          {
+           "id": "13",
+           "layout": "S[('dimensions', \"[('height', '29'), ('width', '87')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0020",
+           "text": "张少坤 ",
+           "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '30'), ('fontWeight', '700'), ('letterSpacing', '0'), ('lineHeight', '30'), ('textAlignHorizontal', \"'LEFT'\")]",
+           "type": "TEXT"
+          }
+         ],
+         "fills": "S[\"'rgba(149, 149, 149, 0.00)'\"]",
+         "id": "12",
+         "layout": "S[('dimensions', \"[('height', '30'), ('width', '90')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0022",
+         "type": "VECTOR"
+        }
+       ],
+       "id": "18",
+       "layout": "S[('dimensions', \"[('height', '30'), ('width', '90')]\"), ('locationRelativeToParent', \"[('x', '88'), ('y', '33')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0019",
+       "type": "FRAME"
+      },
+      {
+       "absolutePosition": {
+        "x": 620,
+        "y": 1398
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 690,
+          "y": 1398
+         },
+         "children": [
+          {
+           "absolutePosition": {
+            "x": 690,
+            "y": 1398
+           },
+           "children": [
+            {
+             "borderRadius": "1px",
+             "fills": "S[\"'#0079FF'\"]",
+             "id": "30",
+             "layout": "S[('dimensions', \"[('height', '19.0'), ('width', '10.5')]\"), ('locationRelativeToParent', \"[('x', '1'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+             "name": "ANON0025",
+             "type": "VECTOR"
+            }
+           ],
+           "fills": "S[\"'rgba(149, 149, 149, 0.00)'\"]",
+           "id": "31",
+           "layout": "S[('dimensions', \"[('height', '24'), ('width', '12')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0026",
+           "type": "VECTOR"
+          }
+         ],
+         "id": "66",
+         "layout": "S[('dimensions', \"[('height', '24'), ('width', '12')]\"), ('locationRelativeToParent', \"[('x', '70'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0024",
+         "type": "FRAME"
+        },
+        {
+         "absolutePosition": {
+          "x": 620,
+          "y": 1398
+         },
+         "children": [
+          {
+           "id": "17",
+           "layout": "S[('dimensions', \"[('height', '23'), ('width', '45')]\"), ('locationRelativeToParent', \"[('x', '16'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0027",
+           "text": "回复",
+           "textStyle": "S[('color', \"'#0079FF'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '24'), ('fontWeight', '400'), ('letterSpacing', '0'), ('lineHeight', '30'), ('textAlignHorizontal', \"'RIGHT'\")]",
+           "type": "TEXT"
+          }
+         ],
+         "fills": "S[\"'rgba(149, 149, 149, 0.00)'\"]",
+         "id": "16",
+         "layout": "S[('dimensions', \"[('height', '24'), ('width', '62')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0029",
+         "type": "VECTOR"
+        }
+       ],
+       "id": "32",
+       "layout": "S[('dimensions', \"[('height', '24'), ('width', '82')]\"), ('locationRelativeToParent', \"[('x', '596'), ('y', '36')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0023",
+       "type": "FRAME"
+      },
+      {
+       "absolutePosition": {
+        "x": 218,
+        "y": 1398
+       },
+       "children": [
+        {
+         "absolutePosition": {
+          "x": 218,
+          "y": 1398
+         },
+         "children": [
+          {
+           "id": "15",
+           "layout": "S[('dimensions', \"[('height', '23'), ('width', '83')]\"), ('locationRelativeToParent', \"[('x', '2'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+           "name": "ANON0031",
+           "text": "1分钟前",
+           "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '24'), ('fontWeight', '400'), ('letterSpacing', '0'), ('lineHeight', '30'), ('textAlignHorizontal', \"'LEFT'\")]",
+           "type": "TEXT"
+          }
+         ],
+         "fills": "S[\"'rgba(149, 149, 149, 0.00)'\"]",
+         "id": "14",
+         "layout": "S[('dimensions', \"[('height', '24'), ('width', '160')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0033",
+         "type": "VECTOR"
+        }
+       ],
+       "id": "34",
+       "layout": "S[('dimensions', \"[('height', '24'), ('width', '160')]\"), ('locationRelativeToParent', \"[('x', '194'), ('y', '36')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0030",
+       "type": "FRAME"
+      },
+      {
+       "absolutePosition": {
+        "x": 48,
+        "y": 1450
+       },
+       "children": [
+        {
+         "id": "10",
+         "layout": "S[('dimensions', \"[('height', '69'), ('width', '658')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0035",
+         "text": "您好，我是你的专属客服，顶部小盟可找到我，有\r什么问题欢迎咨询我哦~",
+         "textStyle": "S[('color', \"'#646464'\"), ('fontFamily', \"'PingFang SC'\"), ('fontSize', '30'), ('fontWeight', '400'), ('letterSpacing', '0'), ('lineHeight', '40'), ('textAlignHorizontal', \"'LEFT'\")]",
+         "type": "TEXT"
+        },
+        {
+         "fills": "S[\"'rgba(149, 149, 149, 0.00)'\"]",
+         "id": "11",
+         "layout": "S[('dimensions', \"[('height', '30'), ('width', '654')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0038",
+         "type": "VECTOR"
+        },
+        {
+         "fills": "S[\"'rgba(149, 149, 149, 0.00)'\"]",
+         "id": "36",
+         "layout": "S[('dimensions', \"[('height', '30'), ('width', '654')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '40')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0039",
+         "type": "VECTOR"
+        }
+       ],
+       "id": "28",
+       "layout": "S[('dimensions', \"[('height', '70'), ('width', '658')]\"), ('locationRelativeToParent', \"[('x', '24'), ('y', '88')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0034",
+       "type": "FRAME"
+      }
+     ],
+     "effects": "S[('blur', '14'), ('color', \"'#000000'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]",
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "9",
+     "layout": "S[('dimensions', \"[('height', '182'), ('width', '702')]\"), ('locationRelativeToParent', \"[('x', '19'), ('y', '19')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0040",
+     "type": "VECTOR"
+    },
+    {
+     "borderRadius": "16px",
+     "effects": "S[('blur', '14'), ('color', \"'#000000'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]",
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "68",
+     "layout": "S[('dimensions', \"[('height', '67'), ('width', '67')]\"), ('locationRelativeToParent', \"[('x', '443'), ('y', '25')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0041",
+     "type": "VECTOR"
+    },
+    {
+     "borderRadius": "16px",
+     "effects": "S[('blur', '14'), ('color', \"'#FFFFFF'\"), ('offsetX', '0'), ('offsetY', '0'), ('spread', '0'), ('type', \"'outside'\")]",
+     "fills": "S[\"'#141414'\"]",
+     "id": "70",
+     "layout": "S[('dimensions', \"[('height', '67'), ('width', '67')]\"), ('locationRelativeToParent', \"[('x', '443'), ('y', '25')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0042",
+     "type": "VECTOR"
+    }
+   ],
+   "id": "7",
+   "layout": "S[('dimensions', \"[('height', '215'), ('width', '735')]\"), ('locationRelativeToParent', \"[('x', '5'), ('y', '1343')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0003",
+   "type": "FRAME"
+  },
+  {
+   "absolutePosition": {
+    "x": 0,
+    "y": 0
+   },
+   "children": [
+    {
+     "absolutePosition": {
+      "x": 0,
+      "y": 0
+     },
+     "children": [
+      {
+       "id": "4",
+       "layout": "S[('dimensions', \"[('height', '98'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1568')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0044",
+       "type": "RECTANGLE"
+      }
+     ],
+     "id": "2",
+     "layout": "S[('dimensions', \"[('height', '1666'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0045",
+     "type": "RECTANGLE"
+    }
+   ],
+   "id": "5",
+   "layout": "S[('dimensions', \"[('height', '1666'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0043",
+   "type": "FRAME"
+  }
+ ]
+}

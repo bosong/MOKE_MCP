@@ -65,9 +65,18 @@ export interface DesignNode {
   children?: DesignNode[];
   pos?: { x: number; y: number; w: number; h: number };
   absolutePosition?: { x: number; y: number };
-  fills?: string;
+  /** 布局 token 引用（globalVars.styles 中的 layout_*） */
+  layout?: string;
+  /** 填充 token 引用（单个或数组） */
+  fills?: string | string[];
+  /** 描边 token 引用（单个或数组） */
+  strokes?: string | string[];
+  /** 效果 token 引用（单个或数组） */
+  effects?: string | string[];
   text?: string;
   textStyle?: string;
+  borderRadius?: string;
+  opacity?: number;
   adoptedBy?: string;
 }
 

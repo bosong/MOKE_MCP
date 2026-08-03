@@ -1,0 +1,2242 @@
+{
+ "_meta": {
+  "coordinateSpace": "parent-relative",
+  "unhandledFields": [],
+  "unknownTypes": null
+ },
+ "globalVars": {
+  "styles": {
+   "S[\"'#17B03E'\"]": [
+    "#17B03E"
+   ],
+   "S[\"'#EB333B'\"]": [
+    "#EB333B"
+   ],
+   "S[\"'#EFEFF4'\"]": [
+    "#EFEFF4"
+   ],
+   "S[\"'#F3F3F3'\"]": [
+    "#F3F3F3"
+   ],
+   "S[\"'#F6951D'\"]": [
+    "#F6951D"
+   ],
+   "S[\"'#FFFFFF'\"]": [
+    "#FFFFFF"
+   ],
+   "S[\"'rgba(0, 0, 0, 0.00)'\"]": [
+    "rgba(0, 0, 0, 0.00)"
+   ],
+   "S[('color', \"'#17B03E'\"), ('fontFamily', \"'Helvetica'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '31.2'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#17B03E",
+    "fontFamily": "Helvetica",
+    "fontSize": 26,
+    "letterSpacing": 0,
+    "lineHeight": 31.2,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#17B03E'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#17B03E",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 34,
+    "letterSpacing": 0,
+    "lineHeight": 38,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '70'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#1F1F1F",
+    "fontFamily": "HelveticaLTStd-Roman",
+    "fontSize": 26,
+    "letterSpacing": 0,
+    "lineHeight": 70,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#1F1F1F",
+    "fontFamily": "HelveticaLTStd-Roman",
+    "fontSize": 34,
+    "letterSpacing": 0,
+    "lineHeight": 38,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'Hiragino Sans GB'\"), ('fontSize', '32'), ('fontWeight', '600'), ('letterSpacing', '0'), ('lineHeight', '38.4'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#1F1F1F",
+    "fontFamily": "Hiragino Sans GB",
+    "fontSize": 32,
+    "fontWeight": 600,
+    "letterSpacing": 0,
+    "lineHeight": 38.4,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '70'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#1F1F1F",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 26,
+    "letterSpacing": 0,
+    "lineHeight": 70,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '0'), ('lineHeight', '33.6'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#1F1F1F",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 28,
+    "letterSpacing": 0,
+    "lineHeight": 33.6,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#4690EF'\"), ('dash', \"['6', '2']\"), ('position', \"'center'\"), ('width', '2')]": {
+    "color": "#4690EF",
+    "dash": [
+     6,
+     2
+    ],
+    "position": "center",
+    "width": 2
+   },
+   "S[('color', \"'#4690EF'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '26.4'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#4690EF",
+    "fontFamily": "HelveticaLTStd-Roman",
+    "fontSize": 22,
+    "letterSpacing": 25,
+    "lineHeight": 26.4,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#646464'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '10'), ('lineHeight', '40'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#646464",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 28,
+    "letterSpacing": 10,
+    "lineHeight": 40,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '68'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HelveticaLTStd-Roman",
+    "fontSize": 22,
+    "letterSpacing": 25,
+    "lineHeight": 68,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '22'), ('letterSpacing', '0'), ('lineHeight', '70'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 22,
+    "letterSpacing": 0,
+    "lineHeight": 70,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '24'), ('letterSpacing', '0'), ('lineHeight', '46'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 24,
+    "letterSpacing": 0,
+    "lineHeight": 46,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '0'), ('lineHeight', '46'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 28,
+    "letterSpacing": 0,
+    "lineHeight": 46,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '25'), ('lineHeight', '40'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#8C8C8C",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 28,
+    "letterSpacing": 25,
+    "lineHeight": 40,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]": {
+    "color": "#DDDDDD",
+    "position": "center",
+    "width": 1
+   },
+   "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '2')]": {
+    "color": "#DDDDDD",
+    "position": "center",
+    "width": 2
+   },
+   "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '4')]": {
+    "color": "#DDDDDD",
+    "position": "center",
+    "width": 4
+   },
+   "S[('color', \"'#EB333B'\"), ('fontFamily', \"'Helvetica'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '31.2'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#EB333B",
+    "fontFamily": "Helvetica",
+    "fontSize": 26,
+    "letterSpacing": 0,
+    "lineHeight": 31.2,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#EB333B'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#EB333B",
+    "fontFamily": "HelveticaLTStd-Roman",
+    "fontSize": 34,
+    "letterSpacing": 0,
+    "lineHeight": 38,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#F69511'\"), ('dash', \"['6', '2']\"), ('position', \"'center'\"), ('width', '2')]": {
+    "color": "#F69511",
+    "dash": [
+     6,
+     2
+    ],
+    "position": "center",
+    "width": 2
+   },
+   "S[('color', \"'#F69511'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '26.4'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#F69511",
+    "fontFamily": "HelveticaLTStd-Roman",
+    "fontSize": 22,
+    "letterSpacing": 25,
+    "lineHeight": 26.4,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#F6951D'\"), ('position', \"'center'\"), ('width', '4')]": {
+    "color": "#F6951D",
+    "position": "center",
+    "width": 4
+   },
+   "S[('color', \"'#F6951D'\"), ('position', \"'center'\"), ('width', '6')]": {
+    "color": "#F6951D",
+    "position": "center",
+    "width": 6
+   },
+   "S[('color', \"'#FFA01B'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]": {
+    "color": "#FFA01B",
+    "fontFamily": "HelveticaLTStd-Roman",
+    "fontSize": 34,
+    "letterSpacing": 0,
+    "lineHeight": 38,
+    "textAlignHorizontal": "CENTER"
+   },
+   "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HelveticaLTStd-Bold'\"), ('fontSize', '21.45033073425293'), ('letterSpacing', '0'), ('lineHeight', '25.74'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#FFFFFF",
+    "fontFamily": "HelveticaLTStd-Bold",
+    "fontSize": 21.45033073425293,
+    "letterSpacing": 0,
+    "lineHeight": 25.74,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '31.2'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#FFFFFF",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 26,
+    "letterSpacing": 0,
+    "lineHeight": 31.2,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '36'), ('letterSpacing', '0'), ('lineHeight', '43.2'), ('textAlignHorizontal', \"'LEFT'\")]": {
+    "color": "#FFFFFF",
+    "fontFamily": "HiraginoSansGB-W3",
+    "fontSize": 36,
+    "letterSpacing": 0,
+    "lineHeight": 43.2,
+    "textAlignHorizontal": "LEFT"
+   },
+   "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '2')]": {
+    "color": "#FFFFFF",
+    "position": "center",
+    "width": 2
+   },
+   "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '4')]": {
+    "color": "#FFFFFF",
+    "position": "center",
+    "width": 4
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '176')]\"), ('locationRelativeToParent', \"[('x', '180'), ('y', '1161')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 176
+    },
+    "locationRelativeToParent": {
+     "x": 180,
+     "y": 1161
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '300')]\"), ('locationRelativeToParent', \"[('x', '18'), ('y', '80.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 300
+    },
+    "locationRelativeToParent": {
+     "x": 18,
+     "y": 80.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '300')]\"), ('locationRelativeToParent', \"[('x', '20'), ('y', '80.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 300
+    },
+    "locationRelativeToParent": {
+     "x": 20,
+     "y": 80.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '460')]\"), ('locationRelativeToParent', \"[('x', '180'), ('y', '1161')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 460
+    },
+    "locationRelativeToParent": {
+     "x": 180,
+     "y": 1161
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '556')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '133')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 556
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 133
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '556')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '367')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 556
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 367
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '688')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '129')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 688
+    },
+    "locationRelativeToParent": {
+     "x": -0.5,
+     "y": 129
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '688')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '59')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 688
+    },
+    "locationRelativeToParent": {
+     "x": -0.5,
+     "y": 59
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '0'), ('width', '690')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '1696.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 0,
+     "width": 690
+    },
+    "locationRelativeToParent": {
+     "x": 30,
+     "y": 1696.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '397')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 397
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '12'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 12,
+     "y": 15.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '24.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 24.5,
+     "y": 15.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '25'), ('y', '24.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 25,
+     "y": 24.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '36.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 36.5,
+     "y": 15.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '48.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 48.5,
+     "y": 15.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '60.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 10.0,
+     "width": 9.5
+    },
+    "locationRelativeToParent": {
+     "x": 60.5,
+     "y": 15.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '100'), ('width', '330')]\"), ('locationRelativeToParent', \"[('x', '178'), ('y', '80')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 100,
+     "width": 330
+    },
+    "locationRelativeToParent": {
+     "x": 178,
+     "y": 80
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '102'), ('width', '130')]\"), ('locationRelativeToParent', \"[('x', '542.5'), ('y', '78.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 102,
+     "width": 130
+    },
+    "locationRelativeToParent": {
+     "x": 542.5,
+     "y": 78.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '128'), ('width', '750.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 128,
+     "width": 750.0
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '13.5'), ('width', '36')]\"), ('locationRelativeToParent', \"[('x', '687'), ('y', '13.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 13.5,
+     "width": 36
+    },
+    "locationRelativeToParent": {
+     "x": 687,
+     "y": 13.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '17.5'), ('width', '43.0')]\"), ('locationRelativeToParent', \"[('x', '685'), ('y', '11.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 17.5,
+     "width": 43.0
+    },
+    "locationRelativeToParent": {
+     "x": 685,
+     "y": 11.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '197'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '168'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 197,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 168,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '197'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '518'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 197,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 518,
+     "y": 0.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '198'), ('width', '688')]\"), ('locationRelativeToParent', \"[('x', '31.5'), ('y', '1870.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 198,
+     "width": 688
+    },
+    "locationRelativeToParent": {
+     "x": 31.5,
+     "y": 1870.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '20'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '22'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 20,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 22,
+     "y": 21
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '20'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '36'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 20,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 36,
+     "y": 21
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '20'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1586')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 20,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 1586
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '200'), ('width', '336')]\"), ('locationRelativeToParent', \"[('x', '29'), ('y', '1356')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 200,
+     "width": 336
+    },
+    "locationRelativeToParent": {
+     "x": 29,
+     "y": 1356
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '200'), ('width', '336')]\"), ('locationRelativeToParent', \"[('x', '384'), ('y', '1356')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 200,
+     "width": 336
+    },
+    "locationRelativeToParent": {
+     "x": 384,
+     "y": 1356
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '2154'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 2154,
+     "width": 750
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '22'), ('width', '57')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '1153')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 22,
+     "width": 57
+    },
+    "locationRelativeToParent": {
+     "x": 30,
+     "y": 1153
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '22'), ('width', '58')]\"), ('locationRelativeToParent', \"[('x', '660'), ('y', '1153')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 22,
+     "width": 58
+    },
+    "locationRelativeToParent": {
+     "x": 660,
+     "y": 1153
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '23'), ('width', '23')]\"), ('locationRelativeToParent', \"[('x', '344'), ('y', '1150')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 23,
+     "width": 23
+    },
+    "locationRelativeToParent": {
+     "x": 344,
+     "y": 1150
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26'), ('width', '55')]\"), ('locationRelativeToParent', \"[('x', '625.5'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26,
+     "width": 55
+    },
+    "locationRelativeToParent": {
+     "x": 625.5,
+     "y": 7
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26'), ('width', '616')]\"), ('locationRelativeToParent', \"[('x', '67'), ('y', '2102')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26,
+     "width": 616
+    },
+    "locationRelativeToParent": {
+     "x": 67,
+     "y": 2102
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '26'), ('width', '93')]\"), ('locationRelativeToParent', \"[('x', '329'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 26,
+     "width": 93
+    },
+    "locationRelativeToParent": {
+     "x": 329,
+     "y": 7
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28'), ('width', '366')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28,
+     "width": 366
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28'), ('width', '626')]\"), ('locationRelativeToParent', \"[('x', '66'), ('y', '1255')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28,
+     "width": 626
+    },
+    "locationRelativeToParent": {
+     "x": 66,
+     "y": 1255
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28'), ('width', '96')]\"), ('locationRelativeToParent', \"[('x', '296'), ('y', '14.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28,
+     "width": 96
+    },
+    "locationRelativeToParent": {
+     "x": 296,
+     "y": 14.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28'), ('width', '96')]\"), ('locationRelativeToParent', \"[('x', '35'), ('y', '14.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28,
+     "width": 96
+    },
+    "locationRelativeToParent": {
+     "x": 35,
+     "y": 14.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28'), ('width', '96')]\"), ('locationRelativeToParent', \"[('x', '558'), ('y', '14.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28,
+     "width": 96
+    },
+    "locationRelativeToParent": {
+     "x": 558,
+     "y": 14.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '28.5'), ('width', '28.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 28.5,
+     "width": 28.5
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '17.0')]\"), ('locationRelativeToParent', \"[('x', '31.5'), ('y', '72.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 17.0
+    },
+    "locationRelativeToParent": {
+     "x": 31.5,
+     "y": 72.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '26')]\"), ('locationRelativeToParent', \"[('x', '9.5'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 26
+    },
+    "locationRelativeToParent": {
+     "x": 9.5,
+     "y": 2.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '88')]\"), ('locationRelativeToParent', \"[('x', '39'), ('y', '1217.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 88
+    },
+    "locationRelativeToParent": {
+     "x": 39,
+     "y": 1217.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '30'), ('width', '88')]\"), ('locationRelativeToParent', \"[('x', '630'), ('y', '1217.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 30,
+     "width": 88
+    },
+    "locationRelativeToParent": {
+     "x": 630,
+     "y": 1217.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '33'), ('width', '118')]\"), ('locationRelativeToParent', \"[('x', '102'), ('y', '24')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 33,
+     "width": 118
+    },
+    "locationRelativeToParent": {
+     "x": 102,
+     "y": 24
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '33'), ('width', '118')]\"), ('locationRelativeToParent', \"[('x', '104'), ('y', '24')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 33,
+     "width": 118
+    },
+    "locationRelativeToParent": {
+     "x": 104,
+     "y": 24
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '33'), ('width', '172')]\"), ('locationRelativeToParent', \"[('x', '554'), ('y', '437')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 33,
+     "width": 172
+    },
+    "locationRelativeToParent": {
+     "x": 554,
+     "y": 437
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '34.5'), ('width', '34.5')]\"), ('locationRelativeToParent', \"[('x', '600'), ('y', '70')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 34.5,
+     "width": 34.5
+    },
+    "locationRelativeToParent": {
+     "x": 600,
+     "y": 70
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '35'), ('width', '232')]\"), ('locationRelativeToParent', \"[('x', '28'), ('y', '437')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 35,
+     "width": 232
+    },
+    "locationRelativeToParent": {
+     "x": 28,
+     "y": 437
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '35'), ('width', '234')]\"), ('locationRelativeToParent', \"[('x', '258'), ('y', '1296.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 35,
+     "width": 234
+    },
+    "locationRelativeToParent": {
+     "x": 258,
+     "y": 1296.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '35'), ('width', '35')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 35,
+     "width": 35
+    },
+    "locationRelativeToParent": {
+     "x": 0,
+     "y": 0
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '35'), ('width', '35.5')]\"), ('locationRelativeToParent', \"[('x', '676.5'), ('y', '69.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 35,
+     "width": 35.5
+    },
+    "locationRelativeToParent": {
+     "x": 676.5,
+     "y": 69.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '4.5'), ('width', '14.5')]\"), ('locationRelativeToParent', \"[('x', '80'), ('y', '16.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 4.5,
+     "width": 14.5
+    },
+    "locationRelativeToParent": {
+     "x": 80,
+     "y": 16.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '40'), ('width', '128')]\"), ('locationRelativeToParent', \"[('x', '311'), ('y', '1632')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 40,
+     "width": 128
+    },
+    "locationRelativeToParent": {
+     "x": 311,
+     "y": 1632
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '42'), ('width', '316')]\"), ('locationRelativeToParent', \"[('x', '221.5'), ('y', '63')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 42,
+     "width": 316
+    },
+    "locationRelativeToParent": {
+     "x": 221.5,
+     "y": 63
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '46'), ('width', '117')]\"), ('locationRelativeToParent', \"[('x', '633'), ('y', '618')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 46,
+     "width": 117
+    },
+    "locationRelativeToParent": {
+     "x": 633,
+     "y": 618
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '46'), ('width', '117')]\"), ('locationRelativeToParent', \"[('x', '633'), ('y', '852')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 46,
+     "width": 117
+    },
+    "locationRelativeToParent": {
+     "x": 633,
+     "y": 852
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '498'), ('width', '44')]\"), ('locationRelativeToParent', \"[('x', '27'), ('y', '551')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 498,
+     "width": 44
+    },
+    "locationRelativeToParent": {
+     "x": 27,
+     "y": 551
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '249'), ('y', '181')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 54,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 249,
+     "y": 181
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '249.5'), ('y', '1759')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 54,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 249.5,
+     "y": 1759
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '499'), ('y', '181')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 54,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 499,
+     "y": 181
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '499.5'), ('y', '1759')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 54,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 499.5,
+     "y": 1759
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.0'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '77'), ('y', '12')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.0,
+     "width": 20.5
+    },
+    "locationRelativeToParent": {
+     "x": 77,
+     "y": 12
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '6.0'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '83'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 6.0,
+     "width": 8.0
+    },
+    "locationRelativeToParent": {
+     "x": 83,
+     "y": 21
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '109'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 607,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 109,
+     "y": 2
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '221'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 607,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 221,
+     "y": 2
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '333'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 607,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 333,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '445'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 607,
+     "width": 0
+    },
+    "locationRelativeToParent": {
+     "x": 445,
+     "y": 1
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '608'), ('width', '327.5')]\"), ('locationRelativeToParent', \"[('x', '82'), ('y', '492')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 608,
+     "width": 327.5
+    },
+    "locationRelativeToParent": {
+     "x": 82,
+     "y": 492
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '608'), ('width', '556')]\"), ('locationRelativeToParent', \"[('x', '82'), ('y', '493')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 608,
+     "width": 556
+    },
+    "locationRelativeToParent": {
+     "x": 82,
+     "y": 493
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '61'), ('width', '61')]\"), ('locationRelativeToParent', \"[('x', '99'), ('y', '1131')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 61,
+     "width": 61
+    },
+    "locationRelativeToParent": {
+     "x": 99,
+     "y": 1131
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '67'), ('width', '104')]\"), ('locationRelativeToParent', \"[('x', '572'), ('y', '176')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 67,
+     "width": 104
+    },
+    "locationRelativeToParent": {
+     "x": 572,
+     "y": 176
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '67'), ('width', '104')]\"), ('locationRelativeToParent', \"[('x', '72'), ('y', '176')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 67,
+     "width": 104
+    },
+    "locationRelativeToParent": {
+     "x": 72,
+     "y": 176
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '67'), ('width', '116')]\"), ('locationRelativeToParent', \"[('x', '316.5'), ('y', '176')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 67,
+     "width": 116
+    },
+    "locationRelativeToParent": {
+     "x": 316.5,
+     "y": 176
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '67'), ('width', '122')]\"), ('locationRelativeToParent', \"[('x', '63.5'), ('y', '1754')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 67,
+     "width": 122
+    },
+    "locationRelativeToParent": {
+     "x": 63.5,
+     "y": 1754
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '67'), ('width', '130')]\"), ('locationRelativeToParent', \"[('x', '307'), ('y', '1754')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 67,
+     "width": 130
+    },
+    "locationRelativeToParent": {
+     "x": 307,
+     "y": 1754
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '75'), ('width', '104')]\"), ('locationRelativeToParent', \"[('x', '573'), ('y', '1746')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 75,
+     "width": 104
+    },
+    "locationRelativeToParent": {
+     "x": 573,
+     "y": 1746
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '75'), ('width', '654')]\"), ('locationRelativeToParent', \"[('x', '18'), ('y', '12')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 75,
+     "width": 654
+    },
+    "locationRelativeToParent": {
+     "x": 18,
+     "y": 12
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '81'), ('width', '258')]\"), ('locationRelativeToParent', \"[('x', '20.5'), ('y', '97')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 81,
+     "width": 258
+    },
+    "locationRelativeToParent": {
+     "x": 20.5,
+     "y": 97
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '81'), ('width', '258')]\"), ('locationRelativeToParent', \"[('x', '22.5'), ('y', '97')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 81,
+     "width": 258
+    },
+    "locationRelativeToParent": {
+     "x": 22.5,
+     "y": 97
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '96'), ('width', '129')]\"), ('locationRelativeToParent', \"[('x', '20.5'), ('y', '84.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 96,
+     "width": 129
+    },
+    "locationRelativeToParent": {
+     "x": 20.5,
+     "y": 84.5
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   },
+   "S[('dimensions', \"[('height', '96'), ('width', '686')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '274')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]": {
+    "dimensions": {
+     "height": 96,
+     "width": 686
+    },
+    "locationRelativeToParent": {
+     "x": 30,
+     "y": 274
+    },
+    "mode": "none",
+    "sizing": {
+     "horizontal": "fixed",
+     "vertical": "fixed"
+    }
+   }
+  }
+ },
+ "metadata": {
+  "appId": "golden-app",
+  "device": "ios2x",
+  "name": "golden",
+  "pageId": "golden-page",
+  "path": "golden",
+  "size": {
+   "height": 2154,
+   "width": 750
+  }
+ },
+ "nodes": [
+  {
+   "id": "e2bed948",
+   "layout": "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '499'), ('y', '181')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0012",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "LINE"
+  },
+  {
+   "id": "c367fed4",
+   "layout": "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '249'), ('y', '181')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0013",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "LINE"
+  },
+  {
+   "id": "63f5482f",
+   "layout": "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '499.5'), ('y', '1759')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0014",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "LINE"
+  },
+  {
+   "id": "96592f61",
+   "layout": "S[('dimensions', \"[('height', '54'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '249.5'), ('y', '1759')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0015",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "LINE"
+  },
+  {
+   "id": "4f9e10fd",
+   "layout": "S[('dimensions', \"[('height', '26'), ('width', '616')]\"), ('locationRelativeToParent', \"[('x', '67'), ('y', '2102')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0018",
+   "text": "风险提示：主力筹码所有数据与信息仅供参考，不构成投资建议",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '22'), ('letterSpacing', '0'), ('lineHeight', '70'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 31.5,
+    "y": 1870.5
+   },
+   "children": [
+    {
+     "id": "15b09b9b",
+     "layout": "S[('dimensions', \"[('height', '28'), ('width', '96')]\"), ('locationRelativeToParent', \"[('x', '558'), ('y', '14.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0009",
+     "text": "解禁数量",
+     "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '24'), ('letterSpacing', '0'), ('lineHeight', '46'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "164c520f",
+     "layout": "S[('dimensions', \"[('height', '28'), ('width', '96')]\"), ('locationRelativeToParent', \"[('x', '296'), ('y', '14.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0010",
+     "text": "股东名称",
+     "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '24'), ('letterSpacing', '0'), ('lineHeight', '46'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "624a9794",
+     "layout": "S[('dimensions', \"[('height', '28'), ('width', '96')]\"), ('locationRelativeToParent', \"[('x', '35'), ('y', '14.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0011",
+     "text": "解禁时间",
+     "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '24'), ('letterSpacing', '0'), ('lineHeight', '46'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "b928f032",
+     "layout": "S[('dimensions', \"[('height', '100'), ('width', '330')]\"), ('locationRelativeToParent', \"[('x', '178'), ('y', '80')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0019",
+     "text": "航天控股有限公司\n上海航天工业(集团)有限公司",
+     "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '70'), ('textAlignHorizontal', \"'CENTER'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "d6d678f5",
+     "layout": "S[('dimensions', \"[('height', '102'), ('width', '130')]\"), ('locationRelativeToParent', \"[('x', '542.5'), ('y', '78.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0020",
+     "text": "1840.7",
+     "textSegments": 4,
+     "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '70'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "fdd3480d",
+     "layout": "S[('dimensions', \"[('height', '96'), ('width', '129')]\"), ('locationRelativeToParent', \"[('x', '20.5'), ('y', '84.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0021",
+     "text": "2019-07-22\n2019-06-18",
+     "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '70'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "49ca8d19",
+     "layout": "S[('dimensions', \"[('height', '0'), ('width', '688')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '129')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0022",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "LINE"
+    },
+    {
+     "id": "b4aafe45",
+     "layout": "S[('dimensions', \"[('height', '0'), ('width', '688')]\"), ('locationRelativeToParent', \"[('x', '-0.5'), ('y', '59')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0023",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "LINE"
+    },
+    {
+     "id": "828e287c",
+     "layout": "S[('dimensions', \"[('height', '197'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '518'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0024",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "LINE"
+    },
+    {
+     "id": "d706b987",
+     "layout": "S[('dimensions', \"[('height', '197'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '168'), ('y', '0.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0025",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "LINE"
+    }
+   ],
+   "fills": "S[\"'#F3F3F3'\"]",
+   "id": "d3c4b57d",
+   "layout": "S[('dimensions', \"[('height', '198'), ('width', '688')]\"), ('locationRelativeToParent', \"[('x', '31.5'), ('y', '1870.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0026",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "RECTANGLE"
+  },
+  {
+   "id": "6654e9a6",
+   "layout": "S[('dimensions', \"[('height', '0'), ('width', '690')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '1696.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0031",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+   "type": "LINE"
+  },
+  {
+   "id": "0023fa31",
+   "layout": "S[('dimensions', \"[('height', '40'), ('width', '128')]\"), ('locationRelativeToParent', \"[('x', '311'), ('y', '1632')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0033",
+   "text": "限售筹码",
+   "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'Hiragino Sans GB'\"), ('fontSize', '32'), ('fontWeight', '600'), ('letterSpacing', '0'), ('lineHeight', '38.4'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "fills": "S[\"'#EFEFF4'\"]",
+   "id": "94d09e73",
+   "layout": "S[('dimensions', \"[('height', '10'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '397')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0035",
+   "type": "RECTANGLE"
+  },
+  {
+   "fills": "S[\"'#EFEFF4'\"]",
+   "id": "7a7da5d5",
+   "layout": "S[('dimensions', \"[('height', '20'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '1586')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0036",
+   "type": "RECTANGLE"
+  },
+  {
+   "absolutePosition": {
+    "x": 66,
+    "y": 1255
+   },
+   "borderRadius": "14px",
+   "children": [
+    {
+     "fills": "S[\"'#EB333B'\"]",
+     "id": "ce0970be",
+     "layout": "S[('dimensions', \"[('height', '28'), ('width', '366')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0037",
+     "type": "VECTOR"
+    }
+   ],
+   "fills": "S[\"'#17B03E'\"]",
+   "id": "fc8e10c5",
+   "layout": "S[('dimensions', \"[('height', '28'), ('width', '626')]\"), ('locationRelativeToParent', \"[('x', '66'), ('y', '1255')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0038",
+   "type": "RECTANGLE"
+  },
+  {
+   "id": "9bc8c5b8",
+   "layout": "S[('dimensions', \"[('height', '30'), ('width', '88')]\"), ('locationRelativeToParent', \"[('x', '630'), ('y', '1217.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0039",
+   "text": "39.00%",
+   "textStyle": "S[('color', \"'#17B03E'\"), ('fontFamily', \"'Helvetica'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '31.2'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "767e055f",
+   "layout": "S[('dimensions', \"[('height', '30'), ('width', '88')]\"), ('locationRelativeToParent', \"[('x', '39'), ('y', '1217.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0040",
+   "text": "71.00%",
+   "textStyle": "S[('color', \"'#EB333B'\"), ('fontFamily', \"'Helvetica'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '31.2'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "358a484f",
+   "layout": "S[('dimensions', \"[('height', '35'), ('width', '234')]\"), ('locationRelativeToParent', \"[('x', '258'), ('y', '1296.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0041",
+   "text": "获利比例：",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '0'), ('lineHeight', '33.6'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "fills": "S[\"'#FFFFFF'\"]",
+   "id": "28ca5273",
+   "layout": "S[('dimensions', \"[('height', '23'), ('width', '23')]\"), ('locationRelativeToParent', \"[('x', '344'), ('y', '1150')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0042",
+   "strokes": "S[('color', \"'#F6951D'\"), ('position', \"'center'\"), ('width', '6')]",
+   "type": "ELLIPSE"
+  },
+  {
+   "id": "d3234a5e",
+   "layout": "S[('dimensions', \"[('height', '0'), ('width', '176')]\"), ('locationRelativeToParent', \"[('x', '180'), ('y', '1161')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0043",
+   "strokes": "S[('color', \"'#F6951D'\"), ('position', \"'center'\"), ('width', '4')]",
+   "type": "LINE"
+  },
+  {
+   "id": "9eacf8c3",
+   "layout": "S[('dimensions', \"[('height', '0'), ('width', '460')]\"), ('locationRelativeToParent', \"[('x', '180'), ('y', '1161')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0044",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '4')]",
+   "type": "LINE"
+  },
+  {
+   "absolutePosition": {
+    "x": 99,
+    "y": 1131
+   },
+   "children": [
+    {
+     "id": "8c6a397b",
+     "layout": "S[('dimensions', \"[('height', '20'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '36'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0016",
+     "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '4')]",
+     "type": "LINE"
+    },
+    {
+     "id": "8fe505b4",
+     "layout": "S[('dimensions', \"[('height', '20'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '22'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0017",
+     "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '4')]",
+     "type": "LINE"
+    }
+   ],
+   "fills": "S[\"'#F6951D'\"]",
+   "id": "ada46782",
+   "layout": "S[('dimensions', \"[('height', '61'), ('width', '61')]\"), ('locationRelativeToParent', \"[('x', '99'), ('y', '1131')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0045",
+   "type": "ELLIPSE"
+  },
+  {
+   "id": "c0ac3d06",
+   "layout": "S[('dimensions', \"[('height', '46'), ('width', '117')]\"), ('locationRelativeToParent', \"[('x', '633'), ('y', '852')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0046",
+   "text": "3.2",
+   "textSegments": 4,
+   "textStyle": "S[('color', \"'#F69511'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '26.4'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "f20eaa63",
+   "layout": "S[('dimensions', \"[('height', '46'), ('width', '117')]\"), ('locationRelativeToParent', \"[('x', '633'), ('y', '618')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0047",
+   "text": "4.32（当前",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#4690EF'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '26.4'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "9bfdab20",
+   "layout": "S[('dimensions', \"[('height', '22'), ('width', '58')]\"), ('locationRelativeToParent', \"[('x', '660'), ('y', '1153')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0048",
+   "text": "03-21",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '68'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "0c3549a3",
+   "layout": "S[('dimensions', \"[('height', '22'), ('width', '57')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '1153')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0049",
+   "text": "12-18",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '68'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "e841d49e",
+   "layout": "S[('dimensions', \"[('height', '498'), ('width', '44')]\"), ('locationRelativeToParent', \"[('x', '27'), ('y', '551')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0050",
+   "text": "4.60\n4.31\n4.01\n3.72\n3.42\n3.13\n2.83\n2.54",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '22'), ('letterSpacing', '25'), ('lineHeight', '68'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "569c34db",
+   "layout": "S[('dimensions', \"[('height', '33'), ('width', '172')]\"), ('locationRelativeToParent', \"[('x', '554'), ('y', '437')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0051",
+   "text": "基于日线数据",
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '25'), ('lineHeight', '40'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "e91b378a",
+   "layout": "S[('dimensions', \"[('height', '35'), ('width', '232')]\"), ('locationRelativeToParent', \"[('x', '28'), ('y', '437')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0052",
+   "text": "日期：",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '25'), ('lineHeight', '40'), ('textAlignHorizontal', \"'LEFT'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 82,
+    "y": 493
+   },
+   "children": [
+    {
+     "id": "4b562607",
+     "layout": "S[('dimensions', \"[('height', '0'), ('width', '556')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '367')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0053",
+     "strokes": "S[('color', \"'#F69511'\"), ('dash', \"['6', '2']\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "LINE"
+    },
+    {
+     "id": "d41b9d36",
+     "layout": "S[('dimensions', \"[('height', '0'), ('width', '556')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '133')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0054",
+     "strokes": "S[('color', \"'#4690EF'\"), ('dash', \"['6', '2']\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "LINE"
+    },
+    {
+     "id": "eda097b0",
+     "layout": "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '445'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0055",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "LINE"
+    },
+    {
+     "id": "0a1bb146",
+     "layout": "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '333'), ('y', '1')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0056",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "LINE"
+    }
+   ],
+   "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+   "id": "0b142b7c",
+   "layout": "S[('dimensions', \"[('height', '608'), ('width', '556')]\"), ('locationRelativeToParent', \"[('x', '82'), ('y', '493')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0059",
+   "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '2')]",
+   "type": "IMAGE"
+  },
+  {
+   "id": "6abf95bd",
+   "layout": "S[('dimensions', \"[('height', '75'), ('width', '104')]\"), ('locationRelativeToParent', \"[('x', '573'), ('y', '1746')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0061",
+   "text": "小解",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#17B03E'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "27309929",
+   "layout": "S[('dimensions', \"[('height', '67'), ('width', '130')]\"), ('locationRelativeToParent', \"[('x', '307'), ('y', '1754')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0062",
+   "text": "3.18占",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "d090106b",
+   "layout": "S[('dimensions', \"[('height', '67'), ('width', '122')]\"), ('locationRelativeToParent', \"[('x', '63.5'), ('y', '1754')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0063",
+   "text": "4555.66数",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "8758e414",
+   "layout": "S[('dimensions', \"[('height', '67'), ('width', '104')]\"), ('locationRelativeToParent', \"[('x', '72'), ('y', '176')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0064",
+   "text": "4.25当",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#EB333B'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 30,
+    "y": 274
+   },
+   "borderRadius": "4px",
+   "children": [
+    {
+     "id": "24f953ea",
+     "layout": "S[('dimensions', \"[('height', '75'), ('width', '654')]\"), ('locationRelativeToParent', \"[('x', '18'), ('y', '12')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0060",
+     "text": "当日主力资金流出",
+     "textSegments": 7,
+     "textStyle": "S[('color', \"'#646464'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '10'), ('lineHeight', '40'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    }
+   ],
+   "fills": "S[\"'#F3F3F3'\"]",
+   "id": "91a7cb5e",
+   "layout": "S[('dimensions', \"[('height', '96'), ('width', '686')]\"), ('locationRelativeToParent', \"[('x', '30'), ('y', '274')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0065",
+   "type": "RECTANGLE"
+  },
+  {
+   "id": "d24dac53",
+   "layout": "S[('dimensions', \"[('height', '67'), ('width', '104')]\"), ('locationRelativeToParent', \"[('x', '572'), ('y', '176')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0066",
+   "text": "3.96平",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#FFA01B'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "id": "222b528d",
+   "layout": "S[('dimensions', \"[('height', '67'), ('width', '116')]\"), ('locationRelativeToParent', \"[('x', '316.5'), ('y', '176')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0067",
+   "text": "49.97%获",
+   "textSegments": 2,
+   "textStyle": "S[('color', \"'#EB333B'\"), ('fontFamily', \"'HelveticaLTStd-Roman'\"), ('fontSize', '34'), ('letterSpacing', '0'), ('lineHeight', '38'), ('textAlignHorizontal', \"'CENTER'\")]",
+   "type": "TEXT"
+  },
+  {
+   "absolutePosition": {
+    "x": 0,
+    "y": 0
+   },
+   "children": [
+    {
+     "absolutePosition": {
+      "x": 676.5,
+      "y": 69.5
+     },
+     "children": [
+      {
+       "absolutePosition": {
+        "x": 676.5,
+        "y": 69.5
+       },
+       "children": [
+        {
+         "id": "4601d456",
+         "layout": "S[('dimensions', \"[('height', '30'), ('width', '26')]\"), ('locationRelativeToParent', \"[('x', '9.5'), ('y', '2.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+         "name": "ANON0003",
+         "text": "？",
+         "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '26'), ('letterSpacing', '0'), ('lineHeight', '31.2'), ('textAlignHorizontal', \"'LEFT'\")]",
+         "type": "TEXT"
+        }
+       ],
+       "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+       "id": "0ed3bbf4",
+       "layout": "S[('dimensions', \"[('height', '35'), ('width', '35')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0004",
+       "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '2')]",
+       "type": "ELLIPSE"
+      }
+     ],
+     "id": "ae46dfa1",
+     "layout": "S[('dimensions', \"[('height', '35'), ('width', '35.5')]\"), ('locationRelativeToParent', \"[('x', '676.5'), ('y', '69.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0005",
+     "type": "FRAME"
+    },
+    {
+     "absolutePosition": {
+      "x": 600,
+      "y": 70
+     },
+     "children": [
+      {
+       "id": "9f85ca98",
+       "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '25'), ('y', '24.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0006",
+       "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '2')]",
+       "type": "LINE"
+      },
+      {
+       "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+       "id": "07ffdf55",
+       "layout": "S[('dimensions', \"[('height', '28.5'), ('width', '28.5')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+       "name": "ANON0007",
+       "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '2')]",
+       "type": "ELLIPSE"
+      }
+     ],
+     "id": "85907562",
+     "layout": "S[('dimensions', \"[('height', '34.5'), ('width', '34.5')]\"), ('locationRelativeToParent', \"[('x', '600'), ('y', '70')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0008",
+     "type": "FRAME"
+    },
+    {
+     "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+     "id": "e65c022d",
+     "layout": "S[('dimensions', \"[('height', '30'), ('width', '17.0')]\"), ('locationRelativeToParent', \"[('x', '31.5'), ('y', '72.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0068",
+     "strokes": "S[('color', \"'#FFFFFF'\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "VECTOR"
+    },
+    {
+     "id": "3f2dab5f",
+     "layout": "S[('dimensions', \"[('height', '42'), ('width', '316')]\"), ('locationRelativeToParent', \"[('x', '221.5'), ('y', '63')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0069",
+     "text": "筹码分布 - 京东方A",
+     "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '36'), ('letterSpacing', '0'), ('lineHeight', '43.2'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "631043b5",
+     "layout": "S[('dimensions', \"[('height', '6.0'), ('width', '20.5')]\"), ('locationRelativeToParent', \"[('x', '77'), ('y', '12')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0070",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "ab8f61c5",
+     "layout": "S[('dimensions', \"[('height', '4.5'), ('width', '14.5')]\"), ('locationRelativeToParent', \"[('x', '80'), ('y', '16.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0071",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "d1334aa7",
+     "layout": "S[('dimensions', \"[('height', '6.0'), ('width', '8.0')]\"), ('locationRelativeToParent', \"[('x', '83'), ('y', '21')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0072",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "51b49cc5",
+     "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '60.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0073",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "8cb9f2fb",
+     "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '48.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0074",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "0f7ecf5d",
+     "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '36.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0075",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "73016328",
+     "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '24.5'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0076",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "23e4eea0",
+     "layout": "S[('dimensions', \"[('height', '17.5'), ('width', '43.0')]\"), ('locationRelativeToParent', \"[('x', '685'), ('y', '11.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0077",
+     "type": "VECTOR"
+    },
+    {
+     "fills": "S[\"'#FFFFFF'\"]",
+     "id": "c53136fc",
+     "layout": "S[('dimensions', \"[('height', '13.5'), ('width', '36')]\"), ('locationRelativeToParent', \"[('x', '687'), ('y', '13.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0078",
+     "type": "VECTOR"
+    },
+    {
+     "id": "1bb4800b",
+     "layout": "S[('dimensions', \"[('height', '26'), ('width', '93')]\"), ('locationRelativeToParent', \"[('x', '329'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0079",
+     "text": "23:41 PM",
+     "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HelveticaLTStd-Bold'\"), ('fontSize', '21.45033073425293'), ('letterSpacing', '0'), ('lineHeight', '25.74'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "aa1a2511",
+     "layout": "S[('dimensions', \"[('height', '26'), ('width', '55')]\"), ('locationRelativeToParent', \"[('x', '625.5'), ('y', '7')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0080",
+     "text": "100%",
+     "textStyle": "S[('color', \"'#FFFFFF'\"), ('fontFamily', \"'HelveticaLTStd-Bold'\"), ('fontSize', '21.45033073425293'), ('letterSpacing', '0'), ('lineHeight', '25.74'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    }
+   ],
+   "fills": "S[\"'#EB333B'\"]",
+   "id": "6956f393",
+   "layout": "S[('dimensions', \"[('height', '128'), ('width', '750.0')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0081",
+   "type": "RECTANGLE"
+  },
+  {
+   "fills": "S[\"'#FFFFFF'\"]",
+   "id": "55f9bbd5",
+   "layout": "S[('dimensions', \"[('height', '10.0'), ('width', '9.5')]\"), ('locationRelativeToParent', \"[('x', '12'), ('y', '15.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0082",
+   "type": "VECTOR"
+  },
+  {
+   "absolutePosition": {
+    "x": 384,
+    "y": 1356
+   },
+   "borderRadius": "6px",
+   "children": [
+    {
+     "id": "8e87cd4f",
+     "layout": "S[('dimensions', \"[('height', '81'), ('width', '258')]\"), ('locationRelativeToParent', \"[('x', '20.5'), ('y', '97')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0027",
+     "text": "成本范围",
+     "textSegments": 4,
+     "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '0'), ('lineHeight', '46'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "a32ef7d8",
+     "layout": "S[('dimensions', \"[('height', '0'), ('width', '300')]\"), ('locationRelativeToParent', \"[('x', '18'), ('y', '80.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0028",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "LINE"
+    },
+    {
+     "id": "3758f7f7",
+     "layout": "S[('dimensions', \"[('height', '33'), ('width', '118')]\"), ('locationRelativeToParent', \"[('x', '102'), ('y', '24')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0029",
+     "text": "70%筹码",
+     "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '0'), ('lineHeight', '33.6'), ('textAlignHorizontal', \"'CENTER'\")]",
+     "type": "TEXT"
+    }
+   ],
+   "fills": "S[\"'#F3F3F3'\"]",
+   "id": "fa323a4f",
+   "layout": "S[('dimensions', \"[('height', '200'), ('width', '336')]\"), ('locationRelativeToParent', \"[('x', '384'), ('y', '1356')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0083",
+   "type": "RECTANGLE"
+  },
+  {
+   "absolutePosition": {
+    "x": 29,
+    "y": 1356
+   },
+   "borderRadius": "6px",
+   "children": [
+    {
+     "id": "8faa265d",
+     "layout": "S[('dimensions', \"[('height', '81'), ('width', '258')]\"), ('locationRelativeToParent', \"[('x', '22.5'), ('y', '97')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0030",
+     "text": "成本范围",
+     "textSegments": 4,
+     "textStyle": "S[('color', \"'#8C8C8C'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '0'), ('lineHeight', '46'), ('textAlignHorizontal', \"'LEFT'\")]",
+     "type": "TEXT"
+    },
+    {
+     "id": "a26a699c",
+     "layout": "S[('dimensions', \"[('height', '0'), ('width', '300')]\"), ('locationRelativeToParent', \"[('x', '20'), ('y', '80.5')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0032",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '1')]",
+     "type": "LINE"
+    },
+    {
+     "id": "fe5d748f",
+     "layout": "S[('dimensions', \"[('height', '33'), ('width', '118')]\"), ('locationRelativeToParent', \"[('x', '104'), ('y', '24')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0034",
+     "text": "90%筹码",
+     "textStyle": "S[('color', \"'#1F1F1F'\"), ('fontFamily', \"'HiraginoSansGB-W3'\"), ('fontSize', '28'), ('letterSpacing', '0'), ('lineHeight', '33.6'), ('textAlignHorizontal', \"'CENTER'\")]",
+     "type": "TEXT"
+    }
+   ],
+   "fills": "S[\"'#F3F3F3'\"]",
+   "id": "f508aa18",
+   "layout": "S[('dimensions', \"[('height', '200'), ('width', '336')]\"), ('locationRelativeToParent', \"[('x', '29'), ('y', '1356')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0084",
+   "type": "RECTANGLE"
+  },
+  {
+   "absolutePosition": {
+    "x": 82,
+    "y": 492
+   },
+   "children": [
+    {
+     "id": "6119fbf9",
+     "layout": "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '221'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0057",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "LINE"
+    },
+    {
+     "id": "ac6c8fbc",
+     "layout": "S[('dimensions', \"[('height', '607'), ('width', '0')]\"), ('locationRelativeToParent', \"[('x', '109'), ('y', '2')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+     "name": "ANON0058",
+     "strokes": "S[('color', \"'#DDDDDD'\"), ('position', \"'center'\"), ('width', '2')]",
+     "type": "LINE"
+    }
+   ],
+   "fills": "S[\"'rgba(0, 0, 0, 0.00)'\"]",
+   "id": "08177ade",
+   "layout": "S[('dimensions', \"[('height', '608'), ('width', '327.5')]\"), ('locationRelativeToParent', \"[('x', '82'), ('y', '492')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0085",
+   "type": "IMAGE"
+  },
+  {
+   "fills": "S[\"'#FFFFFF'\"]",
+   "id": "9eefb7bd",
+   "layout": "S[('dimensions', \"[('height', '2154'), ('width', '750')]\"), ('locationRelativeToParent', \"[('x', '0'), ('y', '0')]\"), ('mode', \"'none'\"), ('sizing', '[(\\'horizontal\\', \"\\'fixed\\'\"), (\\'vertical\\', \"\\'fixed\\'\")]')]",
+   "name": "ANON0086",
+   "type": "RECTANGLE"
+  }
+ ]
+}

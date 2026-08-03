@@ -141,7 +141,10 @@ def parse_url_or_short(s: str) -> Tuple[str, Optional[str]]:
             raise ValueError("URL 缺少 /app/<APP_ID>/ 段")
         app_id = m.group(1)
         tail = re.sub(r"[?#].*$", "", s).rstrip("/").rsplit("/", 1)[-1]
-        target = None if tail == app_id else tail
+        # URL 固定路径段(design/develop 等)与过短段不是 target id:
+        # 摹客 id 为 ≥8 位 base62/UUID,`/app/{APP}/design` 这类无 target 链接
+        # 尾段是路径的一部分,误判会让 resolve_target_kind 返回 notfound。
+        target = None if tail in (app_id, "design", "develop") or len(tail) < 8 else tail
         return app_id, target
     if ":" in s:
         a, t = s.split(":", 1)
@@ -194,6 +197,12 @@ def fetch_index(app_id: str, refresh: bool = False) -> dict:
         data = json.loads(raw)
         if data.get("code") != 0:
             print(f"ERR: API code={data.get('code')} msg={data.get('message')}", file=sys.stderr)
+            sys.exit(21)
+        payload = data.get("payload")
+        if not isinstance(payload, dict) or not isinstance(payload.get("pages"), list):
+            # 逆向 API 结构漂移防护:结构不符给出明确报错而非 KeyError 裸抛
+            print(f"ERR: index 响应结构异常(缺 payload.pages),API 可能已升级: {str(data)[:200]}",
+                  file=sys.stderr)
             sys.exit(21)
     except (SystemExit, urllib.error.URLError, urllib.error.HTTPError,
             OSError, ValueError):
@@ -313,6 +322,26 @@ def url_hash(u: Optional[str]) -> Optional[str]:
     return m.group(1) if m else None
 
 
+def _slice_bitmap_url(slice_: dict) -> Optional[str]:
+    """slice.bitmapURL 兼容 str 与 dict({倍率: {url}} 小写格式)两种形态。"""
+    u = slice_.get("bitmapURL")
+    if isinstance(u, str) and u:
+        return u
+    if isinstance(u, dict):
+        keys = [k for k in u.keys() if u[k]]
+        if not keys:
+            return None
+        best = keys[-1]
+        if all(str(k).isdigit() for k in keys):
+            best = max(keys, key=lambda k: int(k))
+        v = u[best]
+        if isinstance(v, dict):
+            return v.get("url")
+        if isinstance(v, str):
+            return v
+    return None
+
+
 def extract_slices(data: dict, wanted: Optional[set] = None) -> List[dict]:
     """遍历 data.json layers,返回切图 manifest 列表。
        wanted=None 表示全要;wanted={'hash1','hash2'} 或包含节点 sourceID 也接受。
@@ -321,19 +350,22 @@ def extract_slices(data: dict, wanted: Optional[set] = None) -> List[dict]:
 
     def walk(n):
         s = n.get("slice")
-        if isinstance(s, dict) and (s.get("bitmapURL") or s.get("svgURL")):
-            h = url_hash(s.get("bitmapURL") or s.get("svgURL"))
-            sid = n.get("basic", {}).get("sourceID", "")
-            if h and (wanted is None or h in wanted or sid in wanted):
-                slices.append({
-                    "hash": h,
-                    "name": n.get("basic", {}).get("name", ""),
-                    "sourceID": sid,
-                    "bitmapURL": s.get("bitmapURL", ""),
-                    "svgURL": s.get("svgURL", ""),
-                    "width": s.get("realSliceWidth") or n.get("bounds", {}).get("width"),
-                    "height": s.get("realSliceHeight") or n.get("bounds", {}).get("height"),
-                })
+        if isinstance(s, dict):
+            bitmap = _slice_bitmap_url(s)
+            svg = s.get("svgURL") or s.get("svg") or ""
+            if bitmap or svg:
+                h = url_hash(bitmap or svg)
+                sid = n.get("basic", {}).get("sourceID", "") or n.get("basic", {}).get("id", "")
+                if h and (wanted is None or h in wanted or sid in wanted):
+                    slices.append({
+                        "hash": h,
+                        "name": n.get("basic", {}).get("name", ""),
+                        "sourceID": sid,
+                        "bitmapURL": bitmap or "",
+                        "svgURL": svg or "",
+                        "width": s.get("realSliceWidth") or n.get("bounds", {}).get("width"),
+                        "height": s.get("realSliceHeight") or n.get("bounds", {}).get("height"),
+                    })
         for c in n.get("children", []):
             walk(c)
 

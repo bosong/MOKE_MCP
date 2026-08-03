@@ -7,6 +7,7 @@
     "build": "pnpm -r build",
     "dev": "pnpm -r dev",
     "test": "pnpm -r test",
+    "test:py": "cd scripts/mockplus && python3 -m unittest discover -s tests && python3 tests/run_golden.py",
     "clean": "pnpm -r clean"
   },
   "engines": {

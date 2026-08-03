@@ -48,6 +48,9 @@ def action_cookie(args) -> int:
 
     if sub == "status":
         s = client.cookie_status()
+        if getattr(args, "json", False):
+            print(json.dumps(s, ensure_ascii=False))
+            return 0
         if not s["exists"]:
             print(f"Status:  未配置(运行 `mockplus cookie set`)")
             print(f"Path:    {s['path']}")
@@ -226,6 +229,9 @@ def action_download(args) -> int:
     print(f"目标切图: {len(slices)} 个 → {out_dir}", file=sys.stderr)
 
     stats = client.download_slices(slices, out_dir)
+    if getattr(args, "json", False):
+        print(json.dumps(stats, ensure_ascii=False))
+        return 0
     print(f"OK: 下载 {stats['ok']} (cached={stats['cached']}, "
           f"fail={stats['fail']}, total_files={stats['total']})",
           file=sys.stderr)

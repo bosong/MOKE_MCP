@@ -18,6 +18,8 @@
 
 **设计数据经过：** 包含树重建 → 坐标相对化 → Token 去重 → 机械蒸馏，AI 可直接消费。
 
+> 代码生成（`code_gen`）当前不对外提供，推荐由大模型直接分析设计稿数据生成目标平台代码（如 Swift/React 等），效果更佳。
+
 ---
 
 ## 前置要求
@@ -48,7 +50,7 @@ npx @moke-mcp/cli serve
 ### 方式 2：全局安装
 
 ```bash
-npm install -g @moke-mcp/server @moke-mcp/cli
+npm install -g @moke-mcp/cli
 moke-mcp serve
 ```
 

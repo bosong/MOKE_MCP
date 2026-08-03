@@ -24,7 +24,9 @@ import sys
 
 DISTILL_VERSION = 1
 
-LAYOUT_BLOCK_RE = re.compile(r"^    (layout_\d+):\n((?:      .*\n)+)", re.M)
+# layout 定义块头:缩进动态探测(2~8 空格),body 为同缩进+2 的子行。
+# 原硬编码 4 空格在 globalVars.styles 结构变化时会静默失效,动态缩进增强稳健性。
+LAYOUT_HEAD_RE = re.compile(r"^(?P<indent> {2,8})(?P<name>layout_\d+):\n", re.M)
 LAYOUT_KNOWN_KEYS = {"mode", "sizing", "horizontal", "vertical",
                      "locationRelativeToParent", "x", "y", "dimensions", "width", "height"}
 UUID_RE = re.compile(
@@ -40,11 +42,35 @@ def _grab(block, key):
     return m.group(1) if m else None
 
 
+def _iter_layout_blocks(src):
+    """产出 (name, indent, body)。body = layout 定义的所有子行(含尾随换行)。"""
+    body_re_cache = {}
+
+    def body_re(indent):
+        pat = r"^{}.*\n".format(re.escape(indent + "  "))
+        r = body_re_cache.get(pat)
+        if r is None:
+            r = re.compile(pat, re.M)
+            body_re_cache[pat] = r
+        return r
+
+    for m in LAYOUT_HEAD_RE.finditer(src):
+        indent, name = m.group("indent"), m.group("name")
+        end = m.end()
+        body = ""
+        while True:
+            bm = body_re(indent).match(src, end)
+            if not bm:
+                break
+            body += bm.group(0)
+            end = bm.end()
+        yield name, indent, body
+
+
 def _parse_layouts(src):
     """返回 (可内联 {name: 一行 pos 串}, 跳过名单)。未识别字段 → 跳过(保真)。"""
     inline, skipped = {}, []
-    for m in LAYOUT_BLOCK_RE.finditer(src):
-        name, block = m.group(1), m.group(2)
+    for name, indent, block in _iter_layout_blocks(src):
         keys = set(re.findall(r"^\s+(\w+):", block, re.M))
         x, y = _grab(block, "x"), _grab(block, "y")
         w, h = _grab(block, "width"), _grab(block, "height")
@@ -78,10 +104,25 @@ def apply_text(src: str) -> tuple:
     if not inline:
         raise DistillError("未找到可内联的 layout 表(格式不符或已蒸馏)")
 
-    # 1) 删已内联的 layout 定义
-    def rm_def(m):
-        return "" if m.group(1) in inline else m.group(0)
-    out = LAYOUT_BLOCK_RE.sub(rm_def, src)
+    # 1) 删已内联的 layout 定义(按行重建,缩进动态)
+    def _delete_inlined(src: str, inline: set) -> str:
+        lines = src.splitlines(keepends=True)
+        out_lines = []
+        i, n = 0, len(lines)
+        while i < n:
+            line = lines[i]
+            m = re.match(r"^( {2,8})(layout_\d+):\n?$", line)
+            if m and m.group(2) in inline:
+                body_indent = m.group(1) + "  "
+                i += 1
+                while i < n and lines[i].startswith(body_indent):
+                    i += 1
+                continue
+            out_lines.append(line)
+            i += 1
+        return "".join(out_lines)
+
+    out = _delete_inlined(src, set(inline))
 
     # 2) 引用替换 layout: layout_N → pos: {…}(跳过名单保留原引用)
     def sub_ref(m):
