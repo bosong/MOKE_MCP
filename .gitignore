@@ -19,3 +19,9 @@ packages/*/scripts/mockplus/
 
 # npm pack 产物
 *.tgz
+
+# 测试/运行时产物
+design.yaml
+moke-screenshot-*.png
+*.yaml
+!scripts/mockplus/tests/fixtures/*.yaml
