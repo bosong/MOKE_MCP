@@ -342,6 +342,46 @@ moke-mcp cookie guide     # 显示 Cookie 配置完整指南
 # 配置管理
 moke-mcp config show      # 显示当前配置
 moke-mcp config set <key> <value>  # 设置配置项
+
+# Tool 命令组（本地直接调用 MCP Tools，无需 MCP 客户端）
+moke-mcp tool get_metadata <url>              # 获取页面/分组 XML 层级树
+moke-mcp tool get_design_context <url>        # 获取设计数据（YAML/JSON）
+  --format yaml|json                          #   输出格式，默认 yaml
+  --raw                                       #   输出未蒸馏原文
+  -o, --out <path>                            #   导出到文件
+moke-mcp tool get_screenshot <url>            # 获取整页 @2x 截图
+  -o, --output <path>                         #   PNG 保存路径
+  --base64                                    #   输出 base64 到 stdout
+moke-mcp tool get_variable_defs <url>         # 提取 Design Token
+moke-mcp tool download_design_images <url>    # 下载切图
+  --refs <hash1,hash2,...>                    #   imageRef 列表
+  -o, --output <dir>                          #   输出目录
+moke-mcp tool get_design_data <url>           # get_design_context 别名
+moke-mcp tool create_design_system_rules <url> # 生成设计系统规范
+  --framework react|vue                       #   目标框架，默认 react
+  --style tailwind|css-modules|styled-components
+```
+
+### Tool 命令示例
+
+```bash
+# 查看页面树
+moke-mcp tool get_metadata "https://app.mockplus.cn/app/xxx/develop/design/yyy"
+
+# 获取设计数据并导出为 JSON 文件
+moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  --format json -o design.json
+
+# 获取截图
+moke-mcp tool get_screenshot "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  -o ./preview.png
+
+# 提取设计变量
+moke-mcp tool get_variable_defs "https://app.mockplus.cn/app/xxx/develop/design/yyy"
+
+# 生成 Tailwind 设计规范
+moke-mcp tool create_design_system_rules "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  --framework react --style tailwind
 ```
 
 ---
@@ -394,7 +434,8 @@ MOKE_MCP/
 │   │       └── services/   # 设计上下文/截图/变量提取/代码生成
 │   └── cli/                # CLI 工具包
 │       └── src/
-│           └── commands/   # init / serve / config / cookie
+│           ├── commands/   # init / serve / config / cookie / tool
+│           └── utils/      # version / config-file
 ├── scripts/
 │   └── mockplus/           # Python 数据转换脚本（基于 mockplus-context）
 └── .moke-mcp.json          # 项目配置文件

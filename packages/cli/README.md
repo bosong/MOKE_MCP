@@ -60,15 +60,79 @@ moke-mcp cookie set
 
 ## 命令参考
 
+### 核心命令
+
 | 命令 | 说明 |
 |------|------|
 | `init` | 初始化项目配置，生成 `.moke-mcp.json` |
 | `serve` | 启动 MCP Server（stdio 传输，供 AI 客户端调用） |
 | `config` | 查看/管理配置文件 |
+
+### Cookie 管理
+
+| 命令 | 说明 |
+|------|------|
 | `cookie set` | 交互式设置 Cookie |
 | `cookie status` | 查看 Cookie 状态（路径、有效期） |
 | `cookie clear` | 清除 Cookie |
 | `cookie guide` | 显示 Cookie 获取教程 |
+
+### Tool 命令组（本地调用 MCP Tools）
+
+无需 MCP 客户端，直接在终端调用 7 个 MCP Tools，适合调试和脚本集成。
+
+| 命令 | 说明 |
+|------|------|
+| `tool get_metadata <url>` | 获取页面/分组 XML 层级树 |
+| `tool get_design_context <url>` | 获取设计数据（YAML/JSON） |
+| `tool get_screenshot <url>` | 获取整页 @2x 截图 |
+| `tool get_variable_defs <url>` | 提取 Design Token |
+| `tool download_design_images <url>` | 下载切图资源 |
+| `tool get_design_data <url>` | `get_design_context` 别名 |
+| `tool create_design_system_rules <url>` | 生成设计系统规范 |
+
+#### Tool 选项
+
+```bash
+# get_design_context / get_design_data 选项
+--format yaml|json     # 输出格式，默认 yaml
+--raw                  # 输出未蒸馏原文（默认是蒸馏压缩后的数据）
+-o, --out <path>       # 导出到文件
+
+# get_screenshot 选项
+-o, --output <path>    # PNG 保存路径
+--base64               # 输出 base64 到 stdout
+
+# download_design_images 选项
+--refs <hash1,hash2>   # imageRef 列表（必填）
+-o, --output <dir>     # 输出目录
+
+# create_design_system_rules 选项
+--framework react|vue  # 目标框架，默认 react
+--style <style>        # 样式方案: tailwind|css-modules|styled-components
+```
+
+#### Tool 使用示例
+
+```bash
+# 查看页面树
+moke-mcp tool get_metadata "https://app.mockplus.cn/app/xxx/develop/design/yyy"
+
+# 获取设计数据并导出为 JSON
+moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  --format json -o design.json
+
+# 获取截图
+moke-mcp tool get_screenshot "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  -o ./preview.png
+
+# 提取设计变量
+moke-mcp tool get_variable_defs "https://app.mockplus.cn/app/xxx/develop/design/yyy"
+
+# 生成 Tailwind 设计规范
+moke-mcp tool create_design_system_rules "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  --framework react --style tailwind
+```
 
 ## 快速开始
 
