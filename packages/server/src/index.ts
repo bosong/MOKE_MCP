@@ -16,6 +16,20 @@ export interface ServerOptions {
 /** 本包版本号（取自 package.json，供 CLI/MCP serverInfo 展示） */
 export const VERSION = getPackageVersion();
 
+// ─── 工具执行所需导出（供 CLI 本地调用 MCP Tools 复用） ───
+export {
+  parseMockplusUrl,
+  fetchDesignData,
+  fetchDesignDataYaml,
+  fetchPageTreeForMetadata,
+  fetchAllAssets,
+  downloadImages,
+  verifyPythonEnv,
+} from './api/client.js';
+export { extractVariables, generateDesignSystemRules } from './services/variable-extract.service.js';
+export { getDesignScreenshot } from './services/screenshot.service.js';
+export { buildPageTreeXml } from './services/design-context.service.js';
+
 /** 启动 Moke MCP Server */
 export async function startServer(_options: ServerOptions = {}): Promise<void> {
   logger.info('══════════════════════════════════════');

@@ -9,6 +9,7 @@ import { initCommand } from './commands/init.js';
 import { serveCommand } from './commands/serve.js';
 import { configShowCommand, configSetCommand } from './commands/config.js';
 import { cookieSetCommand, cookieStatusCommand, cookieClearCommand, cookieShowPathCommand } from './commands/cookie.js';
+import { registerToolCommand } from './commands/tool.js';
 import { getCliVersion } from './utils/version.js';
 
 const program = new Command();
@@ -87,5 +88,8 @@ cookieCmd
   .action(() => {
     cookieShowPathCommand();
   });
+
+// tool 命令组（本地直接调用 MCP Tools）
+registerToolCommand(program);
 
 program.parse();

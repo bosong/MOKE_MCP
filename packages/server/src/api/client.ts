@@ -215,11 +215,20 @@ export async function fetchDesignData(
 
 /**
  * 获取设计数据（YAML 原始文本，用于 AI 直接消费）
+ * @param options.raw 为 true 时输出未蒸馏原文（v0.6 形态，体积更大）
  */
-export async function fetchDesignDataYaml(url: string): Promise<string> {
+export async function fetchDesignDataYaml(
+  url: string,
+  options: { raw?: boolean } = {}
+): Promise<string> {
   logger.info(`[API] 获取设计数据 YAML: ${url}`);
 
-  const result = await runPython(['data', url, '--format', 'yaml']);
+  const args = ['data', url, '--format', 'yaml'];
+  if (options.raw) {
+    args.push('--raw');
+  }
+
+  const result = await runPython(args);
   return handleResult(result, '获取设计数据 YAML');
 }
 
