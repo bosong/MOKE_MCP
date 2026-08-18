@@ -9,13 +9,14 @@ import { initCommand } from './commands/init.js';
 import { serveCommand } from './commands/serve.js';
 import { configShowCommand, configSetCommand } from './commands/config.js';
 import { cookieSetCommand, cookieStatusCommand, cookieClearCommand, cookieShowPathCommand } from './commands/cookie.js';
+import { getCliVersion } from './utils/version.js';
 
 const program = new Command();
 
 program
   .name('moke-mcp')
   .description('摹客 MCP Server - 将摹客设计数据接入 AI 编码助手')
-  .version('0.2.0');
+  .version(getCliVersion());
 
 // init 命令
 program

@@ -7,15 +7,19 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { createMcpServer } from './mcp/server.js';
 import { logger } from './utils/logger.js';
 import { verifyPythonEnv } from './api/client.js';
+import { getPackageVersion } from './utils/version.js';
 
 export interface ServerOptions {
   /** 保留接口兼容性，不再需要 wsPort */
 }
 
+/** 本包版本号（取自 package.json，供 CLI/MCP serverInfo 展示） */
+export const VERSION = getPackageVersion();
+
 /** 启动 Moke MCP Server */
 export async function startServer(_options: ServerOptions = {}): Promise<void> {
   logger.info('══════════════════════════════════════');
-  logger.info('  Moke MCP Server v0.2.0');
+  logger.info(`  Moke MCP Server v${VERSION}`);
   logger.info('  摹客设计数据 → AI 编码助手');
   logger.info('  数据源: HTTP API (mockplus-context)');
   logger.info('══════════════════════════════════════');

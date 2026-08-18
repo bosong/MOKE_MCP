@@ -4,7 +4,7 @@
  */
 
 import { readConfig } from '../utils/config-file.js';
-import { startServer } from '@moke-mcp/server';
+import { startServer, VERSION as SERVER_VERSION } from '@moke-mcp/server';
 
 export async function serveCommand(): Promise<void> {
   const config = readConfig();
@@ -12,7 +12,7 @@ export async function serveCommand(): Promise<void> {
   // 注意: 所有提示一律输出到 stderr, 避免污染 MCP stdio 的 stdout JSON-RPC 通道
   const banner = (msg: string) => console.error(msg);
 
-  banner('🔌 启动 Moke MCP Server v0.2.0...');
+  banner(`🔌 启动 Moke MCP Server v${SERVER_VERSION}...`);
   banner(`   数据源: HTTP API (app.mockplus.cn)`);
   banner(`   框架: ${config.codeGen.framework}`);
   banner(`   样式: ${config.codeGen.styleLibrary}`);

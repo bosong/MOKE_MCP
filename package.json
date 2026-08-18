@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Moke MCP Server - 摹客设计数据到 AI 编码助手的 MCP 桥梁",
+  "license": "MIT",
   "scripts": {
     "build": "pnpm -r build",
     "dev": "pnpm -r dev",

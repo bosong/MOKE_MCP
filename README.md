@@ -57,7 +57,7 @@ moke-mcp serve
 ### 方式 3：本地开发
 
 ```bash
-git clone git@github.com:your-org/MOKE_MCP.git
+git clone https://github.com/bosong/MOKE_MCP.git
 cd MOKE_MCP
 cd packages/server && npm install && npm run build && cd ../..
 cd packages/cli && npm install && npm run build && cd ../..

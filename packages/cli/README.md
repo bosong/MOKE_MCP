@@ -126,6 +126,7 @@ moke-mcp serve
 {
   "servers": {
     "moke-mcp": {
+      "type": "stdio",
       "command": "moke-mcp",
       "args": ["serve"],
       "env": {

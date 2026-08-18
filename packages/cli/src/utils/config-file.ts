@@ -122,8 +122,9 @@ export function generateMCPClientConfig(): string {
     {
       name: 'VS Code Copilot (.vscode/mcp.json)',
       config: {
-        mcpServers: {
+        servers: {
           'moke-mcp': {
+            type: 'stdio',
             command: 'npx',
             args: ['-y', '@moke-mcp/cli', 'serve'],
             env: {

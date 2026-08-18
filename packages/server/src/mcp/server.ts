@@ -20,6 +20,7 @@ import type { DesignNode } from '../api/types.js';
 import { buildMetadataXml, buildPageTreeXml, formatDesignData } from '../services/design-context.service.js';
 import { getDesignScreenshot, getAssetImages } from '../services/screenshot.service.js';
 import { extractVariables, generateDesignSystemRules } from '../services/variable-extract.service.js';
+import { getPackageVersion } from '../utils/version.js';
 import * as os from 'os';
 import * as path from 'path';
 
@@ -27,7 +28,7 @@ import * as path from 'path';
 export function createMcpServer(): McpServer {
   const server = new McpServer({
     name: 'moke-mcp',
-    version: '0.2.0',
+    version: getPackageVersion(),
   });
 
   // ─── Tool: get_metadata ─────────────────────────────────
