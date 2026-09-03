@@ -260,7 +260,16 @@ https://app.mockplus.cn/app/xxx/develop/design/yyy
 | `url` | string | ✅ | 摹客设计稿 URL |
 | `format` | `"yaml"` \| `"json"` | ❌ | 输出格式，默认 `yaml` |
 
-> **scale 单位缩放（默认 `1`，通常无需设置）**：设计稿原始数值基于 Sketch 画布像素（如 device `ios2x`），默认 `scale = 1` 直接输出画布原始像素值，绝大多数场景不需要任何配置。仅当目标端需要与画布像素不同的逻辑单位（如按 ios2x 出逻辑 pt 传 `0.5`、3x 传 `0.333`）等特殊需求时，才按以下方式传入系数：
+> **scale 单位缩放（默认 `1`，通常无需设置）**：设计稿原始数值基于 Sketch 画布像素（如 device `ios2x`）。默认不填 scale 时直接输出画布原始像素值，绝大多数场景不需要任何配置 —— AI 可依据返回数据 `metadata` 中的 `device` 与 `size`（如 `ios2x`、`750 × 1630`）自行推算出正确的逻辑宽度（375pt）进行布局：
+>
+> ```yaml
+> metadata:
+>   name: 会场页面 - 黑版直播
+>   device: ios2x           # 源设计稿设备标记
+>   size: {width: 750, height: 1630}
+> ```
+>
+> 仅当目标端需要特殊换算时，才按以下方式传入系数，例如设置输出 scale 为 `0.5`：
 > 1. 环境变量：`MOKE_SCALE=0.5`
 > 2. 项目配置：`.moke-mcp.json` 中 `"output": { "scale": 0.5 }`
 > 3. CLI 本地调用：`moke-mcp tool get_design_context <url> --scale 0.5`（优先级最高）
@@ -380,7 +389,10 @@ moke-mcp tool get_metadata "https://app.mockplus.cn/app/xxx/develop/design/yyy"
 moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
   --format json -o design.json
 
-# 按 ios2x 逻辑单位输出（物理像素 ÷ 2）
+# 默认：按画布物理像素单位输出（无需 --scale，AI 依据 device/size 自行换算）
+moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy"
+
+# 特殊需求：按 ios2x 逻辑单位输出（物理像素 ÷ 2）
 moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
   --scale 0.5
 
