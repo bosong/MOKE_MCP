@@ -260,6 +260,13 @@ https://app.mockplus.cn/app/xxx/develop/design/yyy
 | `url` | string | ✅ | 摹客设计稿 URL |
 | `format` | `"yaml"` \| `"json"` | ❌ | 输出格式，默认 `yaml` |
 
+> **scale 单位缩放（非必填）**：设计稿原始数值基于 Sketch 画布像素（如 device `ios2x`）。若目标端需要逻辑单位，可通过以下方式传入缩放系数（如 ios2x→逻辑 pt 传 `0.5`，3x 传 `0.333`）：
+> 1. 环境变量：`MOKE_SCALE=0.5`
+> 2. 项目配置：`.moke-mcp.json` 中 `"output": { "scale": 0.5 }`
+> 3. CLI 本地调用：`moke-mcp tool get_design_context <url> --scale 0.5`（优先级最高）
+>
+> 启用后所有长度值（坐标/尺寸/字号/圆角/线宽/效果偏移）被等比缩放，返回数据的 `metadata.scale` 会记录该系数 —— **数值已换算，勿再按 device 物理倍率二次缩放**。不配置则默认 `1` 输出画布原始像素值。
+
 ```text
 用户：把这个设计稿还原成 Vue 组件
 https://app.mockplus.cn/app/xxx/develop/design/yyy
@@ -348,6 +355,7 @@ moke-mcp tool get_metadata <url>              # 获取页面/分组 XML 层级�
 moke-mcp tool get_design_context <url>        # 获取设计数据（YAML/JSON）
   --format yaml|json                          #   输出格式，默认 yaml
   --raw                                       #   输出未蒸馏原文
+  --scale <num>                               #   （可选）单位缩放系数，如 0.5；覆盖 MOKE_SCALE/配置
   -o, --out <path>                            #   导出到文件
 moke-mcp tool get_screenshot <url>            # 获取整页 @2x 截图
   -o, --output <path>                         #   PNG 保存路径
@@ -371,6 +379,10 @@ moke-mcp tool get_metadata "https://app.mockplus.cn/app/xxx/develop/design/yyy"
 # 获取设计数据并导出为 JSON 文件
 moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
   --format json -o design.json
+
+# 按 ios2x 逻辑单位输出（物理像素 ÷ 2）
+moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  --scale 0.5
 
 # 获取截图
 moke-mcp tool get_screenshot "https://app.mockplus.cn/app/xxx/develop/design/yyy" \

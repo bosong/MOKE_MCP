@@ -97,6 +97,7 @@ moke-mcp cookie set
 # get_design_context / get_design_data 选项
 --format yaml|json     # 输出格式，默认 yaml
 --raw                  # 输出未蒸馏原文（默认是蒸馏压缩后的数据）
+--scale <num>          # （可选）单位缩放系数，如 0.5；覆盖 MOKE_SCALE/项目配置
 -o, --out <path>       # 导出到文件
 
 # get_screenshot 选项
@@ -122,6 +123,10 @@ moke-mcp tool get_metadata "https://app.mockplus.cn/app/xxx/develop/design/yyy"
 moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
   --format json -o design.json
 
+# 按 ios2x 逻辑单位输出（物理像素 ÷ 2；可选，默认输出画布原始像素值）
+moke-mcp tool get_design_context "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
+  --scale 0.5
+
 # 获取截图
 moke-mcp tool get_screenshot "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
   -o ./preview.png
@@ -133,6 +138,8 @@ moke-mcp tool get_variable_defs "https://app.mockplus.cn/app/xxx/develop/design/
 moke-mcp tool create_design_system_rules "https://app.mockplus.cn/app/xxx/develop/design/yyy" \
   --framework react --style tailwind
 ```
+
+> **scale 说明（非必填）**：设计稿原始数值基于 Sketch 画布像素。scale 仅在需要目标逻辑单位时使用（如 ios2x→`0.5`）。解析优先级：`--scale` > 环境变量 `MOKE_SCALE` > 项目 `.moke-mcp.json` 的 `output.scale` > 默认 `1`。启用后 `metadata.scale` 记录系数，数值已换算，勿按 device 倍率二次缩放。
 
 ## 快速开始
 
