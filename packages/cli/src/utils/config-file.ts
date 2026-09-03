@@ -18,6 +18,7 @@ export const ConfigSchema = z.object({
   output: z.object({
     imageFormat: z.enum(['png', 'svg']).default('png'),
     imageScale: z.number().default(2),
+    scale: z.number().default(1),
   }),
 });
 
@@ -36,6 +37,7 @@ export function getDefaultConfig(): MokeMCPConfig {
     output: {
       imageFormat: 'png',
       imageScale: 2,
+      scale: 1,
     },
   };
 }

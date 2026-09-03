@@ -21,6 +21,7 @@ import {
   getDesignScreenshot,
   buildPageTreeXml,
 } from '@moke-mcp/server';
+import { readConfig } from '../utils/config-file.js';
 
 /** 注册 tool 子命令 */
 export function registerToolCommand(program: Command): void {
@@ -52,12 +53,13 @@ export function registerToolCommand(program: Command): void {
   // ─── get_design_context ──────────────────────────────────
   tool
     .command('get_design_context')
-    .description('获取完整设计上下文（YAML/JSON），可直接用于代码生成')
+    .description('获取完整设计上下文（YAML/JSON），可直接用于代码生成。注意：metadata.scale 存在且 ≠1 时数值已换算，勿按 device 倍率二次缩放')
     .argument('<url>', '摹客设计稿 URL')
     .option('-f, --format <fmt>', '输出格式: yaml|json', 'yaml')
     .option('--raw', '输出未蒸馏原文（默认是蒸馏压缩后的数据）')
+    .option('--scale <num>', '输出单位缩放系数（覆盖 env MOKE_SCALE / config output.scale；如 ios2x→逻辑值传 0.5）')
     .option('-o, --out <path>', '导出为文本文件（默认输出到终端）')
-    .action(async (url: string, opts: { format: string; raw?: boolean; out?: string }) => {
+    .action(async (url: string, opts: { format: string; raw?: boolean; scale?: string; out?: string }) => {
       try {
         parseMockplusUrl(url);
         await outputDesignData(url, opts);
@@ -153,12 +155,13 @@ export function registerToolCommand(program: Command): void {
   // ─── get_design_data ─────────────────────────────────────
   tool
     .command('get_design_data')
-    .description('获取完整设计数据（get_design_context 的别名）')
+    .description('获取完整设计数据（get_design_context 的别名）。注意：metadata.scale 存在且 ≠1 时数值已换算，勿按 device 倍率二次缩放')
     .argument('<url>', '摹客设计稿 URL')
     .option('-f, --format <fmt>', '输出格式: yaml|json', 'yaml')
     .option('--raw', '输出未蒸馏原文（默认是蒸馏压缩后的数据）')
+    .option('--scale <num>', '输出单位缩放系数（覆盖 env MOKE_SCALE / config output.scale；如 ios2x→逻辑值传 0.5）')
     .option('-o, --out <path>', '导出为文本文件（默认输出到终端）')
-    .action(async (url: string, opts: { format: string; raw?: boolean; out?: string }) => {
+    .action(async (url: string, opts: { format: string; raw?: boolean; scale?: string; out?: string }) => {
       try {
         parseMockplusUrl(url);
         await outputDesignData(url, opts);
@@ -190,22 +193,33 @@ export function registerToolCommand(program: Command): void {
 /** get_design_context / get_design_data 共用：拉取并输出（或导出文件） */
 async function outputDesignData(
   url: string,
-  opts: { format: string; raw?: boolean; out?: string }
+  opts: { format: string; raw?: boolean; scale?: string; out?: string }
 ): Promise<void> {
+  const scale = resolveOutputScale(opts.scale);
   let output: string;
   if (opts.format === 'json') {
-    const data = await fetchDesignData(url, { format: 'json', raw: !!opts.raw });
+    const data = await fetchDesignData(url, { format: 'json', raw: !!opts.raw, scale });
     output = JSON.stringify(data, null, 2);
   } else {
-    output = await fetchDesignDataYaml(url, { raw: !!opts.raw });
+    output = await fetchDesignDataYaml(url, { raw: !!opts.raw, scale });
   }
 
   if (opts.out) {
     fs.writeFileSync(opts.out, output);
-    console.log(`已导出 ${opts.format}${opts.raw ? ' (raw)' : ''} 数据: ${opts.out}`);
+    console.log(`已导出 ${opts.format}${opts.raw ? ' (raw)' : ''} 数据: ${opts.out}${scale !== 1 ? ` (scale=${scale})` : ''}`);
   } else {
     console.log(output);
   }
+}
+
+/** 解析最终缩放系数：CLI --scale > env MOKE_SCALE > 配置 output.scale > 1 */
+function resolveOutputScale(explicit?: string): number {
+  const pick = (v: string | undefined): number | undefined => {
+    if (v === undefined) return undefined;
+    const n = Number(v);
+    return Number.isFinite(n) && n > 0 ? n : undefined;
+  };
+  return pick(explicit) ?? pick(process.env.MOKE_SCALE) ?? (readConfig().output.scale || 1);
 }
 
 /** 统一错误输出（stderr + 非零退出码） */

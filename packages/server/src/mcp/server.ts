@@ -21,6 +21,7 @@ import { buildMetadataXml, buildPageTreeXml, formatDesignData } from '../service
 import { getDesignScreenshot, getAssetImages } from '../services/screenshot.service.js';
 import { extractVariables, generateDesignSystemRules } from '../services/variable-extract.service.js';
 import { getPackageVersion } from '../utils/version.js';
+import { resolveScale } from '../utils/scale.js';
 import * as os from 'os';
 import * as path from 'path';
 
@@ -62,7 +63,7 @@ export function createMcpServer(): McpServer {
   // ─── Tool: get_design_context ────────────────────────────
   server.tool(
     'get_design_context',
-    '获取摹客设计文件的完整设计上下文（布局、样式、颜色、排版、节点树等）。返回结构化 YAML 数据，可直接用于代码生成。',
+    '获取摹客设计文件的完整设计上下文（布局、样式、颜色、排版、节点树等）。返回结构化 YAML 数据，可直接用于代码生成。注意：当 metadata.scale 存在且不等于 1 时，所有数值（坐标/尺寸/字号/圆角/线宽）均已按该系数换算为目标单位，请直接使用，勿再按 metadata.device 的物理倍率二次缩放。',
     {
       url: z.string().describe('摹客设计稿 URL'),
       format: z.enum(['json', 'yaml']).optional().default('yaml').describe('输出格式，yaml 格式更适合 AI 消费'),
@@ -70,13 +71,14 @@ export function createMcpServer(): McpServer {
     async ({ url, format }) => {
       try {
         parseMockplusUrl(url);
+        const scale = resolveScale();
 
         let output: string;
 
         if (format === 'yaml') {
-          output = await fetchDesignDataYaml(url);
+          output = await fetchDesignDataYaml(url, { scale });
         } else {
-          const data = await fetchDesignData(url, { format: 'json' });
+          const data = await fetchDesignData(url, { format: 'json', scale });
           output = JSON.stringify(data, null, 2);
         }
 
@@ -197,7 +199,7 @@ export function createMcpServer(): McpServer {
   // ─── Tool: get_design_data ───────────────────────────────
   server.tool(
     'get_design_data',
-    '获取摹客设计文件的完整设计数据（get_design_context 的别名，兼容 Figma MCP 命名习惯）。',
+    '获取摹客设计文件的完整设计数据（get_design_context 的别名，兼容 Figma MCP 命名习惯）。注意：当 metadata.scale 存在且不等于 1 时，所有数值（坐标/尺寸/字号/圆角/线宽）均已按该系数换算为目标单位，请直接使用，勿再按 metadata.device 的物理倍率二次缩放。',
     {
       url: z.string().describe('摹客设计稿 URL'),
       format: z.enum(['json', 'yaml']).optional().default('yaml').describe('输出格式'),
@@ -205,13 +207,14 @@ export function createMcpServer(): McpServer {
     async ({ url, format }) => {
       try {
         parseMockplusUrl(url);
+        const scale = resolveScale();
 
         let output: string;
 
         if (format === 'yaml') {
-          output = await fetchDesignDataYaml(url);
+          output = await fetchDesignDataYaml(url, { scale });
         } else {
-          const data = await fetchDesignData(url, { format: 'json' });
+          const data = await fetchDesignData(url, { format: 'json', scale });
           output = JSON.stringify(data, null, 2);
         }
 

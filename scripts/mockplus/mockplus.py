@@ -25,6 +25,8 @@ def build_parser() -> argparse.ArgumentParser:
                    help="输出未蒸馏原文(v0.6 形态;默认 YAML 经 distill 蒸馏 −~49%)")
     g.add_argument("--stats", action="store_true", help="额外打印统计到 stderr")
     g.add_argument("--refresh", action="store_true", help="跳过 cache 重拉")
+    g.add_argument("--scale", type=float, default=1.0,
+                   help="输出单位缩放系数(字段级只缩放长度值;如 ios2x→逻辑值传 0.5;默认 1 不缩放)")
 
     # download
     g = sub.add_parser("download", help="按 --nodes 下载切图")

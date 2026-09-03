@@ -193,14 +193,17 @@ export async function fetchPageTree(appId: string): Promise<{ pages: PageMeta[];
  */
 export async function fetchDesignData(
   url: string,
-  options: { format?: 'json' | 'yaml'; raw?: boolean } = {}
+  options: { format?: 'json' | 'yaml'; raw?: boolean; scale?: number } = {}
 ): Promise<DesignData> {
-  const { format = 'json', raw = false } = options;
+  const { format = 'json', raw = false, scale } = options;
   logger.info(`[API] 获取设计数据: ${url}`);
 
   const args = ['data', url, '--format', format];
   if (raw) {
     args.push('--raw');
+  }
+  if (scale && scale !== 1) {
+    args.push('--scale', String(scale));
   }
 
   const result = await runPython(args);
@@ -216,16 +219,20 @@ export async function fetchDesignData(
 /**
  * 获取设计数据（YAML 原始文本，用于 AI 直接消费）
  * @param options.raw 为 true 时输出未蒸馏原文（v0.6 形态，体积更大）
+ * @param options.scale 输出单位缩放系数（默认 1 不缩放）
  */
 export async function fetchDesignDataYaml(
   url: string,
-  options: { raw?: boolean } = {}
+  options: { raw?: boolean; scale?: number } = {}
 ): Promise<string> {
   logger.info(`[API] 获取设计数据 YAML: ${url}`);
 
   const args = ['data', url, '--format', 'yaml'];
   if (options.raw) {
     args.push('--raw');
+  }
+  if (options.scale && options.scale !== 1) {
+    args.push('--scale', String(options.scale));
   }
 
   const result = await runPython(args);

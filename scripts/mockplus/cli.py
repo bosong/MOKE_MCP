@@ -158,6 +158,12 @@ def action_data(args) -> int:
     result = _transform.transform(data, page_meta, app_id,
                                   coords=getattr(args, "coords", "relative"))
 
+    # 单位缩放(可选):在序列化/蒸馏前作用于 dict,json/yaml/raw 一致
+    scale = getattr(args, "scale", 1.0)
+    if scale and scale != 1.0:
+        import scale as _scale
+        _scale.apply_scale(result, scale)
+
     # 校验:断言关键字段(替代砍掉的 _schema.py)
     try:
         assert "metadata" in result and result["metadata"].get("pageId"), "metadata.pageId 缺失"

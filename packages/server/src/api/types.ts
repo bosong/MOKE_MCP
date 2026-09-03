@@ -105,6 +105,8 @@ export interface DesignData {
     device: string;
     size: { width: number; height: number };
     backgroundColor: string;
+    /** 输出单位缩放系数（scale≠1 时存在，数值已按此缩放；缺失表示未缩放） */
+    scale?: number;
     components?: Record<string, unknown>;
   };
   nodes: DesignNode[];
