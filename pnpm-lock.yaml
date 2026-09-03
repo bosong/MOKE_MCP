@@ -11,7 +11,7 @@ importers:
   packages/cli:
     dependencies:
       '@moke-mcp/server':
-        specifier: workspace:*
+        specifier: ^0.2.5
         version: link:../server
       commander:
         specifier: ^12.0.0
