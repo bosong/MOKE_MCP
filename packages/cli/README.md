@@ -139,7 +139,7 @@ moke-mcp tool create_design_system_rules "https://app.mockplus.cn/app/xxx/develo
   --framework react --style tailwind
 ```
 
-> **scale 说明（非必填）**：设计稿原始数值基于 Sketch 画布像素。scale 仅在需要目标逻辑单位时使用（如 ios2x→`0.5`）。解析优先级：`--scale` > 环境变量 `MOKE_SCALE` > 项目 `.moke-mcp.json` 的 `output.scale` > 默认 `1`。启用后 `metadata.scale` 记录系数，数值已换算，勿按 device 倍率二次缩放。
+> **scale 说明（非必填，默认 `1`）**：设计稿原始数值基于 Sketch 画布像素，默认 `scale = 1` 输出原始像素值，通常无需设置。仅特殊需求（如按 ios2x 出逻辑单位）时才配置，如 `--scale 0.5`。解析优先级：`--scale` > 环境变量 `MOKE_SCALE` > 项目 `.moke-mcp.json` 的 `output.scale` > 默认 `1`。启用后 `metadata.scale` 记录系数，数值已换算，勿按 device 倍率二次缩放。
 
 ## 快速开始
 

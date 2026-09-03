@@ -260,12 +260,12 @@ https://app.mockplus.cn/app/xxx/develop/design/yyy
 | `url` | string | ✅ | 摹客设计稿 URL |
 | `format` | `"yaml"` \| `"json"` | ❌ | 输出格式，默认 `yaml` |
 
-> **scale 单位缩放（非必填）**：设计稿原始数值基于 Sketch 画布像素（如 device `ios2x`）。若目标端需要逻辑单位，可通过以下方式传入缩放系数（如 ios2x→逻辑 pt 传 `0.5`，3x 传 `0.333`）：
+> **scale 单位缩放（默认 `1`，通常无需设置）**：设计稿原始数值基于 Sketch 画布像素（如 device `ios2x`），默认 `scale = 1` 直接输出画布原始像素值，绝大多数场景不需要任何配置。仅当目标端需要与画布像素不同的逻辑单位（如按 ios2x 出逻辑 pt 传 `0.5`、3x 传 `0.333`）等特殊需求时，才按以下方式传入系数：
 > 1. 环境变量：`MOKE_SCALE=0.5`
 > 2. 项目配置：`.moke-mcp.json` 中 `"output": { "scale": 0.5 }`
 > 3. CLI 本地调用：`moke-mcp tool get_design_context <url> --scale 0.5`（优先级最高）
 >
-> 启用后所有长度值（坐标/尺寸/字号/圆角/线宽/效果偏移）被等比缩放，返回数据的 `metadata.scale` 会记录该系数 —— **数值已换算，勿再按 device 物理倍率二次缩放**。不配置则默认 `1` 输出画布原始像素值。
+> 设置后所有长度值（坐标/尺寸/字号/圆角/线宽/效果偏移）被等比缩放，返回数据的 `metadata.scale` 会记录该系数 —— **数值已换算，勿再按 device 物理倍率二次缩放**。
 
 ```text
 用户：把这个设计稿还原成 Vue 组件
