@@ -108,6 +108,14 @@ class TestTypeMapping(unittest.TestCase):
 
 
 class TestWeightAndSlice(unittest.TestCase):
+    def test_numeric_font_weight_takes_precedence(self):
+        self.assertEqual(transform._pick_font_weight({"weight": "Bold", "fontWeight": 400}), 400)
+        self.assertEqual(transform._pick_font_weight({"weight": "Normal", "fontWeight": 350}), 350)
+
+    def test_weight_string_fallback(self):
+        self.assertEqual(transform._pick_font_weight({"weight": "Bold"}), 700)
+        self.assertEqual(transform._pick_font_weight({"weight": "Bold", "fontWeight": "invalid"}), 700)
+
     def test_weight_w6(self):
         self.assertEqual(transform._normalize_weight("W6"), 600)
 
@@ -149,6 +157,12 @@ class TestTokenTable(unittest.TestCase):
     def test_named_preferred(self):
         k1 = self.bank.text_style({"font": {"size": 16}, "align": "left"}, preferred_name="Body")
         self.assertEqual(k1, "Body")
+
+    def test_text_style_uses_numeric_font_weight(self):
+        key = self.bank.text_style({"font": {
+            "family": "PingFang SC", "size": 16, "weight": "Bold", "fontWeight": 400,
+        }})
+        self.assertEqual(self.bank.styles[key]["fontWeight"], 400)
 
     def test_named_same_spec_reuse(self):
         st = {"font": {"size": 16, "weight": "W6"}, "align": "left"}
