@@ -52,14 +52,20 @@ python --version   # 或 py -3 --version
 无需安装，直接运行：
 
 ```bash
-npx @moke-mcp/cli serve
+npx @moke-mcp/cli@latest serve
 ```
 
 ### 方式 2：全局安装
 
 ```bash
-npm install -g @moke-mcp/cli
+npm install -g @moke-mcp/cli@latest
 moke-mcp serve
+```
+
+升级到最新版本（CLI 与 server 需同时更新）：
+
+```bash
+npm install -g @moke-mcp/server@latest @moke-mcp/cli@latest
 ```
 
 ### 方式 3：本地开发
@@ -128,7 +134,7 @@ moke-mcp cookie status
 export MOKE_COOKIE="你的cookie"
 
 # 2. 启动 Server
-npx @moke-mcp/cli serve
+npx @moke-mcp/cli@latest serve
 
 # 3. 在 AI 编辑器中配置 MCP（见下方各编辑器 JSON）
 # 4. 在 AI 对话中粘贴摹客设计稿 URL 即可
@@ -147,7 +153,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
   "mcpServers": {
     "moke-mcp": {
       "command": "npx",
-      "args": ["-y", "@moke-mcp/cli", "serve"],
+      "args": ["-y", "@moke-mcp/cli@latest", "serve"],
       "env": {
         "MOKE_COOKIE": "你的cookie"
       }
@@ -167,7 +173,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
   "mcpServers": {
     "moke-mcp": {
       "command": "npx",
-      "args": ["-y", "@moke-mcp/cli", "serve"],
+      "args": ["-y", "@moke-mcp/cli@latest", "serve"],
       "env": {
         "MOKE_COOKIE": "你的cookie"
       }
@@ -190,7 +196,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
   "mcpServers": {
     "moke-mcp": {
       "command": "npx",
-      "args": ["-y", "@moke-mcp/cli", "serve"],
+      "args": ["-y", "@moke-mcp/cli@latest", "serve"],
       "env": {
         "MOKE_COOKIE": "你的cookie"
       }
@@ -211,7 +217,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
     "moke-mcp": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@moke-mcp/cli", "serve"],
+      "args": ["-y", "@moke-mcp/cli@latest", "serve"],
       "env": {
         "MOKE_COOKIE": "你的cookie"
       }
@@ -231,7 +237,7 @@ Trae MCP 配置文件位于项目目录的 `.trae/mcp.json`：
   "mcpServers": {
     "moke-mcp": {
       "command": "npx",
-      "args": ["-y", "@moke-mcp/cli", "serve"],
+      "args": ["-y", "@moke-mcp/cli@latest", "serve"],
       "env": {
         "MOKE_COOKIE": "你的cookie"
       }

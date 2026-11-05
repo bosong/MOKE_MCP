@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-npm install -g @moke-mcp/cli
+npm install -g @moke-mcp/cli@latest
 ```
 
 > `@moke-mcp/cli` 内置了 `@moke-mcp/server` 和 Python 脚本，安装后无需额外配置即可使用。
@@ -25,7 +25,7 @@ moke-mcp --help
   "mcpServers": {
     "moke-mcp": {
       "command": "npx",
-      "args": ["-y", "@moke-mcp/cli", "serve"],
+      "args": ["-y", "@moke-mcp/cli@latest", "serve"],
       "env": {
         "MOKE_COOKIE": "你的cookie"
       }
