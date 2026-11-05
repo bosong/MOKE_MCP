@@ -32,9 +32,9 @@ def rgba_to_str(c: Optional[dict]) -> Optional[str]:
     """{r,g,b,a} → '#RRGGBB' (alpha=1) 或 'rgba(r, g, b, a.xx)' (alpha<1)。"""
     if not isinstance(c, dict):
         return None
-    r = int(c.get("r", 0))
-    g = int(c.get("g", 0))
-    b = int(c.get("b", 0))
+    r = _round_half(c.get("r", 0))
+    g = _round_half(c.get("g", 0))
+    b = _round_half(c.get("b", 0))
     a = float(c.get("a", 1))
     if a >= 0.999:
         return f"#{r:02X}{g:02X}{b:02X}"
@@ -46,13 +46,13 @@ def normalize_bg(bg) -> str:
     if not bg:
         return ""
     if isinstance(bg, dict):
-        r = bg.get("r", 0)
-        g = bg.get("g", 0)
-        b = bg.get("b", 0)
+        r = _round_half(bg.get("r", 0))
+        g = _round_half(bg.get("g", 0))
+        b = _round_half(bg.get("b", 0))
         a = bg.get("a", 1)
         if a == 1:
-            return f"#{int(r):02X}{int(g):02X}{int(b):02X}"
-        return f"rgba({int(r)}, {int(g)}, {int(b)}, {a:.2f})"
+            return f"#{r:02X}{g:02X}{b:02X}"
+        return f"rgba({r}, {g}, {b}, {a:.2f})"
     s = bg.lstrip("#").upper()
     if len(s) == 8:
         r, g, b = int(s[0:2], 16), int(s[2:4], 16), int(s[4:6], 16)
