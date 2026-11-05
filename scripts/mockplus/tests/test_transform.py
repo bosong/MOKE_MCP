@@ -23,6 +23,16 @@ class TestColor(unittest.TestCase):
     def test_rgba_to_str_alpha_lt1(self):
         self.assertEqual(transform.rgba_to_str({"r": 0, "g": 0, "b": 0, "a": 0.3}), "rgba(0, 0, 0, 0.30)")
 
+    def test_rgba_to_str_rounds_fractional_channels(self):
+        self.assertEqual(
+            transform.rgba_to_str({"r": 129.625, "g": 204.85, "b": 255, "a": 1}),
+            "#82CDFF",
+        )
+        self.assertEqual(
+            transform.rgba_to_str({"r": 0.5, "g": 100.938, "b": 174.888, "a": 0.3}),
+            "rgba(1, 101, 175, 0.30)",
+        )
+
     def test_rgba_to_str_none(self):
         self.assertIsNone(transform.rgba_to_str(None))
 
@@ -34,6 +44,16 @@ class TestColor(unittest.TestCase):
 
     def test_normalize_bg_dict(self):
         self.assertEqual(transform.normalize_bg({"r": 1, "g": 2, "b": 3, "a": 1}), "#010203")
+
+    def test_normalize_bg_dict_rounds_fractional_channels(self):
+        self.assertEqual(
+            transform.normalize_bg({"r": 129.625, "g": 204.85, "b": 255, "a": 1}),
+            "#82CDFF",
+        )
+        self.assertEqual(
+            transform.normalize_bg({"r": 0.5, "g": 100.938, "b": 174.888, "a": 0.3}),
+            "rgba(1, 101, 175, 0.30)",
+        )
 
 
 class TestNumbers(unittest.TestCase):
