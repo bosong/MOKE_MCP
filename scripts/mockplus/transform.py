@@ -270,7 +270,7 @@ class TokenTable:
         spec = compact({
             "fontSize": font.get("size"),
             "fontFamily": font.get("family", ""),
-            "fontWeight": _normalize_weight(font.get("weight")),
+            "fontWeight": _pick_font_weight(font),
             "fontStyle": "italic" if fstyles.get("italic") else None,
             "color": rgba_to_str(color),
             "lineHeight": space.get("lineHeight"),
@@ -359,6 +359,19 @@ def _normalize_weight(w):
     if m:
         return int(m.group(1)) * 100
     return WEIGHT_STR_MAP.get(s, s or None)
+
+
+def _pick_font_weight(font: dict):
+    """优先使用 Sketch 数值字重，缺失或无效时回退粗分类 weight。"""
+    w = font.get("fontWeight")
+    if w is not None and not isinstance(w, bool):
+        try:
+            n = float(w)
+            if math.isfinite(n):
+                return int(n) if n.is_integer() else n
+        except (TypeError, ValueError, OverflowError):
+            pass
+    return _normalize_weight(font.get("weight"))
 
 
 def _slice_bitmap_url(slice_: dict) -> Optional[str]:
