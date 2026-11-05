@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """record_fixture.py - 从本地缓存/网络把真实页面 Sketch JSON 匿名化后录制为 fixtures。
 
-用法:
+用法(Windows 下 python3 换成 python 或 py -3):
     python3 tests/record_fixture.py <APP_ID>:<PAGE_ID> [--out tests/fixtures/real-<n>.json]
 
 匿名化规则(只打码业务内容,保留结构/几何/颜色/字号等验证对象):
@@ -75,7 +75,7 @@ def main(argv=None) -> int:
         name = re.sub(r"[^\w\-]+", "-", page_meta.get("name", page_id)).strip("-")
         out = Path(__file__).resolve().parent / "fixtures" / f"real-{name or page_id}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(data_copy, ensure_ascii=False, indent=1))
+    out.write_bytes(json.dumps(data_copy, ensure_ascii=False, indent=1).encode("utf-8"))
     print(f"OK: {out} (name={page_meta.get('name')} size={len(data_copy['layers'].get('children', []))} top-children)")
     return 0
 

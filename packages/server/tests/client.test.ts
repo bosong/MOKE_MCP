@@ -12,7 +12,12 @@ vi.mock('child_process', () => ({
 }));
 
 import { spawn } from 'child_process';
-import { checkCookieStatus, downloadImages, parseMockplusUrl } from '../src/api/client.js';
+import {
+  checkCookieStatus,
+  downloadImages,
+  fetchPageTreeForMetadata,
+  parseMockplusUrl,
+} from '../src/api/client.js';
 
 const mockSpawn = vi.mocked(spawn);
 
@@ -85,18 +90,50 @@ describe('downloadImages 契约', () => {
 
   it('传 --json 并解析真实下载统计(替代写死的假统计)', async () => {
     mockSpawn.mockReturnValue(
-      makeProc(JSON.stringify({ ok: 3, fail: 1, cached: 2, total: 6 })) as never
+      makeProc(JSON.stringify({ ok: 3, fail: 1, cached: 2, total: 6, unmatched: ['h2'] })) as never
     );
     const stats = await downloadImages('https://app.mockplus.cn/app/a1/design', ['h1', 'h2'], '/tmp/out');
     const args = mockSpawn.mock.calls[0][1] as string[];
     expect(args).toContain('download');
     expect(args).toContain('--json');
-    expect(stats).toEqual({ ok: 3, fail: 1, cached: 2, total: 6 });
+    expect(stats).toEqual({ ok: 3, fail: 1, cached: 2, total: 6, unmatched: ['h2'] });
   });
 
-  it('stdout 非 JSON 时回退估算统计不中断', async () => {
+  it('stdout 非 JSON 时抛 PARSE_ERROR(不再返回估算假统计)', async () => {
     mockSpawn.mockReturnValue(makeProc('') as never);
-    const stats = await downloadImages('https://app.mockplus.cn/app/a1/design', ['h1', 'h2'], '/tmp/out');
-    expect(stats).toEqual({ ok: 2, fail: 0, cached: 0, total: 2 });
+    await expect(
+      downloadImages('https://app.mockplus.cn/app/a1/design', ['h1', 'h2'], '/tmp/out')
+    ).rejects.toMatchObject({ code: 'PARSE_ERROR' });
+  });
+});
+
+describe('fetchPageTreeForMetadata 契约', () => {
+  beforeEach(() => {
+    mockSpawn.mockReset();
+  });
+
+  it('传 --flat 并由扁平 pages/groups 构建树', async () => {
+    mockSpawn.mockReturnValue(
+      makeProc(JSON.stringify({
+        pages: [{ id: 'p1', name: '页', parentID: 'g1' }],
+        groups: [{ id: 'g1', name: '组', parentID: '' }],
+      })) as never
+    );
+    const tree = await fetchPageTreeForMetadata('https://app.mockplus.cn/app/a1/design');
+    const args = mockSpawn.mock.calls[0][1] as string[];
+    expect(args).toContain('tree');
+    expect(args).toContain('--flat');
+    expect(tree).toEqual([
+      { id: 'g1', name: '组', type: 'group', children: [{ id: 'p1', name: '页', type: 'page' }] },
+    ]);
+  });
+
+  it('响应结构不符(嵌套数组)时抛 PARSE_ERROR 而非返回空树', async () => {
+    mockSpawn.mockReturnValue(
+      makeProc(JSON.stringify([{ id: 'g1', name: '组', kind: 'group', children: [] }])) as never
+    );
+    await expect(
+      fetchPageTreeForMetadata('https://app.mockplus.cn/app/a1/design')
+    ).rejects.toMatchObject({ code: 'PARSE_ERROR' });
   });
 });

@@ -43,7 +43,8 @@ export async function startServer(_options: ServerOptions = {}): Promise<void> {
   const pythonOk = await verifyPythonEnv();
   if (!pythonOk) {
     logger.warn('[Server] 未检测到 Python 3，请确保已安装 Python 3');
-    logger.warn('[Server] 安装: brew install python3 或 https://www.python.org/downloads/');
+    logger.warn('[Server] 安装: macOS brew install python3；Windows 从 https://www.python.org/downloads/ 安装(或 winget install Python.Python.3)');
+    logger.warn('[Server] 也可通过环境变量 MOKE_PYTHON 指定解释器路径');
   } else {
     logger.info('[Server] Python 3 环境就绪');
   }

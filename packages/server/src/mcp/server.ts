@@ -168,7 +168,7 @@ export function createMcpServer(): McpServer {
     '下载摹客设计文件中的切图资源，保存为 PNG/SVG 文件到本地目录。',
     {
       url: z.string().describe('摹客设计稿 URL'),
-      imageRefs: z.array(z.string()).describe('要下载的切图 imageRef 列表（从设计数据的 globalVars.styles 中找到 type: IMAGE 的 imageRef）'),
+      imageRefs: z.array(z.string()).describe('要下载的切图 imageRef 列表（设计数据 globalVars.styles 中 type: IMAGE 条目的 imageRef 资产哈希，也接受节点 sourceID；未匹配的 ref 会在结果中列为「未匹配」）'),
       outputDir: z.string().optional().describe('输出目录，默认为 ./mockplus-assets'),
     },
     async ({ url, imageRefs, outputDir }) => {
@@ -186,7 +186,8 @@ export function createMcpServer(): McpServer {
                 `  目录: ${outDir}\n` +
                 `  成功: ${result.ok}\n` +
                 `  失败: ${result.fail}\n` +
-                `  总数: ${result.total}`,
+                `  总数: ${result.total}` +
+                (result.unmatched.length > 0 ? `\n  未匹配: ${result.unmatched.join(', ')}` : ''),
             },
           ],
         };

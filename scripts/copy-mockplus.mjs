@@ -5,7 +5,7 @@
  * 用法: node scripts/copy-mockplus.mjs <server|cli>
  */
 import { cpSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
-import { resolve, dirname, join } from 'node:path';
+import { resolve, dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -33,12 +33,14 @@ mkdirSync(dest, { recursive: true });
 cpSync(src, dest, {
   recursive: true,
   filter: (srcPath, dstPath) => {
+    // 按路径段判断，兼容 Windows 反斜杠分隔符
+    const segments = relative(src, srcPath).split(sep);
     // 跳过 tests/ 目录（仅测试用，不下发给用户）
-    if (srcPath.includes('/tests') || srcPath.endsWith('/tests')) {
+    if (segments.includes('tests')) {
       return false;
     }
     // 跳过 __pycache__ 目录（Python 版本相关缓存）
-    if (srcPath.endsWith('/__pycache__') || srcPath.includes('/__pycache__/')) {
+    if (segments.includes('__pycache__')) {
       return false;
     }
     return true;

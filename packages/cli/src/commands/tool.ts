@@ -133,7 +133,7 @@ export function registerToolCommand(program: Command): void {
     .command('download_design_images')
     .description('下载切图资源（PNG/SVG）到本地目录')
     .argument('<url>', '摹客设计稿 URL')
-    .requiredOption('--refs <refs>', 'imageRef 列表，逗号分隔（来自 globalVars.styles 中 type: IMAGE 的 imageRef）')
+    .requiredOption('--refs <refs>', 'imageRef 列表，逗号分隔（globalVars.styles 中 type: IMAGE 条目的 imageRef 资产哈希，也接受节点 sourceID）')
     .option('-o, --output <dir>', '输出目录', path.join(process.cwd(), 'mockplus-assets'))
     .action(async (url: string, opts: { refs: string; output: string }) => {
       try {
@@ -147,6 +147,9 @@ export function registerToolCommand(program: Command): void {
         console.log(`  成功: ${result.ok}`);
         console.log(`  失败: ${result.fail}`);
         console.log(`  总数: ${result.total}`);
+        if (result.unmatched?.length) {
+          console.log(`  未匹配: ${result.unmatched.join(', ')}`);
+        }
       } catch (err) {
         handleError('download_design_images', err);
       }

@@ -39,39 +39,116 @@ function getPythonScript(): string {
   return path.join(SCRIPTS_DIR, 'mockplus.py');
 }
 
-/** 执行 Python cookie 子命令 */
-function runCookieCmd(args: string[], stdin?: string): Promise<{ stdout: string; stderr: string; code: number }> {
-  const env = { ...process.env };
-  if (process.env.MOKE_COOKIE) {
-    env.MOCKPLUS_COOKIE = process.env.MOKE_COOKIE;
-  }
+interface PythonCommand {
+  cmd: string;
+  args: string[];
+}
 
+/**
+ * Python 解释器候选(与 @moke-mcp/server 的 utils/python.ts 保持一致)
+ * 优先级: env MOKE_PYTHON(仅用它) > Windows: python → py -3 → python3 / 其他: python3 → python
+ */
+function getPythonCandidates(): PythonCommand[] {
+  const override = process.env.MOKE_PYTHON;
+  if (override) {
+    return [{ cmd: override, args: [] }];
+  }
+  if (process.platform === 'win32') {
+    return [
+      { cmd: 'python', args: [] },
+      { cmd: 'py', args: ['-3'] },
+      { cmd: 'python3', args: [] },
+    ];
+  }
+  return [
+    { cmd: 'python3', args: [] },
+    { cmd: 'python', args: [] },
+  ];
+}
+
+type CmdResult = { stdout: string; stderr: string; code: number };
+
+/** 已验证可用的解释器(首次成功后缓存) */
+let resolvedPython: PythonCommand | null = null;
+
+/** 用指定解释器执行一次；解释器不存在(ENOENT / Windows 9009)时 resolve null */
+function spawnCookieCmd(
+  python: PythonCommand,
+  args: string[],
+  env: NodeJS.ProcessEnv,
+  stdin?: string
+): Promise<CmdResult | null> {
   return new Promise((resolve, reject) => {
-    const proc = spawn('python3', [getPythonScript(), ...args], {
+    const proc = spawn(python.cmd, [...python.args, getPythonScript(), ...args], {
       env,
       stdio: stdin ? ['pipe', 'pipe', 'pipe'] : ['inherit', 'pipe', 'pipe'],
     });
 
-    let stdout = '';
-    let stderr = '';
+    // 按 Buffer 收集，close 时统一解码，避免多字节字符跨 chunk 被截断
+    const stdoutChunks: Buffer[] = [];
+    const stderrChunks: Buffer[] = [];
+    let settled = false;
 
     proc.stdout!.on('data', (data: Buffer) => {
-      stdout += data.toString();
+      stdoutChunks.push(data);
     });
     proc.stderr!.on('data', (data: Buffer) => {
-      stderr += data.toString();
+      stderrChunks.push(data);
     });
 
     if (stdin && proc.stdin) {
+      proc.stdin.on('error', () => { /* 解释器不存在时 stdin 写入会 EPIPE，交给 error/close 处理 */ });
       proc.stdin.write(stdin);
       proc.stdin.end();
     }
 
-    proc.on('close', (code) => resolve({ stdout, stderr, code: code ?? 0 }));
-    proc.on('error', (err) => {
+    proc.on('close', (code) => {
+      if (settled) return;
+      settled = true;
+      if (process.platform === 'win32' && code === 9009) {
+        resolve(null);
+        return;
+      }
+      resolve({
+        stdout: Buffer.concat(stdoutChunks).toString('utf8'),
+        stderr: Buffer.concat(stderrChunks).toString('utf8'),
+        code: code ?? 0,
+      });
+    });
+    proc.on('error', (err: NodeJS.ErrnoException) => {
+      if (settled) return;
+      settled = true;
+      if (err.code === 'ENOENT') {
+        resolve(null);
+        return;
+      }
       reject(new Error(`Python 脚本执行失败: ${err.message}。请确保已安装 Python 3`));
     });
   });
+}
+
+/** 执行 Python cookie 子命令 */
+async function runCookieCmd(args: string[], stdin?: string): Promise<CmdResult> {
+  // 强制 Python 使用 UTF-8 读写 stdio/文件(Windows 默认是本地代码页如 GBK)
+  const env: NodeJS.ProcessEnv = { ...process.env, PYTHONUTF8: '1', PYTHONIOENCODING: 'utf-8' };
+  if (process.env.MOKE_COOKIE) {
+    env.MOCKPLUS_COOKIE = process.env.MOKE_COOKIE;
+  }
+
+  const candidates = resolvedPython ? [resolvedPython] : getPythonCandidates();
+  for (const python of candidates) {
+    const result = await spawnCookieCmd(python, args, env, stdin);
+    if (result) {
+      resolvedPython = python;
+      return result;
+    }
+  }
+
+  const tried = candidates.map((c) => [c.cmd, ...c.args].join(' ')).join(', ');
+  throw new Error(
+    `Python 脚本执行失败: 未找到可用的 Python 3 解释器(已尝试: ${tried})。` +
+      '请确保已安装 Python 3，或通过环境变量 MOKE_PYTHON 指定解释器路径'
+  );
 }
 
 /** cookie set：交互式设置 Cookie */

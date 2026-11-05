@@ -252,7 +252,7 @@ moke-mcp serve
 ## 前置要求
 
 - Node.js >= 18
-- Python 3（brew install python3）
+- Python 3（macOS: brew install python3；Windows: 从 python.org 安装或 winget install Python.Python.3。可用环境变量 MOKE_PYTHON 指定解释器路径）
 
 ## License
 

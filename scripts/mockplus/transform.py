@@ -106,7 +106,7 @@ def compact(d: dict) -> dict:
 def url_hash(u: Optional[str]) -> Optional[str]:
     if not u:
         return None
-    m = re.search(r"/sketch/([^/]+)/", u)
+    m = re.search(r"/(?:sketch|figma)/([^/]+)/", u)
     return m.group(1) if m else None
 
 

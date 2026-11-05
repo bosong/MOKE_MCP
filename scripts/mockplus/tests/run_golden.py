@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """run_golden.py - golden 回归:fixtures/*.json → transform(relative) → 与 .expected.json 语义等价对比。
 
-用法:
-    python3 tests/run_golden.py            # 对比(回归)
+用法(Windows 下 python3 换成 python 或 py -3):
+    python3 tests/run_golden.py           # 对比(回归)
     python3 tests/run_golden.py --update   # 重新生成 golden(transform 契约变更时)
 
 语义等价口径:token key(layout_/fill_/stroke_/effect_/textStyle_ 序号)按 spec 指纹归一化,
@@ -68,21 +68,21 @@ def main(argv=None) -> int:
 
     failed = 0
     for fp in targets:
-        data = json.loads(fp.read_text())
+        data = json.loads(fp.read_text(encoding="utf-8"))
         page_meta = {"name": "golden", "path": "golden", "id": "golden-page",
                      "device": data.get("device", "")}
         result = transform.transform(data, page_meta, "golden-app", coords="relative")
         got = normalize(result)
         gold_fp = fp.with_name(fp.stem + ".expected.json")
         if update:
-            gold_fp.write_text(json.dumps(got, ensure_ascii=False, indent=1, sort_keys=True))
+            gold_fp.write_bytes(json.dumps(got, ensure_ascii=False, indent=1, sort_keys=True).encode("utf-8"))
             print(f"UPDATED {gold_fp.name}")
             continue
         if not gold_fp.exists():
             print(f"MISSING-GOLDEN {fp.name}(先跑 --update)")
             failed += 1
             continue
-        want = json.loads(gold_fp.read_text())
+        want = json.loads(gold_fp.read_text(encoding="utf-8"))
         if got == want:
             print(f"OK {fp.name}")
         else:

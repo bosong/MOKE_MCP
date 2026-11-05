@@ -30,7 +30,7 @@ def action_cookie(args) -> int:
             if not p.exists():
                 print(f"ERR: 文件不存在: {p}", file=sys.stderr)
                 return 11
-            content = p.read_text()
+            content = p.read_text(encoding="utf-8-sig")
         elif sys.stdin.isatty():
             print("粘贴 cookie(单行),回车结束:", file=sys.stderr)
             content = sys.stdin.readline()
@@ -102,6 +102,11 @@ def _node_summary_json(node: dict) -> dict:
 
 def action_tree(args) -> int:
     idx = client.fetch_index(args.app_id, refresh=args.refresh)
+
+    if getattr(args, "flat", False):
+        pages, groups = client.flatten_pages(idx)
+        print(json.dumps({"pages": pages, "groups": groups}, ensure_ascii=False, indent=2))
+        return 0
 
     if args.format == "json":
         out = [_node_summary_json(root) for root in idx["payload"]["pages"]]
@@ -188,7 +193,7 @@ def action_data(args) -> int:
         except Exception as e:
             print(f"WARN: distill 失败,已回退未蒸馏原文: {e}", file=sys.stderr)
     if args.out and args.out != "-":
-        Path(args.out).write_text(out_text)
+        Path(args.out).write_bytes(out_text.encode("utf-8"))
         print(f"OK: 写入 {args.out}", file=sys.stderr)
     else:
         sys.stdout.write(out_text)
@@ -230,11 +235,17 @@ def action_download(args) -> int:
 
     # 写 manifest
     manifest_fp = out_dir / "assets-manifest.json"
-    manifest_fp.write_text(json.dumps({"slices": slices},
-                                       ensure_ascii=False, indent=2))
+    manifest_fp.write_bytes(json.dumps({"slices": slices},
+                                       ensure_ascii=False, indent=2).encode("utf-8"))
     print(f"目标切图: {len(slices)} 个 → {out_dir}", file=sys.stderr)
 
     stats = client.download_slices(slices, out_dir)
+    # 逐个 ref 判定是否命中(避免按 hash 去重后误报)
+    unmatched = sorted(w for w in wanted if not client.extract_slices(data, wanted={w})) \
+        if wanted is not None else []
+    if unmatched:
+        print(f"WARN: 未匹配的 ref: {', '.join(unmatched)}", file=sys.stderr)
+    stats["unmatched"] = unmatched
     if getattr(args, "json", False):
         print(json.dumps(stats, ensure_ascii=False))
         return 0

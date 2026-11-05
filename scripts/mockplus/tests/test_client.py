@@ -46,6 +46,18 @@ class TestSliceManifest(unittest.TestCase):
         self.assertEqual(client.url_hash(u), "wbyrvwvvlh")
         self.assertIsNone(client.url_hash(None))
 
+    def test_url_hash_figma(self):
+        u = "https://img02hw.mockplus.cn/idoc/figma/b6cb63f59b84b6abf481dc763675530b/fgapoykfxf.png"
+        self.assertEqual(client.url_hash(u), "b6cb63f59b84b6abf481dc763675530b")
+
+    def test_extract_slices_figma(self):
+        data = {"layers": {"children": [
+            {"basic": {"name": "f", "sourceID": "src-f"},
+             "slice": {"svgURL": "",
+                       "bitmapURL": "https://img02.mockplus.cn/idoc/figma/fh01/fgapoykfxf.png"}},
+        ]}}
+        self.assertEqual([s["hash"] for s in client.extract_slices(data)], ["fh01"])
+
     def test_bitmap_str(self):
         self.assertEqual(
             client._slice_bitmap_url({"bitmapURL": "https://img02.mockplus.cn/x/y.png"}),
@@ -99,7 +111,7 @@ class TestCookieStatus(unittest.TestCase):
             fp.write_text(
                 f"# set_at: {now}\n"
                 f"# expires_at: {now + 30 * 86400}\n"
-                "abc=123;\n")
+                "abc=123;\n", encoding="utf-8")
             with mock.patch.dict(os.environ, {"MOCKPLUS_COOKIE_FILE": str(fp)}):
                 st = client.cookie_status()
                 self.assertTrue(st["exists"])
@@ -115,7 +127,7 @@ class TestStaleFallback(unittest.TestCase):
             app = "app-cache-1"
             cache_dir = Path(td) / app
             cache_dir.mkdir(parents=True)
-            (cache_dir / "_index.json").write_text(json.dumps(idx))
+            (cache_dir / "_index.json").write_text(json.dumps(idx), encoding="utf-8")
             with mock.patch.dict(os.environ, {"MOCKPLUS_CACHE_DIR": td}):
                 got = client.fetch_index(app)
                 self.assertEqual(got, idx)
@@ -128,7 +140,7 @@ class TestStaleFallback(unittest.TestCase):
             cache_dir = Path(td) / app
             cache_dir.mkdir(parents=True)
             fp = cache_dir / "_index.json"
-            fp.write_text(json.dumps(idx))
+            fp.write_text(json.dumps(idx), encoding="utf-8")
             old = time.time() - 3 * 86400
             os.utime(fp, (old, old))
             with mock.patch.dict(os.environ, {"MOCKPLUS_CACHE_DIR": td}):
@@ -146,6 +158,28 @@ class TestStaleFallback(unittest.TestCase):
         self.assertEqual([p["id"] for p in pages], ["p1"])
         self.assertEqual(pages[0]["path"], "Group / Page")
         self.assertEqual([g["id"] for g in groups], ["g1"])
+
+
+class TestTreeFlat(unittest.TestCase):
+    def test_action_tree_flat_outputs_pages_and_groups(self):
+        """tree --flat 输出扁平 {pages, groups}(MCP get_metadata 契约)。"""
+        import argparse
+        import contextlib
+        import io
+        import cli
+        index = {"payload": {"pages": [
+            {"_id": "g1", "name": "组", "isGroup": True, "parentID": "",
+             "children": [{"_id": "p1", "name": "页", "parentID": "g1",
+                           "dataURL": "https://cdn/x"}]},
+        ]}}
+        args = argparse.Namespace(app_id="app1", refresh=False, format="json", flat=True)
+        buf = io.StringIO()
+        with mock.patch.object(client, "fetch_index", return_value=index), \
+                contextlib.redirect_stdout(buf):
+            self.assertEqual(cli.action_tree(args), 0)
+        out = json.loads(buf.getvalue())
+        self.assertEqual([(g["id"], g["parentID"]) for g in out["groups"]], [("g1", "")])
+        self.assertEqual([(p["id"], p["parentID"]) for p in out["pages"]], [("p1", "g1")])
 
 
 if __name__ == "__main__":

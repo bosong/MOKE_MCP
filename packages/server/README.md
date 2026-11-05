@@ -100,7 +100,7 @@ _meta:
 ## 依赖
 
 - `@modelcontextprotocol/sdk` >= 1.0 — MCP 协议 SDK
-- Python 3 — 通过 child_process 调用 mockplus-context 脚本
+- Python 3 — 通过 child_process 调用 mockplus-context 脚本（自动探测 Windows: python → py -3 → python3，其他: python3 → python；可用环境变量 MOKE_PYTHON 指定）
 
 ## License
 

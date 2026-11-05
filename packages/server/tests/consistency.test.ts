@@ -9,20 +9,38 @@
  *
  * 依赖真实网络 + 有效 Cookie,网络失败时容错跳过(CI 无 Cookie 也能跑)。
  */
-import { execSync } from 'child_process';
+import { execFileSync } from 'child_process';
 import path from 'path';
 import { describe, expect, it } from 'vitest';
 import { fetchDesignData, fetchDesignDataYaml } from '../src/api/client.js';
+import { getPythonCandidates, isPythonNotFound, withPythonUtf8Env } from '../src/utils/python.js';
 
 const TEST_URL = 'https://app.mockplus.cn/app/yd2hUtESwQ5/develop/design/-iGT77iY9j';
 // vitest 对 new URL(x, import.meta.url) 有 Vite 资源解析特判,这里用 process.cwd() 计算
 const SCRIPTS_DIR = path.resolve(process.cwd(), '../../scripts/mockplus');
 
 function cli(format: 'json' | 'yaml'): string {
-  return execSync(
-    `python3 mockplus.py data ${JSON.stringify(TEST_URL)} --format ${format}`,
-    { cwd: SCRIPTS_DIR, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }
-  );
+  const scriptArgs = ['mockplus.py', 'data', TEST_URL, '--format', format];
+  const candidates = getPythonCandidates();
+  for (let i = 0; i < candidates.length; i++) {
+    const { cmd, args } = candidates[i];
+    try {
+      return execFileSync(cmd, [...args, ...scriptArgs], {
+        cwd: SCRIPTS_DIR,
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'pipe'],
+        env: withPythonUtf8Env(process.env),
+      });
+    } catch (err) {
+      const e = err as NodeJS.ErrnoException & { status?: number | null };
+      // 解释器不存在则尝试下一个候选，其余错误原样抛出
+      if (i < candidates.length - 1 && (isPythonNotFound(e) || isPythonNotFound(e.status ?? null))) {
+        continue;
+      }
+      throw err;
+    }
+  }
+  throw new Error('未找到可用的 Python 3 解释器');
 }
 
 function runOrSkip<T>(fn: () => T): T | undefined {

@@ -58,7 +58,7 @@ def load_cookie() -> str:
         return env.strip()
     fp = cookie_file_path()
     if fp.exists():
-        text = fp.read_text()
+        text = fp.read_text(encoding="utf-8-sig")
         return "".join(l for l in text.splitlines() if not l.startswith("#")).strip()
     return ""
 
@@ -81,7 +81,7 @@ def write_cookie(content: str) -> None:
         f"# expires_at: {expires_at}\n"
         f"{content.strip()}\n"
     )
-    fp.write_text(body)
+    fp.write_bytes(body.encode("utf-8"))
     os.chmod(fp.parent, 0o700)
     os.chmod(fp, 0o600)
 
@@ -93,7 +93,7 @@ def cookie_status() -> dict:
     if not fp.exists():
         return out
     out["mode"] = oct(fp.stat().st_mode & 0o777)
-    text = fp.read_text()
+    text = fp.read_text(encoding="utf-8-sig")
     for line in text.splitlines():
         try:
             if line.startswith("# set_at:"):
@@ -171,7 +171,7 @@ def _stale_fallback(cache_fp: Path, what: str) -> Optional[dict]:
                   f"(>{cap_days} 天上限),不回退;请联网重试或 --refresh",
                   file=sys.stderr)
             return None
-        data = json.loads(cache_fp.read_text())
+        data = json.loads(cache_fp.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return None  # 缓存缺失/损坏:走原错误路径
     print(f"WARN: {what} 拉取失败,回退 {age/86400:.1f} 天前的过期缓存 {cache_fp}",
@@ -190,7 +190,7 @@ def fetch_index(app_id: str, refresh: bool = False) -> dict:
     cache_fp = cdir / "_index.json"
     if (not refresh and cache_fp.exists()
             and time.time() - cache_fp.stat().st_mtime < CACHE_TTL_SECONDS):
-        return json.loads(cache_fp.read_text())
+        return json.loads(cache_fp.read_text(encoding="utf-8"))
     try:
         cookie = require_cookie()
         raw = _get(f"/api/v1/app/module/{app_id}/design", cookie=cookie)
@@ -211,7 +211,7 @@ def fetch_index(app_id: str, refresh: bool = False) -> dict:
             if stale is not None:
                 return stale
         raise
-    cache_fp.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+    cache_fp.write_bytes(json.dumps(data, ensure_ascii=False, indent=2).encode("utf-8"))
     os.chmod(cache_fp, 0o600)
     return data
 
@@ -282,7 +282,7 @@ def get_page_data_cached(app_id: str, page_meta: dict, refresh: bool = False) ->
     data_fp = cdir / "data.json"
     if (not refresh and data_fp.exists()
             and time.time() - data_fp.stat().st_mtime < CACHE_TTL_SECONDS):
-        return json.loads(data_fp.read_text())
+        return json.loads(data_fp.read_text(encoding="utf-8"))
     try:
         data = fetch_page_data(page_meta)
     except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError):
@@ -291,7 +291,7 @@ def get_page_data_cached(app_id: str, page_meta: dict, refresh: bool = False) ->
             if stale is not None:
                 return stale
         raise
-    data_fp.write_text(json.dumps(data, ensure_ascii=False))
+    data_fp.write_bytes(json.dumps(data, ensure_ascii=False).encode("utf-8"))
     os.chmod(data_fp, 0o600)
     return data
 
@@ -315,10 +315,10 @@ def test_cookie_api(app_id: str) -> int:
 # ============================================================
 
 def url_hash(u: Optional[str]) -> Optional[str]:
-    """https://img02.mockplus.cn/idoc/sketch/<hash>/wbyrvwvvlh.png → <hash>"""
+    """https://img02.mockplus.cn/idoc/{sketch|figma}/<hash>/wbyrvwvvlh.png → <hash>"""
     if not u:
         return None
-    m = re.search(r"/sketch/([^/]+)/", u)
+    m = re.search(r"/(?:sketch|figma)/([^/]+)/", u)
     return m.group(1) if m else None
 
 

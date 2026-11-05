@@ -16,7 +16,7 @@
 文本级变换 + 出口不变量自检;任何不变量不满足即抛 DistillError——调用方
 (cli.action_data)回退输出未蒸馏原文,绝不输出半蒸馏产物。
 
-独立 CLI(离线蒸馏既有文件):
+独立 CLI(离线蒸馏既有文件,Windows 下 python3 换成 python 或 py -3):
   python3 distill.py <in.yaml> [<out.yaml>] [--check-only]
 """
 import re
