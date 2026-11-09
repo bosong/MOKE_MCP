@@ -88,18 +88,20 @@ node packages/cli/dist/index.js serve
 
 1. 浏览器打开 [app.mockplus.cn](https://app.mockplus.cn) 并登录
 2. 按 `F12` → **Application** → **Cookies** → `app.mockplus.cn`
-3. 复制所有 cookie，格式为 `name=value`，用 `; ` 连接
+3. **全量复制**该域名下 Cookie 的所有 `key=value` 键值对，按 **Header String**（请求头 Cookie 字符串）格式拼接：`k1=v1; k2=v2; ...`，即每个键值对用 `; `（分号+空格）连接
 
    ```
-   token=xxxxx; JSESSIONID=yyyyy; _ga=zzzzz
+   mockuuid=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx; mockuuid.sig=xxxxx; _c_WBKFRo=xxxxx; ds.sid=ds:sess:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx; ds.sid.sig=xxxxx; _ga=GA1.2.xxxxxxxxxx.xxxxxxxxxx
    ```
+
+   > **建议全量复制所有 key=value 键值对，不要只挑选部分 key**：`ds.sid` 与 `ds.sid.sig` 是登录态凭证（最关键），`mockuuid`、`mockuuid.sig`、`_c_WBKFRo` 等也不可缺少，遗漏会导致 401。最终格式必须是 Header String：`k1=v1; k2=v2; ...`。
 
 ### 配置方式（三选一，按优先级）
 
 #### 方式 1：环境变量（推荐，Agent 中直接设置）
 
 ```bash
-export MOKE_COOKIE="token=xxx; JSESSIONID=yyy; ..."
+export MOKE_COOKIE="mockuuid=xxxxx; mockuuid.sig=xxxxx; _c_WBKFRo=xxxxx; ds.sid=ds:sess:xxxxx; ds.sid.sig=xxxxx; _ga=GA1.2.xxxxx.xxxxx"
 ```
 
 在 AI 编辑器的 MCP 配置中也可直接写入 `env` 字段（见下方编辑器配置）。
@@ -539,6 +541,24 @@ MOKE_MCP 的设计灵感来自以下两个优秀项目：
 
 ---
 
-## License
+## License 与使用声明
 
-MIT
+### 许可证
+
+本项目采用 [MIT License](./LICENSE)。
+
+### 使用声明
+
+本项目是**独立开发的第三方工具**，与摹客（Mockplus）等平台无官方关联，相关商标、产品名称及数据归各自权利人所有。
+
+本作品仅供交流，**不建议用于商业用途**；使用者应依法自行承担使用本作品产生的法律责任，上述用途建议仅为作者倡议。
+
+### 免责声明
+
+- 请仅处理**已获授权**的数据，并遵守适用法律及平台条款。
+- 提交内容、日志和附件可能发送至所配置的服务及智能体，请先检查其中是否包含敏感信息。
+- 软件按**「现状」**提供，不作任何担保；责任限制以 MIT 许可证及适用法律为准。
+
+### 权利争议
+
+如对本项目的内容、标识或使用方式存在权利争议，请提交 [Issue](https://github.com/bosong/MOKE_MCP/issues) 或联系作者，说明具体情况，我们将核实并视情况更正或移除相关内容。

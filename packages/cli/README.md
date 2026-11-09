@@ -56,7 +56,7 @@ moke-mcp cookie set
 
 将 Cookie 写入 `~/.config/mockplus/cookie`。
 
-> 获取 Cookie：浏览器登录 app.mockplus.cn → F12 → Application → Cookies → 全选复制所有 `name=value`，用 `; ` 连接。
+> 获取 Cookie：浏览器登录 app.mockplus.cn → F12 → Application → Cookies → **全量复制**该域名下所有 `key=value` 键值对，按 **Header String** 格式用 `; ` 连接（如 `k1=v1; k2=v2`）。
 
 ## 命令参考
 
